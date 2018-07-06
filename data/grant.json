@@ -1,0 +1,2831 @@
+{
+    "license": "See dataset/license within each grant. This file also contains OS data © Crown copyright and database right 2016, Royal Mail data © Royal Mail copyright and Database right 2016, National Statistics data © Crown copyright and database right 2016, see http://grantnav.org/datasets/ for more information.",
+    "grants": [
+        {
+            "recipientLocation": "South Lakeland District Kendal Strickland Ward North West",
+            "title": "Grant awarded to South Lakeland Support Group of Disabled Children & their Fa (North West)",
+            "recipientOrganization": [
+                {
+                    "streetAddress": "Unit 9\nDockray Hall Industrial Estate\nDockray Hall Road",
+                    "charityNumber": "1061763.0",
+                    "id_and_name": "[\"South Lakeland Support Group of Disabled Children and Their Families\", \"GB-CHC-1061763\"]",
+                    "postalCode": "LA9 4RU",
+                    "addressCountry": "United Kingdom",
+                    "addressLocality": "Kendal",
+                    "name": "South Lakeland Support Group of Disabled Children & their Fa",
+                    "addressRegion": "Cumbria",
+                    "id": "GB-CHC-1061763"
+                }
+            ],
+            "recipientDistrictName": "South Lakeland District",
+            "plannedDates": [
+                {
+                    "endDate": "2002-09-14T00:00:00+00:00",
+                    "startDate": "1999-09-14T00:00:00+00:00",
+                    "duration": 36
+                }
+            ],
+            "description": "To employ a family support worker.",
+            "beneficiaryLocation": [
+                {
+                    "name": "North West",
+                    "countryCode": "GB"
+                }
+            ],
+            "currency": "GBP",
+            "id": "360G-northernrock:437",
+            "dataset": {
+                "issued": "2016-05-26",
+                "identifier": "a002400000G4KGLAA3",
+                "modified": "2018-04-18T14:24:03+0000",
+                "title": "Northern Rock Foundation",
+                "distribution": [
+                    {
+                        "downloadURL": "https://docs.google.com/spreadsheets/d/1gyyHFzS60yrMqindaaTNW8kSFa0sOIZAjDIR8sZ5dLA/export?format=xlsx",
+                        "title": "Northern Rock Foundation",
+                        "accessURL": "https://docs.google.com/spreadsheets/d/1gyyHFzS60yrMqindaaTNW8kSFa0sOIZAjDIR8sZ5dLA/edit#gid=539732310"
+                    }
+                ],
+                "license": "http://www.opendefinition.org/licenses/odc-pddl",
+                "license_name": "Open Data Commons Public Domain Dedication and Licence 1.0",
+                "publisher": {
+                    "name": "Northern Rock Foundation",
+                    "website": "http://www.nr-foundation.org.uk",
+                    "prefix": "360G-northernrock",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/northern-rock-foundation.png"
+                },
+                "funders": [
+                    [
+                        "Northern Rock Foundation",
+                        "GB-COH-03416658"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000G4KGLAA3.json",
+                    "datetime_downloaded": "2018-06-04T13:15:23+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "xlsx"
+                },
+                "description": "Northern Rock Foundation - All Grants - Modifications by Open Data Services 26.05.2016"
+            },
+            "fundingOrganization": [
+                {
+                    "name": "Northern Rock Foundation",
+                    "id_and_name": "[\"Northern Rock Foundation\", \"GB-COH-03416658\"]",
+                    "id": "GB-COH-03416658"
+                }
+            ],
+            "Internal organisation identifier": 1820,
+            "amountAwarded": 48000,
+            "recipientWardName": "Kendal Strickland Ward",
+            "recipientRegionName": "North West",
+            "recipientDistrictGeoCode": "E07000031",
+            "amountAppliedFor": 71399.79,
+            "awardDate": "1999-09-14T00:00:00+00:00",
+            "url": "https://www.southlakesdisabled.org.uk",
+            "Application Date": {
+                "Start Date": "1999-06-16T00:00:00+00:00"
+            },
+            "recipientWardNameGeoCode": "E05003259",
+            "filename": "a002400000G4KGLAA3.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "True Colours Trust",
+                    "id_and_name": "[\"True Colours Trust\", \"GB-CHC-1089893\"]",
+                    "id": "GB-CHC-1089893"
+                }
+            ],
+            "recipientLocation": "Islington London Boro Bunhill Ward London",
+            "title": "towards a second phase of on the national data on disabled children",
+            "recipientOrganization": [
+                {
+                    "charityNumber": "258825",
+                    "id_and_name": "[\"National Children's Bureau\", \"GB-CHC-258825\"]",
+                    "postalCode": "EC1V 7QE",
+                    "addressCountry": "UK",
+                    "name": "Council for Disabled Children",
+                    "addressRegion": "London",
+                    "id": "GB-CHC-258825"
+                }
+            ],
+            "recipientDistrictGeoCode": "E09000019",
+            "recipientDistrictName": "Islington London Boro",
+            "amountAwarded": 25742,
+            "recipientWardName": "Bunhill Ward",
+            "recipientRegionName": "London",
+            "ID": "33036",
+            "awardDate": "2017-01-11",
+            "dateModified": "2017-03-23T11:10:01Z",
+            "currency": "GBP",
+            "description": "Towards a second phase of on the national data on disabled children.",
+            "beneficiaryLocation": [
+                {
+                    "name": "UK",
+                    "countryCode": "GB"
+                }
+            ],
+            "recipientWardNameGeoCode": "E05000367",
+            "id": "360G-truecolours:TCT1403",
+            "dataset": {
+                "issued": "2016-02-23",
+                "identifier": "a002400000G4KGWAA3",
+                "modified": "2018-03-14T11:12:05+0000",
+                "title": "True Colours Trust grants",
+                "distribution": [
+                    {
+                        "downloadURL": "http://ods.sfct.org.uk/opendataservice/sfct360givingfeed.aspx?trust=GB-CHC-1089893",
+                        "title": "True Colours Trust grants",
+                        "accessURL": "http://www.sfct.org.uk/360giving"
+                    }
+                ],
+                "license": "https://creativecommons.org/licenses/by/4.0/",
+                "license_name": "Creative Commons Attribution 4.0",
+                "publisher": {
+                    "name": "True Colours Trust",
+                    "website": "http://www.truecolourstrust.org.uk/",
+                    "prefix": "360G-truecolours",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/true-colours-trust.png"
+                },
+                "funders": [
+                    [
+                        "True Colours Trust",
+                        "GB-CHC-1089893"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000G4KGWAA3.json",
+                    "datetime_downloaded": "2018-06-04T13:20:26+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "csv"
+                },
+                "description": ""
+            },
+            "filename": "a002400000G4KGWAA3.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "BBC Children in Need",
+                    "id_and_name": "[\"BBC Children in Need\", \"GB-CHC-802052\"]",
+                    "id": "GB-CHC-802052"
+                }
+            ],
+            "recipientLocation": "Pen-y-bont ar Ogwr - Bridgend Wales",
+            "title": "Grant to Bridgend & District Resource For Children With Disabilities",
+            "grantProgramme": [
+                {
+                    "title": "Main Grants"
+                }
+            ],
+            "recipientDistrictGeoCode": "W06000013",
+            "recipientDistrictName": "Pen-y-bont ar Ogwr - Bridgend",
+            "amountAwarded": 84525,
+            "plannedDates": [
+                {
+                    "duration": 36
+                }
+            ],
+            "recipientRegionName": "Wales",
+            "awardDate": "2014-07-01",
+            "dateModified": "2016-10-02T18:00:00+00:00",
+            "currency": "GBP",
+            "description": "This project will provide outreach support to disabled children.  They will improve their development improve their skills and increase their confidence.",
+            "dataset": {
+                "issued": "2016-07-15",
+                "identifier": "a002400000Uxj98AAB",
+                "modified": "2017-01-29T17:37:46+0000",
+                "title": "BBC Children in Need grants",
+                "distribution": [
+                    {
+                        "downloadURL": "http://downloads.bbc.co.uk/tv/pudsey/360_giving_data_02102016.xlsx",
+                        "title": "BBC Children in Need grants",
+                        "accessURL": "http://www.bbc.co.uk/programmes/articles/5VM9FRDjhbSRyl8VLyJC8T/bbc-children-in-need-360-giving"
+                    }
+                ],
+                "license": "https://creativecommons.org/licenses/by/4.0/",
+                "license_name": "Creative Commons Attribution 4.0",
+                "publisher": {
+                    "name": "BBC Children in Need",
+                    "website": "http://www.bbc.co.uk/corporate2/childreninneed",
+                    "prefix": "360g-cin",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/BBCCiN_CoreLogo.png"
+                },
+                "funders": [
+                    [
+                        "BBC Children in Need",
+                        "GB-CHC-802052"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000Uxj98AAB.json",
+                    "datetime_downloaded": "2018-06-04T08:59:27+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "xlsx"
+                },
+                "description": ""
+            },
+            "recipientOrganization": [
+                {
+                    "location": [
+                        {
+                            "name": "Bridgend",
+                            "geoCode": "W06000013",
+                            "geoCodeType": "UA"
+                        }
+                    ],
+                    "id_and_name": "[\"Bridgend & District Resource For Children With Disabilities\", \"360G-CIN-bridgenddistrictresourceforchildrenwithdisabilities\"]",
+                    "id": "360G-CIN-bridgenddistrictresourceforchildrenwithdisabilities",
+                    "name": "Bridgend & District Resource For Children With Disabilities"
+                }
+            ],
+            "id": "360G-CIN-74083",
+            "filename": "a002400000Uxj98AAB.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "The Big Lottery Fund",
+                    "id_and_name": "[\"The Big Lottery Fund\", \"360G-blf\"]",
+                    "id": "360G-blf"
+                }
+            ],
+            "recipientLocation": "West Dunbartonshire Scotland",
+            "title": "Dumbarton District Disabled Children's Forum",
+            "grantProgramme": [
+                {
+                    "title": "Young Peoples Fund",
+                    "code": "YSC1"
+                }
+            ],
+            "recipientDistrictGeoCode": "S12000039",
+            "recipientDistrictName": "West Dunbartonshire",
+            "amountAwarded": 58216,
+            "plannedDates": [
+                {
+                    "startDate": "2006-09-12",
+                    "duration": 48
+                }
+            ],
+            "recipientRegionName": "Scotland",
+            "BIGField_Organisation_Type": "Charity : Registered Charity",
+            "awardDate": "2006-08-11",
+            "amountAppliedFor": 58216,
+            "dateModified": "2016-05-11T13:46:00Z",
+            "currency": "GBP",
+            "description": "This grant will benefit 80 young people with physical disabilities, sensory impairment or behavioural difficulties. The grant will be used to purchase a fully adapted caravan that will enable the young people to experience a greater level of independence whilst on holiday. Most of the young people who will be offered the holidays live in circumstances where poverty, social deprivation or their level of disability would preclude them from accessing a holiday.  \u000b",
+            "dataset": {
+                "issued": "2016-04-22",
+                "identifier": "a002400000Z58cqAAB",
+                "modified": "2018-02-20T09:53:07+0000",
+                "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                "distribution": [
+                    {
+                        "downloadURL": "https://www.biglotteryfund.org.uk/-/media/Files/Research%20Documents/aOpenDataFiles/BLFOpenData_2004_2015_V41.csv",
+                        "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                        "accessURL": "https://www.biglotteryfund.org.uk/research/open-data"
+                    }
+                ],
+                "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+                "license_name": "Open Government Licence 3.0 (United Kingdom)",
+                "publisher": {
+                    "name": "Big Lottery Fund",
+                    "website": "https://www.biglotteryfund.org.uk/",
+                    "prefix": "360G-blf",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/big-lottery-fund.png"
+                },
+                "funders": [
+                    [
+                        "The Big Lottery Fund",
+                        "360G-blf"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000Z58cqAAB.json",
+                    "datetime_downloaded": "2018-06-04T09:08:02+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "csv"
+                },
+                "description": "This is a large download file"
+            },
+            "recipientOrganization": [
+                {
+                    "location": [
+                        {
+                            "name": "Leven",
+                            "geoCode": "S13002815"
+                        },
+                        {
+                            "name": "West Dunbartonshire",
+                            "geoCode": "S12000039"
+                        }
+                    ],
+                    "id_and_name": "[\"Dumbarton District Disabled Children's Forum\", \"GB-SC-SC024818\"]",
+                    "id": "GB-SC-SC024818",
+                    "name": "Dumbarton District Disabled Children's Forum",
+                    "charityNumber": "SC024818"
+                }
+            ],
+            "id": "360G-blf-0030134033",
+            "filename": "a002400000Z58cqAAB.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "The Big Lottery Fund",
+                    "id_and_name": "[\"The Big Lottery Fund\", \"360G-blf\"]",
+                    "id": "360G-blf"
+                }
+            ],
+            "awardDate": "2017-05-31",
+            "title": "We are the gate keepers lets make informed decisions",
+            "grantProgramme": [
+                {
+                    "title": "Awards for All",
+                    "code": "AFE1"
+                }
+            ],
+            "recipientDistrictName": "Manchester District",
+            "amountAwarded": 9867,
+            "recipientWardName": "Ardwick Ward",
+            "plannedDates": [
+                {
+                    "endDate": "2018-06-20",
+                    "startDate": "2017-06-20",
+                    "duration": 12
+                }
+            ],
+            "recipientRegionName": "North West",
+            "BIGField_Organisation_Type": "Charity : Charitable Incorporated Organisation",
+            "recipientDistrictGeoCode": "E08000003",
+            "recipientLocation": "Manchester District Ardwick Ward North West",
+            "dateModified": "2018-01-23T14:06:02.9730000Z",
+            "currency": "GBP",
+            "description": "The funding will be used to run a volunteer-led outreach programme, including fortnightly meetings and one to one and group support sessions for black and minority ethnic (BME) families of children with autism. The project aims to address the stigma around disability and increase access to support.",
+            "dataset": {
+                "issued": "2018-02-19",
+                "identifier": "a001p00000vZIqbAAG",
+                "modified": "2018-02-19T11:53:07+0000",
+                "title": "Big Lottery Fund - grants data 2017-18 year-to-date",
+                "distribution": [
+                    {
+                        "downloadURL": "https://www.biglotteryfund.org.uk/-/media/Files/Research%20Documents/aOpenDataFiles/BLFOpenData17-18.xlsx",
+                        "title": "Big Lottery Fund - grants data 2017-18 year-to-date",
+                        "accessURL": "https://www.biglotteryfund.org.uk/research/open-data"
+                    }
+                ],
+                "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+                "license_name": "Open Government Licence 3.0 (United Kingdom)",
+                "publisher": {
+                    "name": "Big Lottery Fund",
+                    "website": "https://www.biglotteryfund.org.uk/",
+                    "prefix": "360G-blf",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/big-lottery-fund.png"
+                },
+                "funders": [
+                    [
+                        "The Big Lottery Fund",
+                        "360G-blf"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a001p00000vZIqbAAG.json",
+                    "datetime_downloaded": "2018-06-04T09:07:15+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "xlsx"
+                },
+                "description": ""
+            },
+            "recipientOrganization": [
+                {
+                    "location": [
+                        {
+                            "name": "Ardwick",
+                            "geoCode": "E05000688"
+                        },
+                        {
+                            "name": "Manchester",
+                            "geoCode": "E08000003"
+                        }
+                    ],
+                    "id_and_name": "[\"Dimobi Children Disability Trust\", \"GB-CHC-1170582\"]",
+                    "id": "GB-CHC-1170582",
+                    "name": "Dimobi Children Disability Trust",
+                    "charityNumber": "1170582"
+                }
+            ],
+            "recipientWardNameGeoCode": "E05000688",
+            "id": "360G-blf-0031049688",
+            "filename": "a001p00000vZIqbAAG.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "The Big Lottery Fund",
+                    "id_and_name": "[\"The Big Lottery Fund\", \"360G-blf\"]",
+                    "id": "360G-blf"
+                }
+            ],
+            "recipientLocation": "Selby District Yorkshire and the Humber",
+            "title": "Music on Wheels",
+            "grantProgramme": [
+                {
+                    "title": "Awards for All",
+                    "code": "AFE1"
+                }
+            ],
+            "recipientDistrictGeoCode": "E07000169",
+            "recipientDistrictName": "Selby District",
+            "amountAwarded": 10000,
+            "plannedDates": [
+                {
+                    "startDate": "2010-08-03",
+                    "duration": 12
+                }
+            ],
+            "recipientRegionName": "Yorkshire and the Humber",
+            "BIGField_Organisation_Type": "Charity : Charitable Unincorporated Association",
+            "awardDate": "2010-06-17",
+            "amountAppliedFor": 10000,
+            "dateModified": "2016-05-11T14:56:00Z",
+            "currency": "GBP",
+            "description": "This group will use funding to provide weekly activity workshops for disabled children and their able-bodied peers, including singing and playing instruments. This will improve confidence, self esteem and also be therapeutic for children taking part, while also improving understanding between these two groups.",
+            "dataset": {
+                "issued": "2016-04-22",
+                "identifier": "a002400000Z58cqAAB",
+                "modified": "2018-02-20T09:53:07+0000",
+                "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                "distribution": [
+                    {
+                        "downloadURL": "https://www.biglotteryfund.org.uk/-/media/Files/Research%20Documents/aOpenDataFiles/BLFOpenData_2004_2015_V41.csv",
+                        "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                        "accessURL": "https://www.biglotteryfund.org.uk/research/open-data"
+                    }
+                ],
+                "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+                "license_name": "Open Government Licence 3.0 (United Kingdom)",
+                "publisher": {
+                    "name": "Big Lottery Fund",
+                    "website": "https://www.biglotteryfund.org.uk/",
+                    "prefix": "360G-blf",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/big-lottery-fund.png"
+                },
+                "funders": [
+                    [
+                        "The Big Lottery Fund",
+                        "360G-blf"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000Z58cqAAB.json",
+                    "datetime_downloaded": "2018-06-04T09:08:02+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "csv"
+                },
+                "description": "This is a large download file"
+            },
+            "recipientOrganization": [
+                {
+                    "location": [
+                        {
+                            "name": "Fairburn with Brotherton",
+                            "geoCode": "E05006348"
+                        },
+                        {
+                            "name": "Selby",
+                            "geoCode": "E07000169"
+                        }
+                    ],
+                    "id_and_name": "[\"Music for Disabled Children\", \"360G-blf-org-MusicforDisabledChildrenCharity:CharitableUnincorporatedAssociation121999\"]",
+                    "id": "360G-blf-org-MusicforDisabledChildrenCharity:CharitableUnincorporatedAssociation121999",
+                    "name": "Music for Disabled Children"
+                }
+            ],
+            "id": "360G-blf-0030090799",
+            "filename": "a002400000Z58cqAAB.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "The Big Lottery Fund",
+                    "id_and_name": "[\"The Big Lottery Fund\", \"360G-blf\"]",
+                    "id": "360G-blf"
+                }
+            ],
+            "awardDate": "2013-04-16",
+            "title": "A Dynamic Future",
+            "grantProgramme": [
+                {
+                    "title": "Bright New Futures",
+                    "code": "BF1"
+                }
+            ],
+            "recipientDistrictName": "Wrecsam - Wrexham",
+            "amountAwarded": 956137,
+            "recipientWardName": "Erddig ED",
+            "plannedDates": [
+                {
+                    "startDate": "2013-09-01",
+                    "duration": 72
+                }
+            ],
+            "recipientRegionName": "Wales",
+            "BIGField_Organisation_Type": "Charity : Registered Charity",
+            "recipientDistrictGeoCode": "W06000006",
+            "recipientLocation": "Wrecsam - Wrexham Erddig ED Wales",
+            "dateModified": "2016-05-11T15:40:00Z",
+            "currency": "GBP",
+            "description": "270 young disabled people aged 14 - 25 living in Wrexham will be assisted to design and implement their own individual transition plan enabling them to achieve their goals and make informed decisions about their future. Support networks will be developed and there will be opportunities to work with colleges and statutory and third sector organisations. The project will include the establishment of a youth forum, social activities and basic skills training in readiness for employment and independent living.",
+            "dataset": {
+                "issued": "2016-04-22",
+                "identifier": "a002400000Z58cqAAB",
+                "modified": "2018-02-20T09:53:07+0000",
+                "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                "distribution": [
+                    {
+                        "downloadURL": "https://www.biglotteryfund.org.uk/-/media/Files/Research%20Documents/aOpenDataFiles/BLFOpenData_2004_2015_V41.csv",
+                        "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                        "accessURL": "https://www.biglotteryfund.org.uk/research/open-data"
+                    }
+                ],
+                "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+                "license_name": "Open Government Licence 3.0 (United Kingdom)",
+                "publisher": {
+                    "name": "Big Lottery Fund",
+                    "website": "https://www.biglotteryfund.org.uk/",
+                    "prefix": "360G-blf",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/big-lottery-fund.png"
+                },
+                "funders": [
+                    [
+                        "The Big Lottery Fund",
+                        "360G-blf"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000Z58cqAAB.json",
+                    "datetime_downloaded": "2018-06-04T09:08:02+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "csv"
+                },
+                "description": "This is a large download file"
+            },
+            "recipientOrganization": [
+                {
+                    "charityNumber": "1102954",
+                    "id_and_name": "[\"Dynamic Centre for Children and Young People With Disabilities\", \"GB-CHC-1102954\"]",
+                    "id": "GB-CHC-1102954",
+                    "name": "Dynamic, Centre for Children & Young People with Disabilities",
+                    "companyNumber": "4839002",
+                    "location": [
+                        {
+                            "name": "Erddig",
+                            "geoCode": "W05000249"
+                        },
+                        {
+                            "name": "Wrexham",
+                            "geoCode": "W06000006"
+                        }
+                    ]
+                }
+            ],
+            "recipientWardNameGeoCode": "W05000249",
+            "amountAppliedFor": 542758,
+            "id": "360G-blf-0030113207",
+            "filename": "a002400000Z58cqAAB.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "Co-operative Group",
+                    "id_and_name": "[\"Co-operative Group\", \"GB-COH-IP00525R\"]",
+                    "id": "GB-COH-IP00525R"
+                }
+            ],
+            "recipientLocation": "Pen-y-bont ar Ogwr - Bridgend Oldcastle ED Wales",
+            "title": "Grant to Bridgend & District Resource for Children with Disabilities T/A Y Bont",
+            "recipientOrganization": [
+                {
+                    "name": "Bridgend & District Resource for Children with Disabilities T/A Y Bont",
+                    "id_and_name": "[\"Bridgend and District Resource for Children With Disabilities\", \"GB-CHC-1040818\"]",
+                    "id": "GB-CHC-1040818",
+                    "postalCode": "CF31 3HT",
+                    "charityNumber": "1040818"
+                }
+            ],
+            "recipientDistrictName": "Pen-y-bont ar Ogwr - Bridgend",
+            "amountAwarded": 2717.3,
+            "recipientWardName": "Oldcastle ED",
+            "recipientRegionName": "Wales",
+            "recipientDistrictGeoCode": "W06000013",
+            "awardDate": "2017-08-04",
+            "currency": "GBP",
+            "description": "Funding for subsidised childcare places will give local disabled children much-needed access to pre-school education.",
+            "beneficiaryLocation": [
+                {
+                    "name": "CF31",
+                    "geoCodeType": "PD",
+                    "geoCode": "CF31"
+                }
+            ],
+            "recipientWardNameGeoCode": "W05000899",
+            "id": "360G-COOPGROUP-1381",
+            "dataset": {
+                "issued": "2017-10-03",
+                "identifier": "a002400000qzkbKAAQ",
+                "modified": "2017-10-03T13:04:26+0000",
+                "title": "Co-operative Group Local community fund grants awarded",
+                "distribution": [
+                    {
+                        "downloadURL": "https://www.coop.co.uk/downloads/causes-data-2017.csv",
+                        "title": "Co-operative Group Local community fund grants awarded",
+                        "accessURL": "https://www.coop.co.uk/membership/local-community-fund"
+                    }
+                ],
+                "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "license_name": "Creative Commons Attribution Share-Alike 4.0",
+                "publisher": {
+                    "name": "Co-operative Group",
+                    "website": "https://www.coop.co.uk/",
+                    "prefix": "360G-coopgroup-",
+                    "logo": ""
+                },
+                "funders": [
+                    [
+                        "Co-operative Group",
+                        "GB-COH-IP00525R"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000qzkbKAAQ.json",
+                    "datetime_downloaded": "2018-06-04T13:13:36+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "csv"
+                },
+                "description": ""
+            },
+            "filename": "a002400000qzkbKAAQ.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "Tuixen Foundation",
+                    "id_and_name": "[\"Tuixen Foundation\", \"GB-CHC-1081124\"]",
+                    "id": "GB-CHC-1081124"
+                }
+            ],
+            "recipientLocation": "Great Yarmouth District East Flegg Ward East of England",
+            "title": "Core grant to Nat Hol Fund for Sick and Disabled Children",
+            "recipientOrganization": [
+                {
+                    "id_and_name": "[\"National Holiday Fund for Sick and Disabled Children\", \"GB-CHC-327714\"]",
+                    "url": "http://www.nhfcharity.co.uk/",
+                    "charityNumber": "327714",
+                    "addressRegion": "Norfolk",
+                    "postalCode": "NR29 4JZ",
+                    "addressLocality": "Hemsby",
+                    "name": "Nat Hol Fund for Sick and Disabled Children",
+                    "id": "GB-CHC-327714"
+                }
+            ],
+            "recipientDistrictGeoCode": "E07000145",
+            "recipientDistrictName": "Great Yarmouth District",
+            "amountAwarded": 5000,
+            "recipientWardName": "East Flegg Ward",
+            "recipientRegionName": "East of England",
+            "awardDate": "2012-03-01T00:00:00+00:00",
+            "dateModified": "2017-10-17T00:00:00+00:00",
+            "currency": "GBP",
+            "description": "The National Holiday Fund for Sick and Disabled Children provide the holiday of a lifetime in the USA for severely handicapped children.",
+            "dataset": {
+                "issued": "2017-11-15",
+                "identifier": "a002400000sgDIcAAM",
+                "modified": "2017-11-16T09:22:49+0000",
+                "title": "Grants awarded from 2010 until November 2017",
+                "distribution": [
+                    {
+                        "downloadURL": "http://tuixen.org.uk/360_giving_tuixen_oct_2017.xlsx",
+                        "title": "Grants awarded from 2010 until November 2017",
+                        "accessURL": "http://tuixen.org.uk/grants-awarded/"
+                    }
+                ],
+                "license": "https://creativecommons.org/licenses/by/4.0/",
+                "license_name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+                "publisher": {
+                    "name": "Tuixen Foundation",
+                    "website": "http://tuixen.org.uk/",
+                    "prefix": "360G-tuixen",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/tuixenlogo.jpeg"
+                },
+                "funders": [
+                    [
+                        "Tuixen Foundation",
+                        "GB-CHC-1081124"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000sgDIcAAM.json",
+                    "datetime_downloaded": "2018-06-04T13:20:36+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "xlsx"
+                },
+                "description": ""
+            },
+            "recipientWardNameGeoCode": "E05005790",
+            "id": "360G-tuixen-a022000000cW8T7AAK",
+            "filename": "a002400000sgDIcAAM.json"
+        },
+        {
+            "Award Type": "Revenue",
+            "recipientLocation": "Sandwell District Oldbury Ward West Midlands",
+            "title": "Trampoling and rebound therapy for disabled children .",
+            "recipientOrganization": [
+                {
+                    "charityNumber": "1125576",
+                    "id_and_name": "[\"Sandwell Parents for Disabled Children\", \"GB-CHC-1125576\"]",
+                    "description": "Charity",
+                    "addressCountry": "GB",
+                    "name": "Sandwell Parents for Disabled Children",
+                    "id": "GB-CHC-1125576",
+                    "location": [
+                        {
+                            "longitude": -2.0040221,
+                            "latitude": 52.500882
+                        }
+                    ],
+                    "postalCode": "B69 4PJ"
+                }
+            ],
+            "recipientDistrictName": "Sandwell District",
+            "amountDisbursed": 1249,
+            "dateModified": "2018-02-09T16:16:27.550000+00:00",
+            "description": "Funding under Sport England's Small Grants funding programme for a Revenue project titled 'Trampoling and rebound therapy for disabled children .'. This project lists its main activity as Trampolining.",
+            "beneficiaryLocation": [
+                {
+                    "longitude": -1.9624663,
+                    "countryCode": "GB",
+                    "name": "B66 4NL",
+                    "latitude": 52.482779
+                },
+                {
+                    "name": "Warley",
+                    "geoCodeType": "WPC",
+                    "geoCode": "E14001016"
+                },
+                {
+                    "name": "Sandwell",
+                    "geoCodeType": "LAD",
+                    "geoCode": "E08000028"
+                },
+                {
+                    "geoCodeType": "LSOA",
+                    "geoCode": "E01010059"
+                }
+            ],
+            "recipientWardNameGeoCode": "E05001273",
+            "id": "360G-SE-2011018626LOTT",
+            "dataset": {
+                "issued": "2017-12-15",
+                "identifier": "a001p00000tV2XpAAK",
+                "modified": "2018-03-29T11:30:24+0000",
+                "title": "Grants Awarded Since 2009",
+                "distribution": [
+                    {
+                        "downloadURL": "https://www.sportengland.org/media/12725/360giving-sport-england-data.xlsx",
+                        "title": "Grants Awarded Since 2009",
+                        "accessURL": "https://www.sportengland.org/our-work/open-data/"
+                    }
+                ],
+                "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+                "license_name": "Open Government Licence 3.0 (United Kingdom)",
+                "publisher": {
+                    "name": "Sport England",
+                    "website": "https://www.sportengland.org/",
+                    "prefix": "360G-SE",
+                    "logo": "https://brandtoolkit.sportengland.org/assets/logos/Sport-England-Logo-Blue-(CMYK).jpg"
+                },
+                "funders": [
+                    [
+                        "Sport England",
+                        "GB-COH-RC000766"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a001p00000tV2XpAAK.json",
+                    "datetime_downloaded": "2018-06-04T13:16:09+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "xlsx"
+                },
+                "description": "Updated Quarterly"
+            },
+            "fundingOrganization": [
+                {
+                    "name": "Sport England",
+                    "id_and_name": "[\"Sport England\", \"GB-COH-RC000766\"]",
+                    "department": "Trampolining",
+                    "id": "GB-COH-RC000766"
+                }
+            ],
+            "fromOpenCall": "Yes",
+            "grantProgramme": [
+                {
+                    "url": "http://www.sportengland.org/funding",
+                    "title": "Small Grants",
+                    "code": "SG"
+                }
+            ],
+            "amountAwarded": 1249,
+            "recipientWardName": "Oldbury Ward",
+            "recipientRegionName": "West Midlands",
+            "recipientDistrictGeoCode": "E08000028",
+            "awardDate": "2012-03-29T00:00:00+00:00",
+            "currency": "GBP",
+            "plannedDates": [
+                {
+                    "endDate": "2012-06-29T00:00:00+00:00",
+                    "startDate": "2012-04-20T00:00:00+00:00",
+                    "duration": 3
+                }
+            ],
+            "filename": "a001p00000tV2XpAAK.json",
+            "dataSource": "http://www.sportengland.org/funding/our-investments-explained/investments-weve-made"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "Lloyds Bank Foundation for England and Wales",
+                    "id_and_name": "[\"Lloyds Bank Foundation for England and Wales\", \"GB-CHC-327114\"]",
+                    "id": "GB-CHC-327114"
+                }
+            ],
+            "recipientLocation": "Sandwell District West Bromwich Central Ward West Midlands",
+            "fromOpenCall": "Yes",
+            "grantProgramme": [
+                {
+                    "title": "XA4 - Community"
+                }
+            ],
+            "recipientDistrictName": "Sandwell District",
+            "amountAwarded": 25200,
+            "recipientWardName": "West Bromwich Central Ward",
+            "plannedDates": [
+                {
+                    "endDate": "2014-04-02",
+                    "startDate": "2012-04-02",
+                    "duration": 24
+                }
+            ],
+            "recipientRegionName": "West Midlands",
+            "recipientOrganization": [
+                {
+                    "streetAddress": "Sandwell Young Carers\nThe Old Vicarage\nBratt Street",
+                    "charityNumber": "1125576",
+                    "id_and_name": "[\"Sandwell Parents for Disabled Children\", \"GB-CHC-1125576\"]",
+                    "postalCode": "B70 8SB",
+                    "url": "http://www.sp-dc.org",
+                    "addressLocality": "West Bromwich",
+                    "name": "Sandwell Parents for Disabled Children",
+                    "id": "GB-CHC-1125576"
+                }
+            ],
+            "recipientDistrictGeoCode": "E08000028",
+            "awardDate": "2012-03-29",
+            "currency": "GBP",
+            "title": "Grant to Sandwell Parents for Disabled Children",
+            "description": "the salary of the Manager, core running and activity costs",
+            "dataset": {
+                "issued": "2016-04-01",
+                "identifier": "a002400000OiDBQAA3",
+                "modified": "2018-03-15T17:10:16+0000",
+                "title": "Grant Making Data 2010 - December 2017",
+                "distribution": [
+                    {
+                        "downloadURL": "https://www.lloydsbankfoundation.org.uk/360_giving_LBFEW_2010_2017.xlsx",
+                        "title": "Grant Making Data 2010 - December 2017",
+                        "accessURL": "https://www.lloydsbankfoundation.org.uk/our-programmes/what-funding/"
+                    }
+                ],
+                "license": "https://creativecommons.org/licenses/by/4.0/",
+                "license_name": "Creative Commons Attribution 4.0",
+                "publisher": {
+                    "name": "Lloyds Bank Foundation",
+                    "website": "http://www.lloydsbankfoundation.org.uk/",
+                    "prefix": "360G-LBFEW",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/Lloyds-Bank-Foundation-EW-colour.jpg"
+                },
+                "funders": [
+                    [
+                        "Lloyds Bank Foundation for England and Wales",
+                        "GB-CHC-327114"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000OiDBQAA3.json",
+                    "datetime_downloaded": "2018-06-04T13:14:55+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "xlsx"
+                },
+                "description": "All grants awarded by the Lloyds Bank Foundation from 2010 until December 2017, formatted to the 360Giving data standard. The Foundation will continue to publish new grants via 360Giving biannually."
+            },
+            "recipientWardNameGeoCode": "E05001283",
+            "id": "360G-LBFEW-92598",
+            "filename": "a002400000OiDBQAA3.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "Lloyds Bank Foundation for England and Wales",
+                    "id_and_name": "[\"Lloyds Bank Foundation for England and Wales\", \"GB-CHC-327114\"]",
+                    "id": "GB-CHC-327114"
+                }
+            ],
+            "recipientLocation": "Pen-y-bont ar Ogwr - Bridgend Oldcastle ED Wales",
+            "fromOpenCall": "Yes",
+            "grantProgramme": [
+                {
+                    "title": "XA6 - Community"
+                }
+            ],
+            "recipientDistrictName": "Pen-y-bont ar Ogwr - Bridgend",
+            "amountAwarded": 20100,
+            "recipientWardName": "Oldcastle ED",
+            "plannedDates": [
+                {
+                    "endDate": "2013-04-28",
+                    "startDate": "2011-04-28",
+                    "duration": 24
+                }
+            ],
+            "recipientRegionName": "Wales",
+            "recipientOrganization": [
+                {
+                    "streetAddress": "Y Bont\nEwenny Road",
+                    "charityNumber": "1040818",
+                    "id_and_name": "[\"Bridgend and District Resource for Children With Disabilities\", \"GB-CHC-1040818\"]",
+                    "postalCode": "CF31 3HT",
+                    "url": "http://www.ybont.com",
+                    "addressLocality": "Bridgend",
+                    "name": "Bridgend and District Resource for Children with Disabilities",
+                    "id": "GB-CHC-1040818"
+                }
+            ],
+            "recipientDistrictGeoCode": "W06000013",
+            "awardDate": "2011-04-28",
+            "currency": "GBP",
+            "title": "Grant to Bridgend and District Resource for Children with Disabilities",
+            "description": "the salary and on costs of a part-time Finance Administrator",
+            "dataset": {
+                "issued": "2016-04-01",
+                "identifier": "a002400000OiDBQAA3",
+                "modified": "2018-03-15T17:10:16+0000",
+                "title": "Grant Making Data 2010 - December 2017",
+                "distribution": [
+                    {
+                        "downloadURL": "https://www.lloydsbankfoundation.org.uk/360_giving_LBFEW_2010_2017.xlsx",
+                        "title": "Grant Making Data 2010 - December 2017",
+                        "accessURL": "https://www.lloydsbankfoundation.org.uk/our-programmes/what-funding/"
+                    }
+                ],
+                "license": "https://creativecommons.org/licenses/by/4.0/",
+                "license_name": "Creative Commons Attribution 4.0",
+                "publisher": {
+                    "name": "Lloyds Bank Foundation",
+                    "website": "http://www.lloydsbankfoundation.org.uk/",
+                    "prefix": "360G-LBFEW",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/Lloyds-Bank-Foundation-EW-colour.jpg"
+                },
+                "funders": [
+                    [
+                        "Lloyds Bank Foundation for England and Wales",
+                        "GB-CHC-327114"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000OiDBQAA3.json",
+                    "datetime_downloaded": "2018-06-04T13:14:55+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "xlsx"
+                },
+                "description": "All grants awarded by the Lloyds Bank Foundation from 2010 until December 2017, formatted to the 360Giving data standard. The Foundation will continue to publish new grants via 360Giving biannually."
+            },
+            "recipientWardNameGeoCode": "W05000899",
+            "id": "360G-LBFEW-86572",
+            "filename": "a002400000OiDBQAA3.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "The Big Lottery Fund",
+                    "id_and_name": "[\"The Big Lottery Fund\", \"360G-blf\"]",
+                    "id": "360G-blf"
+                }
+            ],
+            "awardDate": "2006-09-18",
+            "title": "Promotional Material",
+            "grantProgramme": [
+                {
+                    "title": "Awards for All",
+                    "code": "AAW2"
+                }
+            ],
+            "recipientDistrictName": "Pen-y-bont ar Ogwr - Bridgend",
+            "amountAwarded": 1469,
+            "recipientWardName": "Oldcastle ED",
+            "plannedDates": [
+                {
+                    "startDate": "2006-09-26",
+                    "duration": 12
+                }
+            ],
+            "recipientRegionName": "Wales",
+            "BIGField_Organisation_Type": "Charity : Registered Charity",
+            "recipientDistrictGeoCode": "W06000013",
+            "recipientLocation": "Pen-y-bont ar Ogwr - Bridgend Oldcastle ED Wales",
+            "dateModified": "2016-05-11T13:35:00Z",
+            "currency": "GBP",
+            "description": "The project is to develop the promotional work of the group. The money is for production of notice boards and banners.",
+            "dataset": {
+                "issued": "2016-04-22",
+                "identifier": "a002400000Z58cqAAB",
+                "modified": "2018-02-20T09:53:07+0000",
+                "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                "distribution": [
+                    {
+                        "downloadURL": "https://www.biglotteryfund.org.uk/-/media/Files/Research%20Documents/aOpenDataFiles/BLFOpenData_2004_2015_V41.csv",
+                        "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                        "accessURL": "https://www.biglotteryfund.org.uk/research/open-data"
+                    }
+                ],
+                "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+                "license_name": "Open Government Licence 3.0 (United Kingdom)",
+                "publisher": {
+                    "name": "Big Lottery Fund",
+                    "website": "https://www.biglotteryfund.org.uk/",
+                    "prefix": "360G-blf",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/big-lottery-fund.png"
+                },
+                "funders": [
+                    [
+                        "The Big Lottery Fund",
+                        "360G-blf"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000Z58cqAAB.json",
+                    "datetime_downloaded": "2018-06-04T09:08:02+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "csv"
+                },
+                "description": "This is a large download file"
+            },
+            "recipientOrganization": [
+                {
+                    "charityNumber": "1040818",
+                    "id_and_name": "[\"Bridgend and District Resource for Children With Disabilities\", \"GB-CHC-1040818\"]",
+                    "id": "GB-CHC-1040818",
+                    "name": "Bridgend & District Resource for Children with Disabilities",
+                    "companyNumber": "2957667",
+                    "location": [
+                        {
+                            "name": "Oldcastle",
+                            "geoCode": "W05000899"
+                        },
+                        {
+                            "name": "Bridgend",
+                            "geoCode": "W06000013"
+                        }
+                    ]
+                }
+            ],
+            "recipientWardNameGeoCode": "W05000899",
+            "amountAppliedFor": 1469,
+            "id": "360G-blf-0030042738",
+            "filename": "a002400000Z58cqAAB.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "The Big Lottery Fund",
+                    "id_and_name": "[\"The Big Lottery Fund\", \"360G-blf\"]",
+                    "id": "360G-blf"
+                }
+            ],
+            "awardDate": "2010-06-17",
+            "title": "Creating an Opportunity Centre Accessible for All",
+            "grantProgramme": [
+                {
+                    "title": "Awards for All",
+                    "code": "AFE1"
+                }
+            ],
+            "recipientDistrictName": "Leeds District",
+            "amountAwarded": 10000,
+            "recipientWardName": "Weetwood Ward",
+            "plannedDates": [
+                {
+                    "startDate": "2010-08-31",
+                    "duration": 12
+                }
+            ],
+            "recipientRegionName": "Yorkshire and the Humber",
+            "BIGField_Organisation_Type": "Charity : Registered Charity",
+            "recipientDistrictGeoCode": "E08000035",
+            "recipientLocation": "Leeds District Weetwood Ward Yorkshire and the Humber",
+            "dateModified": "2016-05-11T14:43:00Z",
+            "currency": "GBP",
+            "description": "This is a project by a foundation for disabled children in Cannock, Staffordshire.  The group will use the funding to install a lift in its Opportunity Centre.  This will provide greater access to more people, including older people and people with mobility problems.",
+            "dataset": {
+                "issued": "2016-04-22",
+                "identifier": "a002400000Z58cqAAB",
+                "modified": "2018-02-20T09:53:07+0000",
+                "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                "distribution": [
+                    {
+                        "downloadURL": "https://www.biglotteryfund.org.uk/-/media/Files/Research%20Documents/aOpenDataFiles/BLFOpenData_2004_2015_V41.csv",
+                        "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                        "accessURL": "https://www.biglotteryfund.org.uk/research/open-data"
+                    }
+                ],
+                "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+                "license_name": "Open Government Licence 3.0 (United Kingdom)",
+                "publisher": {
+                    "name": "Big Lottery Fund",
+                    "website": "https://www.biglotteryfund.org.uk/",
+                    "prefix": "360G-blf",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/big-lottery-fund.png"
+                },
+                "funders": [
+                    [
+                        "The Big Lottery Fund",
+                        "360G-blf"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000Z58cqAAB.json",
+                    "datetime_downloaded": "2018-06-04T09:08:02+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "csv"
+                },
+                "description": "This is a large download file"
+            },
+            "recipientOrganization": [
+                {
+                    "charityNumber": "1001817",
+                    "id_and_name": "[\"Newlife Foundation for Disabled Children\", \"GB-CHC-1001817\"]",
+                    "id": "GB-CHC-1001817",
+                    "name": "Newlife Foundation for Disabled Children",
+                    "companyNumber": "2833372",
+                    "location": [
+                        {
+                            "name": "Weetwood",
+                            "geoCode": "E05001442"
+                        },
+                        {
+                            "name": "Leeds",
+                            "geoCode": "E08000035"
+                        }
+                    ]
+                }
+            ],
+            "recipientWardNameGeoCode": "E05001442",
+            "amountAppliedFor": 10000,
+            "id": "360G-blf-0030091111",
+            "filename": "a002400000Z58cqAAB.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "The Big Lottery Fund",
+                    "id_and_name": "[\"The Big Lottery Fund\", \"360G-blf\"]",
+                    "id": "360G-blf"
+                }
+            ],
+            "awardDate": "2004-08-27",
+            "title": "Tfr of MJ/1/010032485",
+            "grantProgramme": [
+                {
+                    "title": "Transfers of grants",
+                    "code": "TR1"
+                }
+            ],
+            "recipientDistrictName": "Wrecsam - Wrexham",
+            "amountAwarded": 29160,
+            "recipientWardName": "Erddig ED",
+            "plannedDates": [
+                {
+                    "startDate": "2004-09-01",
+                    "duration": 12
+                }
+            ],
+            "recipientRegionName": "Wales",
+            "BIGField_Organisation_Type": "Charity : Registered Charity",
+            "recipientDistrictGeoCode": "W06000006",
+            "recipientLocation": "Wrecsam - Wrexham Erddig ED Wales",
+            "dateModified": "2016-05-11T12:26:00Z",
+            "currency": "GBP",
+            "description": "The project will provide a Youth worker who will develop the range of activities for disabled children and young people and provide training to staff and volunteers.",
+            "dataset": {
+                "issued": "2016-04-22",
+                "identifier": "a002400000Z58cqAAB",
+                "modified": "2018-02-20T09:53:07+0000",
+                "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                "distribution": [
+                    {
+                        "downloadURL": "https://www.biglotteryfund.org.uk/-/media/Files/Research%20Documents/aOpenDataFiles/BLFOpenData_2004_2015_V41.csv",
+                        "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                        "accessURL": "https://www.biglotteryfund.org.uk/research/open-data"
+                    }
+                ],
+                "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+                "license_name": "Open Government Licence 3.0 (United Kingdom)",
+                "publisher": {
+                    "name": "Big Lottery Fund",
+                    "website": "https://www.biglotteryfund.org.uk/",
+                    "prefix": "360G-blf",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/big-lottery-fund.png"
+                },
+                "funders": [
+                    [
+                        "The Big Lottery Fund",
+                        "360G-blf"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000Z58cqAAB.json",
+                    "datetime_downloaded": "2018-06-04T09:08:02+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "csv"
+                },
+                "description": "This is a large download file"
+            },
+            "recipientOrganization": [
+                {
+                    "charityNumber": "1102954",
+                    "id_and_name": "[\"Dynamic Centre for Children and Young People With Disabilities\", \"GB-CHC-1102954\"]",
+                    "id": "GB-CHC-1102954",
+                    "name": "Dynamic, Centre for Children & Young People with Disabilities",
+                    "companyNumber": "4839002",
+                    "location": [
+                        {
+                            "name": "Erddig",
+                            "geoCode": "W05000249"
+                        },
+                        {
+                            "name": "Wrexham",
+                            "geoCode": "W06000006"
+                        }
+                    ]
+                }
+            ],
+            "recipientWardNameGeoCode": "W05000249",
+            "amountAppliedFor": 29160,
+            "id": "360G-blf-TR_1_010127307",
+            "filename": "a002400000Z58cqAAB.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "The Big Lottery Fund",
+                    "id_and_name": "[\"The Big Lottery Fund\", \"360G-blf\"]",
+                    "id": "360G-blf"
+                }
+            ],
+            "awardDate": "2005-10-18",
+            "title": "There is no project name available for this record",
+            "grantProgramme": [
+                {
+                    "title": "Awards for All",
+                    "code": "AAW2"
+                }
+            ],
+            "recipientDistrictName": "Caerdydd - Cardiff",
+            "amountAwarded": 1666,
+            "recipientWardName": "Cathays ED",
+            "plannedDates": [
+                {
+                    "startDate": "2005-10-25",
+                    "duration": 12
+                }
+            ],
+            "recipientRegionName": "Wales",
+            "BIGField_Organisation_Type": "Charity : Registered Charity",
+            "recipientDistrictGeoCode": "W06000015",
+            "recipientLocation": "Caerdydd - Cardiff Cathays ED Wales",
+            "dateModified": "2016-05-11T13:00:00Z",
+            "currency": "GBP",
+            "description": "The project is to hold an information and awareness-raising event about the work of the group. The money is for venue hire, interpreters fees, producing information leaflets and light refreshments.",
+            "dataset": {
+                "issued": "2016-04-22",
+                "identifier": "a002400000Z58cqAAB",
+                "modified": "2018-02-20T09:53:07+0000",
+                "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                "distribution": [
+                    {
+                        "downloadURL": "https://www.biglotteryfund.org.uk/-/media/Files/Research%20Documents/aOpenDataFiles/BLFOpenData_2004_2015_V41.csv",
+                        "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                        "accessURL": "https://www.biglotteryfund.org.uk/research/open-data"
+                    }
+                ],
+                "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+                "license_name": "Open Government Licence 3.0 (United Kingdom)",
+                "publisher": {
+                    "name": "Big Lottery Fund",
+                    "website": "https://www.biglotteryfund.org.uk/",
+                    "prefix": "360G-blf",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/big-lottery-fund.png"
+                },
+                "funders": [
+                    [
+                        "The Big Lottery Fund",
+                        "360G-blf"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000Z58cqAAB.json",
+                    "datetime_downloaded": "2018-06-04T09:08:02+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "csv"
+                },
+                "description": "This is a large download file"
+            },
+            "recipientOrganization": [
+                {
+                    "location": [
+                        {
+                            "name": "Cathays",
+                            "geoCode": "W05000857"
+                        },
+                        {
+                            "name": "Cardiff",
+                            "geoCode": "W06000015"
+                        }
+                    ],
+                    "id_and_name": "[\"Abcd Improving Access for Black and Minority Ethnic Children With Disabilities And/Or Chronic Illnesses\", \"GB-CHC-1088964\"]",
+                    "id": "GB-CHC-1088964",
+                    "name": "Access for Black & Minority Ethnic Children and Young People with Disabilities",
+                    "charityNumber": "1088964"
+                }
+            ],
+            "recipientWardNameGeoCode": "W05000857",
+            "amountAppliedFor": 5000,
+            "id": "360G-blf-0030082166",
+            "filename": "a002400000Z58cqAAB.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "Northern Rock Foundation",
+                    "id_and_name": "[\"Northern Rock Foundation\", \"GB-COH-03416658\"]",
+                    "id": "GB-COH-03416658"
+                }
+            ],
+            "recipientLocation": "County Durham Tanfield ED North East",
+            "Internal organisation identifier": 1601,
+            "title": "Grant awarded to Derwentside Playscheme for Children with Disabilities (Durham)",
+            "recipientOrganization": [
+                {
+                    "streetAddress": "37 Bracken Close",
+                    "charityNumber": "1075057.0",
+                    "id_and_name": "[\"Derwentside Playscheme for Children With Disabilities\", \"GB-CHC-1075057\"]",
+                    "postalCode": "DH9 7RR",
+                    "addressCountry": "United Kingdom",
+                    "addressLocality": "Stanley",
+                    "name": "Derwentside Playscheme for Children with Disabilities",
+                    "addressRegion": "County Durham",
+                    "id": "GB-CHC-1075057"
+                }
+            ],
+            "recipientDistrictName": "County Durham",
+            "amountAwarded": 31500,
+            "recipientWardName": "Tanfield ED",
+            "plannedDates": [
+                {
+                    "endDate": "2003-07-11T00:00:00+00:00",
+                    "startDate": "2000-07-11T00:00:00+00:00",
+                    "duration": 36
+                }
+            ],
+            "recipientRegionName": "North East",
+            "recipientDistrictGeoCode": "E06000047",
+            "amountAppliedFor": 31500,
+            "awardDate": "2000-07-11T00:00:00+00:00",
+            "currency": "GBP",
+            "Application Date": {
+                "Start Date": "1999-10-05T00:00:00+00:00"
+            },
+            "description": "To pay the salaries of ten playcare workers.",
+            "beneficiaryLocation": [
+                {
+                    "name": "Durham",
+                    "countryCode": "GB"
+                }
+            ],
+            "recipientWardNameGeoCode": "E05009084",
+            "id": "360G-northernrock:601",
+            "dataset": {
+                "issued": "2016-05-26",
+                "identifier": "a002400000G4KGLAA3",
+                "modified": "2018-04-18T14:24:03+0000",
+                "title": "Northern Rock Foundation",
+                "distribution": [
+                    {
+                        "downloadURL": "https://docs.google.com/spreadsheets/d/1gyyHFzS60yrMqindaaTNW8kSFa0sOIZAjDIR8sZ5dLA/export?format=xlsx",
+                        "title": "Northern Rock Foundation",
+                        "accessURL": "https://docs.google.com/spreadsheets/d/1gyyHFzS60yrMqindaaTNW8kSFa0sOIZAjDIR8sZ5dLA/edit#gid=539732310"
+                    }
+                ],
+                "license": "http://www.opendefinition.org/licenses/odc-pddl",
+                "license_name": "Open Data Commons Public Domain Dedication and Licence 1.0",
+                "publisher": {
+                    "name": "Northern Rock Foundation",
+                    "website": "http://www.nr-foundation.org.uk",
+                    "prefix": "360G-northernrock",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/northern-rock-foundation.png"
+                },
+                "funders": [
+                    [
+                        "Northern Rock Foundation",
+                        "GB-COH-03416658"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000G4KGLAA3.json",
+                    "datetime_downloaded": "2018-06-04T13:15:23+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "xlsx"
+                },
+                "description": "Northern Rock Foundation - All Grants - Modifications by Open Data Services 26.05.2016"
+            },
+            "filename": "a002400000G4KGLAA3.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "True Colours Trust",
+                    "id_and_name": "[\"True Colours Trust\", \"GB-CHC-1089893\"]",
+                    "id": "GB-CHC-1089893"
+                }
+            ],
+            "awardDate": "2016-03-21",
+            "title": "mapping and good practice development",
+            "recipientOrganization": [
+                {
+                    "charityNumber": "258825",
+                    "id_and_name": "[\"National Children's Bureau\", \"GB-CHC-258825\"]",
+                    "postalCode": "EC1V 7QE",
+                    "addressCountry": "UK",
+                    "name": "Council for Disabled Children",
+                    "addressRegion": "London",
+                    "id": "GB-CHC-258825"
+                }
+            ],
+            "recipientDistrictName": "Islington London Boro",
+            "amountAwarded": 99720,
+            "recipientWardName": "Bunhill Ward",
+            "plannedDates": [
+                {
+                    "duration": 24
+                }
+            ],
+            "recipientRegionName": "London",
+            "recipientLocation": "Islington London Boro Bunhill Ward London",
+            "ID": "32070",
+            "recipientDistrictGeoCode": "E09000019",
+            "dateModified": "2017-01-04T14:44:35Z",
+            "currency": "GBP",
+            "description": "Towards mapping and good practice development to include using the proposed work for an application to the National Institute of Health Research for further funding..",
+            "beneficiaryLocation": [
+                {
+                    "name": "UK",
+                    "countryCode": "GB"
+                }
+            ],
+            "recipientWardNameGeoCode": "E05000367",
+            "id": "360G-truecolours:TCT1337",
+            "dataset": {
+                "issued": "2016-02-23",
+                "identifier": "a002400000G4KGWAA3",
+                "modified": "2018-03-14T11:12:05+0000",
+                "title": "True Colours Trust grants",
+                "distribution": [
+                    {
+                        "downloadURL": "http://ods.sfct.org.uk/opendataservice/sfct360givingfeed.aspx?trust=GB-CHC-1089893",
+                        "title": "True Colours Trust grants",
+                        "accessURL": "http://www.sfct.org.uk/360giving"
+                    }
+                ],
+                "license": "https://creativecommons.org/licenses/by/4.0/",
+                "license_name": "Creative Commons Attribution 4.0",
+                "publisher": {
+                    "name": "True Colours Trust",
+                    "website": "http://www.truecolourstrust.org.uk/",
+                    "prefix": "360G-truecolours",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/true-colours-trust.png"
+                },
+                "funders": [
+                    [
+                        "True Colours Trust",
+                        "GB-CHC-1089893"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000G4KGWAA3.json",
+                    "datetime_downloaded": "2018-06-04T13:20:26+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "csv"
+                },
+                "description": ""
+            },
+            "filename": "a002400000G4KGWAA3.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "True Colours Trust",
+                    "id_and_name": "[\"True Colours Trust\", \"GB-CHC-1089893\"]",
+                    "id": "GB-CHC-1089893"
+                }
+            ],
+            "recipientLocation": "Islington London Boro Bunhill Ward London",
+            "title": "data analysis",
+            "recipientOrganization": [
+                {
+                    "charityNumber": "258825",
+                    "id_and_name": "[\"National Children's Bureau\", \"GB-CHC-258825\"]",
+                    "postalCode": "EC1V 7QE",
+                    "addressCountry": "UK",
+                    "name": "Council for Disabled Children",
+                    "addressRegion": "London",
+                    "id": "GB-CHC-258825"
+                }
+            ],
+            "recipientDistrictGeoCode": "E09000019",
+            "recipientDistrictName": "Islington London Boro",
+            "amountAwarded": 27960,
+            "recipientWardName": "Bunhill Ward",
+            "recipientRegionName": "London",
+            "ID": "32389",
+            "awardDate": "2016-05-25",
+            "dateModified": "2017-01-04T14:49:15Z",
+            "currency": "GBP",
+            "description": "Towards research to improve our use and understanding of the national data on disabled children and children with life-limiting and life-threatening conditions.",
+            "beneficiaryLocation": [
+                {
+                    "name": "UK",
+                    "countryCode": "GB"
+                }
+            ],
+            "recipientWardNameGeoCode": "E05000367",
+            "id": "360G-truecolours:TCT1371",
+            "dataset": {
+                "issued": "2016-02-23",
+                "identifier": "a002400000G4KGWAA3",
+                "modified": "2018-03-14T11:12:05+0000",
+                "title": "True Colours Trust grants",
+                "distribution": [
+                    {
+                        "downloadURL": "http://ods.sfct.org.uk/opendataservice/sfct360givingfeed.aspx?trust=GB-CHC-1089893",
+                        "title": "True Colours Trust grants",
+                        "accessURL": "http://www.sfct.org.uk/360giving"
+                    }
+                ],
+                "license": "https://creativecommons.org/licenses/by/4.0/",
+                "license_name": "Creative Commons Attribution 4.0",
+                "publisher": {
+                    "name": "True Colours Trust",
+                    "website": "http://www.truecolourstrust.org.uk/",
+                    "prefix": "360G-truecolours",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/true-colours-trust.png"
+                },
+                "funders": [
+                    [
+                        "True Colours Trust",
+                        "GB-CHC-1089893"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000G4KGWAA3.json",
+                    "datetime_downloaded": "2018-06-04T13:20:26+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "csv"
+                },
+                "description": ""
+            },
+            "filename": "a002400000G4KGWAA3.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "True Colours Trust",
+                    "id_and_name": "[\"True Colours Trust\", \"GB-CHC-1089893\"]",
+                    "id": "GB-CHC-1089893"
+                }
+            ],
+            "recipientLocation": "Sandwell District West Bromwich Central Ward West Midlands",
+            "title": "towards its \u2018Fun Time Together\u2019 project",
+            "recipientOrganization": [
+                {
+                    "charityNumber": "1125576",
+                    "id_and_name": "[\"Sandwell Parents for Disabled Children\", \"GB-CHC-1125576\"]",
+                    "postalCode": "B70 8SB",
+                    "addressCountry": "UK",
+                    "name": "Sandwell Parents for Disabled Children",
+                    "addressRegion": "West Midlands",
+                    "id": "GB-CHC-1125576"
+                }
+            ],
+            "recipientDistrictGeoCode": "E08000028",
+            "recipientDistrictName": "Sandwell District",
+            "amountAwarded": 5000,
+            "recipientWardName": "West Bromwich Central Ward",
+            "recipientRegionName": "West Midlands",
+            "ID": "33917",
+            "awardDate": "2017-10-17",
+            "dateModified": "2017-10-25T09:46:16Z",
+            "currency": "GBP",
+            "description": "Towards its \u2018Fun Time Together\u2019 project for disabled children and young people and their siblings.",
+            "beneficiaryLocation": [
+                {
+                    "name": "UK",
+                    "countryCode": "GB"
+                }
+            ],
+            "recipientWardNameGeoCode": "E05001283",
+            "id": "360G-truecolours:TCT1472",
+            "dataset": {
+                "issued": "2016-02-23",
+                "identifier": "a002400000G4KGWAA3",
+                "modified": "2018-03-14T11:12:05+0000",
+                "title": "True Colours Trust grants",
+                "distribution": [
+                    {
+                        "downloadURL": "http://ods.sfct.org.uk/opendataservice/sfct360givingfeed.aspx?trust=GB-CHC-1089893",
+                        "title": "True Colours Trust grants",
+                        "accessURL": "http://www.sfct.org.uk/360giving"
+                    }
+                ],
+                "license": "https://creativecommons.org/licenses/by/4.0/",
+                "license_name": "Creative Commons Attribution 4.0",
+                "publisher": {
+                    "name": "True Colours Trust",
+                    "website": "http://www.truecolourstrust.org.uk/",
+                    "prefix": "360G-truecolours",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/true-colours-trust.png"
+                },
+                "funders": [
+                    [
+                        "True Colours Trust",
+                        "GB-CHC-1089893"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000G4KGWAA3.json",
+                    "datetime_downloaded": "2018-06-04T13:20:26+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "csv"
+                },
+                "description": ""
+            },
+            "filename": "a002400000G4KGWAA3.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "Lloyds Bank Foundation for England and Wales",
+                    "id_and_name": "[\"Lloyds Bank Foundation for England and Wales\", \"GB-CHC-327114\"]",
+                    "id": "GB-CHC-327114"
+                }
+            ],
+            "recipientLocation": "Tor-faen - Torfaen New Inn ED Wales",
+            "fromOpenCall": "Yes",
+            "grantProgramme": [
+                {
+                    "title": "XA6 - Community"
+                }
+            ],
+            "recipientDistrictName": "Tor-faen - Torfaen",
+            "amountAwarded": 14300,
+            "recipientWardName": "New Inn ED",
+            "plannedDates": [
+                {
+                    "endDate": "2015-10-01",
+                    "startDate": "2013-10-01",
+                    "duration": 24
+                }
+            ],
+            "recipientRegionName": "Wales",
+            "recipientOrganization": [
+                {
+                    "streetAddress": "The Highway\nNew Inn",
+                    "charityNumber": "1094764",
+                    "id_and_name": "[\"Togs Centre\", \"GB-CHC-1094764\"]",
+                    "postalCode": "NP4 0PH",
+                    "url": "http://www.togscentre.co.uk",
+                    "addressLocality": "Pontypool",
+                    "name": "TOGs Disabled Childrens Centre",
+                    "id": "GB-CHC-1094764"
+                }
+            ],
+            "recipientDistrictGeoCode": "W06000020",
+            "awardDate": "2013-09-27",
+            "currency": "GBP",
+            "title": "Grant to TOGs Disabled Childrens Centre",
+            "description": "TOGs is based in New Inn, Torfaen. It delivers a range of support services to families who have children/young people with sensory, educational and physical special needs. Young people have access to new opportunities enhancing their life experiences.",
+            "dataset": {
+                "issued": "2016-04-01",
+                "identifier": "a002400000OiDBQAA3",
+                "modified": "2018-03-15T17:10:16+0000",
+                "title": "Grant Making Data 2010 - December 2017",
+                "distribution": [
+                    {
+                        "downloadURL": "https://www.lloydsbankfoundation.org.uk/360_giving_LBFEW_2010_2017.xlsx",
+                        "title": "Grant Making Data 2010 - December 2017",
+                        "accessURL": "https://www.lloydsbankfoundation.org.uk/our-programmes/what-funding/"
+                    }
+                ],
+                "license": "https://creativecommons.org/licenses/by/4.0/",
+                "license_name": "Creative Commons Attribution 4.0",
+                "publisher": {
+                    "name": "Lloyds Bank Foundation",
+                    "website": "http://www.lloydsbankfoundation.org.uk/",
+                    "prefix": "360G-LBFEW",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/Lloyds-Bank-Foundation-EW-colour.jpg"
+                },
+                "funders": [
+                    [
+                        "Lloyds Bank Foundation for England and Wales",
+                        "GB-CHC-327114"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000OiDBQAA3.json",
+                    "datetime_downloaded": "2018-06-04T13:14:55+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "xlsx"
+                },
+                "description": "All grants awarded by the Lloyds Bank Foundation from 2010 until December 2017, formatted to the 360Giving data standard. The Foundation will continue to publish new grants via 360Giving biannually."
+            },
+            "recipientWardNameGeoCode": "W05000997",
+            "id": "360G-LBFEW-104492",
+            "filename": "a002400000OiDBQAA3.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "The Big Lottery Fund",
+                    "id_and_name": "[\"The Big Lottery Fund\", \"360G-blf\"]",
+                    "id": "360G-blf"
+                }
+            ],
+            "awardDate": "2011-06-23",
+            "title": "Y BONT 'Making our mark' (publicity & marketing)",
+            "grantProgramme": [
+                {
+                    "title": "Awards for All",
+                    "code": "AFW1"
+                }
+            ],
+            "recipientDistrictName": "Pen-y-bont ar Ogwr - Bridgend",
+            "amountAwarded": 5000,
+            "recipientWardName": "Oldcastle ED",
+            "plannedDates": [
+                {
+                    "startDate": "2011-08-01",
+                    "duration": 11
+                }
+            ],
+            "recipientRegionName": "Wales",
+            "BIGField_Organisation_Type": "Charity : Registered Charity",
+            "recipientDistrictGeoCode": "W06000013",
+            "recipientLocation": "Pen-y-bont ar Ogwr - Bridgend Oldcastle ED Wales",
+            "dateModified": "2016-05-11T14:32:00Z",
+            "currency": "GBP",
+            "description": "Bridgend & District Resource for Children with Disabilities will revise their marketing materials in order to update and refresh their current outdated and worn imagery. This project meets the Awards for All aim of extending access and participation. The grant for \u00a34,446 will fund designing and rebranding of materials, build, hosting and updating a website, signage, pop-up displays and outdoor banners, marketing materials and translation costs.\u000b",
+            "dataset": {
+                "issued": "2016-04-22",
+                "identifier": "a002400000Z58cqAAB",
+                "modified": "2018-02-20T09:53:07+0000",
+                "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                "distribution": [
+                    {
+                        "downloadURL": "https://www.biglotteryfund.org.uk/-/media/Files/Research%20Documents/aOpenDataFiles/BLFOpenData_2004_2015_V41.csv",
+                        "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                        "accessURL": "https://www.biglotteryfund.org.uk/research/open-data"
+                    }
+                ],
+                "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+                "license_name": "Open Government Licence 3.0 (United Kingdom)",
+                "publisher": {
+                    "name": "Big Lottery Fund",
+                    "website": "https://www.biglotteryfund.org.uk/",
+                    "prefix": "360G-blf",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/big-lottery-fund.png"
+                },
+                "funders": [
+                    [
+                        "The Big Lottery Fund",
+                        "360G-blf"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000Z58cqAAB.json",
+                    "datetime_downloaded": "2018-06-04T09:08:02+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "csv"
+                },
+                "description": "This is a large download file"
+            },
+            "recipientOrganization": [
+                {
+                    "charityNumber": "1040818",
+                    "id_and_name": "[\"Bridgend and District Resource for Children With Disabilities\", \"GB-CHC-1040818\"]",
+                    "id": "GB-CHC-1040818",
+                    "name": "Bridgend & District Resource for Children with Disabilities",
+                    "companyNumber": "2957667",
+                    "location": [
+                        {
+                            "name": "Oldcastle",
+                            "geoCode": "W05000899"
+                        },
+                        {
+                            "name": "Bridgend",
+                            "geoCode": "W06000013"
+                        }
+                    ]
+                }
+            ],
+            "recipientWardNameGeoCode": "W05000899",
+            "amountAppliedFor": 5000,
+            "id": "360G-blf-0030052196",
+            "filename": "a002400000Z58cqAAB.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "The Big Lottery Fund",
+                    "id_and_name": "[\"The Big Lottery Fund\", \"360G-blf\"]",
+                    "id": "360G-blf"
+                }
+            ],
+            "awardDate": "2014-01-21",
+            "title": "Reaching Out to Isolated Communities",
+            "grantProgramme": [
+                {
+                    "title": "Reaching Communities",
+                    "code": "RC5"
+                }
+            ],
+            "amountAwarded": 91281,
+            "plannedDates": [
+                {
+                    "startDate": "2014-07-01",
+                    "duration": 24
+                }
+            ],
+            "BIGField_Organisation_Type": "Charity : Registered Charity",
+            "amountAppliedFor": 91938,
+            "dateModified": "2016-05-11T15:34:00Z",
+            "currency": "GBP",
+            "description": "A new project, based on a 12 month pilot to reduce the risk of isolation and improve the wellbeing of families caring for a disabled child, particularly from ethnic minority communities, throughout the West Midlands. Newlife Foundation for Disabled Children (NFDC). Based in Cannock, Staffordshire, it will work in partnership with the charity Include Me Too to provide information and support services to increase confidence and self esteem for families caring for a disabled child in hard to reach communities.",
+            "dataset": {
+                "issued": "2016-04-22",
+                "identifier": "a002400000Z58cqAAB",
+                "modified": "2018-02-20T09:53:07+0000",
+                "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                "distribution": [
+                    {
+                        "downloadURL": "https://www.biglotteryfund.org.uk/-/media/Files/Research%20Documents/aOpenDataFiles/BLFOpenData_2004_2015_V41.csv",
+                        "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                        "accessURL": "https://www.biglotteryfund.org.uk/research/open-data"
+                    }
+                ],
+                "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+                "license_name": "Open Government Licence 3.0 (United Kingdom)",
+                "publisher": {
+                    "name": "Big Lottery Fund",
+                    "website": "https://www.biglotteryfund.org.uk/",
+                    "prefix": "360G-blf",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/big-lottery-fund.png"
+                },
+                "funders": [
+                    [
+                        "The Big Lottery Fund",
+                        "360G-blf"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000Z58cqAAB.json",
+                    "datetime_downloaded": "2018-06-04T09:08:02+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "csv"
+                },
+                "description": "This is a large download file"
+            },
+            "recipientOrganization": [
+                {
+                    "name": "Newlife Foundation for Disabled Children",
+                    "id_and_name": "[\"Newlife Foundation for Disabled Children\", \"GB-CHC-1001817\"]",
+                    "companyNumber": "2833372",
+                    "charityNumber": "1001817",
+                    "id": "GB-CHC-1001817"
+                }
+            ],
+            "id": "360G-blf-0031003010",
+            "filename": "a002400000Z58cqAAB.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "The Big Lottery Fund",
+                    "id_and_name": "[\"The Big Lottery Fund\", \"360G-blf\"]",
+                    "id": "360G-blf"
+                }
+            ],
+            "awardDate": "2005-09-08",
+            "title": "There is no project name available for this record",
+            "grantProgramme": [
+                {
+                    "title": "Large Projects",
+                    "code": "MK1"
+                }
+            ],
+            "recipientDistrictName": "Sir Benfro - Pembrokeshire",
+            "amountAwarded": 248000,
+            "recipientWardName": "Kilgetty/Begelly ED",
+            "plannedDates": [
+                {
+                    "startDate": "2006-08-01",
+                    "duration": 11
+                }
+            ],
+            "recipientRegionName": "Wales",
+            "BIGField_Organisation_Type": "Charity : Registered Charity",
+            "recipientDistrictGeoCode": "W06000009",
+            "recipientLocation": "Sir Benfro - Pembrokeshire Kilgetty/Begelly ED Wales",
+            "dateModified": "2016-05-11T13:32:00Z",
+            "currency": "GBP",
+            "description": "The project, based on the Pembrokeshire coast, will provide a purpose-built holiday facility for children diagnosed with autism or learning difficulties, their families and carers, which can be used all year round. The funding, over one year, will be used to purchase, renovate and equip a bungalow to the National Autistic Society's standards.",
+            "dataset": {
+                "issued": "2016-04-22",
+                "identifier": "a002400000Z58cqAAB",
+                "modified": "2018-02-20T09:53:07+0000",
+                "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                "distribution": [
+                    {
+                        "downloadURL": "https://www.biglotteryfund.org.uk/-/media/Files/Research%20Documents/aOpenDataFiles/BLFOpenData_2004_2015_V41.csv",
+                        "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                        "accessURL": "https://www.biglotteryfund.org.uk/research/open-data"
+                    }
+                ],
+                "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+                "license_name": "Open Government Licence 3.0 (United Kingdom)",
+                "publisher": {
+                    "name": "Big Lottery Fund",
+                    "website": "https://www.biglotteryfund.org.uk/",
+                    "prefix": "360G-blf",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/big-lottery-fund.png"
+                },
+                "funders": [
+                    [
+                        "The Big Lottery Fund",
+                        "360G-blf"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000Z58cqAAB.json",
+                    "datetime_downloaded": "2018-06-04T09:08:02+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "csv"
+                },
+                "description": "This is a large download file"
+            },
+            "recipientOrganization": [
+                {
+                    "location": [
+                        {
+                            "name": "Kilgetty/Begelly",
+                            "geoCode": "W05000955"
+                        },
+                        {
+                            "name": "Pembrokeshire",
+                            "geoCode": "W06000009"
+                        }
+                    ],
+                    "id_and_name": "[\"Harriet Davis Seaside Holiday Trust for Disabled Children\", \"GB-CHC-1015096\"]",
+                    "id": "GB-CHC-1015096",
+                    "name": "Harriet Davis Seaside Holiday Trust For Disabled Children",
+                    "charityNumber": "1015096"
+                }
+            ],
+            "recipientWardNameGeoCode": "W05000955",
+            "amountAppliedFor": 245000,
+            "id": "360G-blf-0030139399",
+            "filename": "a002400000Z58cqAAB.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "Woodward Charitable Trust",
+                    "id_and_name": "[\"Woodward Charitable Trust\", \"GB-CHC-299963\"]",
+                    "id": "GB-CHC-299963"
+                }
+            ],
+            "recipientLocation": "Harrogate District Low Harrogate Ward Yorkshire and the Humber",
+            "title": "For Computers",
+            "recipientOrganization": [
+                {
+                    "charityNumber": "1011382",
+                    "id_and_name": "[\"Disabled Childrens Foundation\", \"GB-CHC-1011382\"]",
+                    "postalCode": "HG1 1EP",
+                    "addressCountry": "UK",
+                    "name": "Disabled Children's Foundation",
+                    "addressRegion": "North Yorkshire",
+                    "id": "GB-CHC-1011382"
+                }
+            ],
+            "recipientDistrictGeoCode": "E07000165",
+            "recipientDistrictName": "Harrogate District",
+            "amountAwarded": 1000,
+            "recipientWardName": "Low Harrogate Ward",
+            "recipientRegionName": "Yorkshire and the Humber",
+            "ID": "15771",
+            "awardDate": "1999-02-03",
+            "dateModified": "2002-12-02T14:54:32Z",
+            "currency": "GBP",
+            "description": "For computers.",
+            "beneficiaryLocation": [
+                {
+                    "name": "UK",
+                    "countryCode": "GB"
+                }
+            ],
+            "recipientWardNameGeoCode": "E05006251",
+            "id": "360G-woodward:WCT247",
+            "dataset": {
+                "issued": "2017-06-12",
+                "identifier": "a001p00000xktQyAAI",
+                "modified": "2018-03-29T12:41:57+0000",
+                "title": "Woodward Charitable Trust grants",
+                "distribution": [
+                    {
+                        "downloadURL": "http://ods.sfct.org.uk/OpenDataService/sfct360givingfeed.aspx?trust=GB-CHC-299963",
+                        "title": "Woodward Charitable Trust grants",
+                        "accessURL": "http://www.sfct.org.uk/360giving"
+                    }
+                ],
+                "license": "https://creativecommons.org/licenses/by/4.0/",
+                "license_name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+                "publisher": {
+                    "name": "Woodward Charitable Trust",
+                    "website": "http://woodwardcharitabletrust.org.uk/",
+                    "prefix": "360G-Woodward",
+                    "logo": ""
+                },
+                "funders": [
+                    [
+                        "Woodward Charitable Trust",
+                        "GB-CHC-299963"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a001p00000xktQyAAI.json",
+                    "datetime_downloaded": "2018-06-04T13:22:22+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "csv"
+                },
+                "description": ""
+            },
+            "filename": "a001p00000xktQyAAI.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "The Big Lottery Fund",
+                    "id_and_name": "[\"The Big Lottery Fund\", \"360G-blf\"]",
+                    "id": "360G-blf"
+                }
+            ],
+            "awardDate": "2013-03-21",
+            "title": "Kit Boxes for Kids",
+            "grantProgramme": [
+                {
+                    "title": "Awards for All",
+                    "code": "AFE1"
+                }
+            ],
+            "recipientDistrictName": "Leeds District",
+            "amountAwarded": 9986,
+            "recipientWardName": "Horsforth Ward",
+            "plannedDates": [
+                {
+                    "startDate": "2013-06-11",
+                    "duration": 12
+                }
+            ],
+            "recipientRegionName": "Yorkshire and the Humber",
+            "BIGField_Organisation_Type": "Charity : Registered Charity",
+            "recipientDistrictGeoCode": "E08000035",
+            "recipientLocation": "Leeds District Horsforth Ward Yorkshire and the Humber",
+            "dateModified": "2016-05-11T15:35:00Z",
+            "currency": "GBP",
+            "description": "This is a project by a charity in Cannock, Staffordshire. The group will use the funding to purchase mobile sensory equipment for children with learning disabilities. This will increase the capacity of the group and  improve the wellbeing of beneficiaries.",
+            "dataset": {
+                "issued": "2016-04-22",
+                "identifier": "a002400000Z58cqAAB",
+                "modified": "2018-02-20T09:53:07+0000",
+                "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                "distribution": [
+                    {
+                        "downloadURL": "https://www.biglotteryfund.org.uk/-/media/Files/Research%20Documents/aOpenDataFiles/BLFOpenData_2004_2015_V41.csv",
+                        "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                        "accessURL": "https://www.biglotteryfund.org.uk/research/open-data"
+                    }
+                ],
+                "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+                "license_name": "Open Government Licence 3.0 (United Kingdom)",
+                "publisher": {
+                    "name": "Big Lottery Fund",
+                    "website": "https://www.biglotteryfund.org.uk/",
+                    "prefix": "360G-blf",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/big-lottery-fund.png"
+                },
+                "funders": [
+                    [
+                        "The Big Lottery Fund",
+                        "360G-blf"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000Z58cqAAB.json",
+                    "datetime_downloaded": "2018-06-04T09:08:02+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "csv"
+                },
+                "description": "This is a large download file"
+            },
+            "recipientOrganization": [
+                {
+                    "charityNumber": "1001817",
+                    "id_and_name": "[\"Newlife Foundation for Disabled Children\", \"GB-CHC-1001817\"]",
+                    "id": "GB-CHC-1001817",
+                    "name": "Newlife Foundation for Disabled Children",
+                    "companyNumber": "2833372",
+                    "location": [
+                        {
+                            "name": "Horsforth",
+                            "geoCode": "E05001428"
+                        },
+                        {
+                            "name": "Leeds",
+                            "geoCode": "E08000035"
+                        }
+                    ]
+                }
+            ],
+            "recipientWardNameGeoCode": "E05001428",
+            "amountAppliedFor": 9986,
+            "id": "360G-blf-0030065503",
+            "filename": "a002400000Z58cqAAB.json"
+        },
+        {
+            "recipientLocation": "Cannock Chase District Hawks Green Ward West Midlands",
+            "title": "Grant to Newlife the Charity for Disabled Children",
+            "recipientOrganization": [
+                {
+                    "charityNumber": "1170125",
+                    "id_and_name": "[\"Newlife the Charity for Disabled Children\", \"GB-CHC-1170125\"]",
+                    "postalCode": "WS11 7GF",
+                    "addressLocality": " ",
+                    "name": "Newlife the Charity for Disabled Children",
+                    "id": "GB-CHC-1170125"
+                }
+            ],
+            "recipientDistrictName": "Cannock Chase District",
+            "dateModified": "2017-05-22T00:00:00+00:00",
+            "description": "towards purchasing new beds for a charity which works with disabled people in Staffordshire",
+            "beneficiaryLocation": [
+                {
+                    "name": "National"
+                }
+            ],
+            "recipientWardNameGeoCode": "E05006909",
+            "id": "360G-ClothworkersFdn-200804955",
+            "Reference": 200804955,
+            "dataset": {
+                "issued": "2017-05-26",
+                "identifier": "a002400000kHd9FAAS",
+                "modified": "2017-05-27T13:08:04+0000",
+                "title": "Clothworkers Foundation grants awarded 2016",
+                "distribution": [
+                    {
+                        "downloadURL": "http://foundation.clothworkers.co.uk/ClothworkersFoundation/media/360giving/Clothworkers-Foundation-2016.xlsx",
+                        "title": "Clothworkers Foundation grants awarded 2016",
+                        "accessURL": "http://foundation.clothworkers.co.uk/360-Giving.aspx"
+                    }
+                ],
+                "license": "https://creativecommons.org/licenses/by/4.0/",
+                "license_name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+                "publisher": {
+                    "name": "The Clothworkers' Foundation",
+                    "website": "http://foundation.clothworkers.co.uk/",
+                    "prefix": "360G-clothworkersfdn",
+                    "logo": "https://www.threesixtygiving.org/wp-content/uploads/clothworkers_foundation_logo.png"
+                },
+                "funders": [
+                    [
+                        "The Clothworkers Foundation",
+                        "GB-CHC-274100"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000kHd9FAAS.json",
+                    "datetime_downloaded": "2018-06-04T13:20:03+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "xlsx"
+                },
+                "description": ""
+            },
+            "fundingOrganization": [
+                {
+                    "name": "The Clothworkers Foundation",
+                    "id_and_name": "[\"The Clothworkers Foundation\", \"GB-CHC-274100\"]",
+                    "id": "GB-CHC-274100"
+                }
+            ],
+            "fromOpenCall": "Yes",
+            "grantProgramme": [
+                {
+                    "title": "Main Grants Programme"
+                }
+            ],
+            "amountAwarded": 21000,
+            "recipientWardName": "Hawks Green Ward",
+            "recipientRegionName": "West Midlands",
+            "recipientDistrictGeoCode": "E07000192",
+            "awardDate": "2016-01-18T00:00:00+00:00",
+            "currency": "GBP",
+            "filename": "a002400000kHd9FAAS.json",
+            "dataSource": "http://foundation.clothworkers.co.uk/"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "The Big Lottery Fund",
+                    "id_and_name": "[\"The Big Lottery Fund\", \"360G-blf\"]",
+                    "id": "360G-blf"
+                }
+            ],
+            "awardDate": "2016-04-20T00:00:00+00:00",
+            "title": "Live, Laugh, Play & Learn with Friends",
+            "grantProgramme": [
+                {
+                    "title": "Awards for All",
+                    "code": "AFE1"
+                }
+            ],
+            "recipientDistrictName": "Wigan District",
+            "amountAwarded": 9996,
+            "recipientWardName": "Leigh South Ward",
+            "plannedDates": [
+                {
+                    "endDate": "2017-05-18T00:00:00+00:00",
+                    "startDate": "2016-05-18T00:00:00+00:00",
+                    "duration": 12
+                }
+            ],
+            "recipientRegionName": "North West",
+            "BIGField_Organisation_Type": "Charity : Registered Charity",
+            "recipientDistrictGeoCode": "E08000010",
+            "recipientLocation": "Wigan District Leigh South Ward North West",
+            "dateModified": "2017-07-18T15:57:18.2800000Z",
+            "currency": "GBP",
+            "description": "The organisation will use the funding to run play session targeting disabled children and their families in the local community. This will increase confidence levels and social skills through increased opportunities for interaction.  ",
+            "dataset": {
+                "issued": "2017-07-26",
+                "identifier": "a002400000nOBx9AAG",
+                "modified": "2017-07-27T10:33:57+0000",
+                "title": "Big Lottery Fund - grants data 2015 to 2017",
+                "distribution": [
+                    {
+                        "downloadURL": "https://www.biglotteryfund.org.uk/-/media/Files/Research%20Documents/aOpenDataFiles/open_data_2015_2017.xlsx",
+                        "title": "Big Lottery Fund - grants data 2015 to 2017",
+                        "accessURL": "https://www.biglotteryfund.org.uk/research/open-data"
+                    }
+                ],
+                "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+                "license_name": "Open Government Licence 3.0 (United Kingdom)",
+                "publisher": {
+                    "name": "Big Lottery Fund",
+                    "website": "https://www.biglotteryfund.org.uk/",
+                    "prefix": "360G-blf",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/big-lottery-fund.png"
+                },
+                "funders": [
+                    [
+                        "The Big Lottery Fund",
+                        "360G-blf"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000nOBx9AAG.json",
+                    "datetime_downloaded": "2018-06-04T08:59:31+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "xlsx"
+                },
+                "description": "1 April 2015 to 31 March 2017"
+            },
+            "recipientOrganization": [
+                {
+                    "location": [
+                        {
+                            "name": "Leigh South",
+                            "geoCode": "E05000853"
+                        },
+                        {
+                            "name": "Wigan",
+                            "geoCode": "E08000010"
+                        }
+                    ],
+                    "id_and_name": "[\"Friends - Play for Disabled Children\", \"GB-CHC-1167995\"]",
+                    "id": "GB-CHC-1167995",
+                    "name": "Friends - Play For Disabled Children",
+                    "charityNumber": "1167995"
+                }
+            ],
+            "recipientWardNameGeoCode": "E05000853",
+            "id": "360G-blf-0031033956",
+            "filename": "a002400000nOBx9AAG.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "Co-operative Group",
+                    "id_and_name": "[\"Co-operative Group\", \"GB-COH-IP00525R\"]",
+                    "id": "GB-COH-IP00525R"
+                }
+            ],
+            "recipientLocation": "Wrecsam - Wrexham Erddig ED Wales",
+            "title": "Grant to Dynamic,  centre for children and young people with disabilities",
+            "recipientOrganization": [
+                {
+                    "name": "Dynamic,  centre for children and young people with disabilities",
+                    "id_and_name": "[\"Dynamic Centre for Children and Young People With Disabilities\", \"GB-CHC-1102954\"]",
+                    "id": "GB-CHC-1102954",
+                    "postalCode": "LL13 7AS",
+                    "charityNumber": "1102954"
+                }
+            ],
+            "recipientDistrictName": "Wrecsam - Wrexham",
+            "amountAwarded": 1463.98,
+            "recipientWardName": "Erddig ED",
+            "recipientRegionName": "Wales",
+            "recipientDistrictGeoCode": "W06000006",
+            "awardDate": "2017-08-04",
+            "currency": "GBP",
+            "description": "Help disabled young people access activities within their local community and promote self esteem and confidence.",
+            "beneficiaryLocation": [
+                {
+                    "name": "LL13",
+                    "geoCodeType": "PD",
+                    "geoCode": "LL13"
+                }
+            ],
+            "recipientWardNameGeoCode": "W05000249",
+            "id": "360G-COOPGROUP-1815",
+            "dataset": {
+                "issued": "2017-10-03",
+                "identifier": "a002400000qzkbKAAQ",
+                "modified": "2017-10-03T13:04:26+0000",
+                "title": "Co-operative Group Local community fund grants awarded",
+                "distribution": [
+                    {
+                        "downloadURL": "https://www.coop.co.uk/downloads/causes-data-2017.csv",
+                        "title": "Co-operative Group Local community fund grants awarded",
+                        "accessURL": "https://www.coop.co.uk/membership/local-community-fund"
+                    }
+                ],
+                "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "license_name": "Creative Commons Attribution Share-Alike 4.0",
+                "publisher": {
+                    "name": "Co-operative Group",
+                    "website": "https://www.coop.co.uk/",
+                    "prefix": "360G-coopgroup-",
+                    "logo": ""
+                },
+                "funders": [
+                    [
+                        "Co-operative Group",
+                        "GB-COH-IP00525R"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000qzkbKAAQ.json",
+                    "datetime_downloaded": "2018-06-04T13:13:36+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "csv"
+                },
+                "description": ""
+            },
+            "filename": "a002400000qzkbKAAQ.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "Tuixen Foundation",
+                    "id_and_name": "[\"Tuixen Foundation\", \"GB-CHC-1081124\"]",
+                    "id": "GB-CHC-1081124"
+                }
+            ],
+            "recipientLocation": "Great Yarmouth District East Flegg Ward East of England",
+            "title": "Core grant to Nat Hol Fund for Sick and Disabled Children",
+            "recipientOrganization": [
+                {
+                    "id_and_name": "[\"National Holiday Fund for Sick and Disabled Children\", \"GB-CHC-327714\"]",
+                    "url": "http://www.nhfcharity.co.uk/",
+                    "charityNumber": "327714",
+                    "addressRegion": "Norfolk",
+                    "postalCode": "NR29 4JZ",
+                    "addressLocality": "Hemsby",
+                    "name": "Nat Hol Fund for Sick and Disabled Children",
+                    "id": "GB-CHC-327714"
+                }
+            ],
+            "recipientDistrictGeoCode": "E07000145",
+            "recipientDistrictName": "Great Yarmouth District",
+            "amountAwarded": 10000,
+            "recipientWardName": "East Flegg Ward",
+            "recipientRegionName": "East of England",
+            "awardDate": "2017-03-24T00:00:00+00:00",
+            "dateModified": "2017-10-17T00:00:00+00:00",
+            "currency": "GBP",
+            "description": "The National Holiday Fund for Sick and Disabled Children provide the holiday of a lifetime in the USA for severely handicapped children.",
+            "dataset": {
+                "issued": "2017-11-15",
+                "identifier": "a002400000sgDIcAAM",
+                "modified": "2017-11-16T09:22:49+0000",
+                "title": "Grants awarded from 2010 until November 2017",
+                "distribution": [
+                    {
+                        "downloadURL": "http://tuixen.org.uk/360_giving_tuixen_oct_2017.xlsx",
+                        "title": "Grants awarded from 2010 until November 2017",
+                        "accessURL": "http://tuixen.org.uk/grants-awarded/"
+                    }
+                ],
+                "license": "https://creativecommons.org/licenses/by/4.0/",
+                "license_name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+                "publisher": {
+                    "name": "Tuixen Foundation",
+                    "website": "http://tuixen.org.uk/",
+                    "prefix": "360G-tuixen",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/tuixenlogo.jpeg"
+                },
+                "funders": [
+                    [
+                        "Tuixen Foundation",
+                        "GB-CHC-1081124"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000sgDIcAAM.json",
+                    "datetime_downloaded": "2018-06-04T13:20:36+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "xlsx"
+                },
+                "description": ""
+            },
+            "recipientWardNameGeoCode": "E05005790",
+            "id": "360G-tuixen-a020O00001BH3jhQAD",
+            "filename": "a002400000sgDIcAAM.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "The Big Lottery Fund",
+                    "id_and_name": "[\"The Big Lottery Fund\", \"360G-blf\"]",
+                    "id": "360G-blf"
+                }
+            ],
+            "awardDate": "2012-12-06",
+            "title": "Friendship for children with disabilities",
+            "grantProgramme": [
+                {
+                    "title": "Awards for All",
+                    "code": "AFE1"
+                }
+            ],
+            "recipientDistrictName": "St. Helens District",
+            "amountAwarded": 9956,
+            "recipientWardName": "Thatto Heath Ward",
+            "plannedDates": [
+                {
+                    "startDate": "2013-02-19",
+                    "duration": 12
+                }
+            ],
+            "recipientRegionName": "North West",
+            "BIGField_Organisation_Type": "Charity : Charitable Unincorporated Association",
+            "recipientDistrictGeoCode": "E08000013",
+            "recipientLocation": "St. Helens District Thatto Heath Ward North West",
+            "dateModified": "2016-05-11T15:07:00Z",
+            "currency": "GBP",
+            "description": "This is a project by a community organisation in St Helens. The group will use funding to provide a programme of activities, including soft play and day trips, for disabled children and their families. This will provide a range of recreational and learning opportunities, with the aim of reducing isolation and promoting wellbeing.",
+            "dataset": {
+                "issued": "2016-04-22",
+                "identifier": "a002400000Z58cqAAB",
+                "modified": "2018-02-20T09:53:07+0000",
+                "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                "distribution": [
+                    {
+                        "downloadURL": "https://www.biglotteryfund.org.uk/-/media/Files/Research%20Documents/aOpenDataFiles/BLFOpenData_2004_2015_V41.csv",
+                        "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                        "accessURL": "https://www.biglotteryfund.org.uk/research/open-data"
+                    }
+                ],
+                "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+                "license_name": "Open Government Licence 3.0 (United Kingdom)",
+                "publisher": {
+                    "name": "Big Lottery Fund",
+                    "website": "https://www.biglotteryfund.org.uk/",
+                    "prefix": "360G-blf",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/big-lottery-fund.png"
+                },
+                "funders": [
+                    [
+                        "The Big Lottery Fund",
+                        "360G-blf"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000Z58cqAAB.json",
+                    "datetime_downloaded": "2018-06-04T09:08:02+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "csv"
+                },
+                "description": "This is a large download file"
+            },
+            "recipientOrganization": [
+                {
+                    "location": [
+                        {
+                            "name": "Thatto Heath",
+                            "geoCode": "E05000928"
+                        },
+                        {
+                            "name": "St. Helens",
+                            "geoCode": "E08000013"
+                        }
+                    ],
+                    "id_and_name": "[\"Friends - Play For Disabled Children\", \"360G-blf-org-Friends-PlayForDisabledChildrenCharity:CharitableUnincorporatedAssociation1102012\"]",
+                    "id": "360G-blf-org-Friends-PlayForDisabledChildrenCharity:CharitableUnincorporatedAssociation1102012",
+                    "name": "Friends - Play For Disabled Children"
+                }
+            ],
+            "recipientWardNameGeoCode": "E05000928",
+            "amountAppliedFor": 9956,
+            "id": "360G-blf-0030072077",
+            "filename": "a002400000Z58cqAAB.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "The Big Lottery Fund",
+                    "id_and_name": "[\"The Big Lottery Fund\", \"360G-blf\"]",
+                    "id": "360G-blf"
+                }
+            ],
+            "recipientLocation": "Glasgow City Scotland",
+            "title": "Activities for Disabled ME Children",
+            "grantProgramme": [
+                {
+                    "title": "Awards for All",
+                    "code": "AFS1"
+                }
+            ],
+            "recipientDistrictGeoCode": "S12000046",
+            "recipientDistrictName": "Glasgow City",
+            "amountAwarded": 3299.37,
+            "plannedDates": [
+                {
+                    "startDate": "2014-01-03",
+                    "duration": 24
+                }
+            ],
+            "recipientRegionName": "Scotland",
+            "BIGField_Organisation_Type": "Other : Non charitable unincorporated organisation",
+            "awardDate": "2013-12-17",
+            "amountAppliedFor": 6000,
+            "dateModified": "2016-05-11T15:04:00Z",
+            "currency": "GBP",
+            "description": "This group will support children from the ME Community that have physical and mental disabilities by creating a programme of activities aimed at promoting personal development and integration with other children. The programme will centre on sporting activities chosen by the children and parents.",
+            "dataset": {
+                "issued": "2016-04-22",
+                "identifier": "a002400000Z58cqAAB",
+                "modified": "2018-02-20T09:53:07+0000",
+                "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                "distribution": [
+                    {
+                        "downloadURL": "https://www.biglotteryfund.org.uk/-/media/Files/Research%20Documents/aOpenDataFiles/BLFOpenData_2004_2015_V41.csv",
+                        "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                        "accessURL": "https://www.biglotteryfund.org.uk/research/open-data"
+                    }
+                ],
+                "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+                "license_name": "Open Government Licence 3.0 (United Kingdom)",
+                "publisher": {
+                    "name": "Big Lottery Fund",
+                    "website": "https://www.biglotteryfund.org.uk/",
+                    "prefix": "360G-blf",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/big-lottery-fund.png"
+                },
+                "funders": [
+                    [
+                        "The Big Lottery Fund",
+                        "360G-blf"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000Z58cqAAB.json",
+                    "datetime_downloaded": "2018-06-04T09:08:02+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "csv"
+                },
+                "description": "This is a large download file"
+            },
+            "recipientOrganization": [
+                {
+                    "location": [
+                        {
+                            "name": "Southside Central",
+                            "geoCode": "S13002648"
+                        },
+                        {
+                            "name": "Glasgow City",
+                            "geoCode": "S12000046"
+                        }
+                    ],
+                    "id_and_name": "[\"Activities for Disabled ME Children\", \"360G-blf-org-ActivitiesforDisabledMEChildrenOther:Noncharitableunincorporatedorganisation24102013\"]",
+                    "id": "360G-blf-org-ActivitiesforDisabledMEChildrenOther:Noncharitableunincorporatedorganisation24102013",
+                    "name": "Activities for Disabled ME Children"
+                }
+            ],
+            "id": "360G-blf-0031002030",
+            "filename": "a002400000Z58cqAAB.json"
+        },
+        {
+            "fundingOrganization": [
+                {
+                    "name": "The Big Lottery Fund",
+                    "id_and_name": "[\"The Big Lottery Fund\", \"360G-blf\"]",
+                    "id": "360G-blf"
+                }
+            ],
+            "awardDate": "2015-02-18",
+            "title": "Parent Carer Support Project",
+            "grantProgramme": [
+                {
+                    "title": "Awards for All",
+                    "code": "AFE1"
+                }
+            ],
+            "recipientDistrictName": "Sandwell District",
+            "amountAwarded": 9990,
+            "recipientWardName": "Oldbury Ward",
+            "plannedDates": [
+                {
+                    "startDate": "2015-03-11",
+                    "duration": 12
+                }
+            ],
+            "recipientRegionName": "West Midlands",
+            "BIGField_Organisation_Type": "Charity : Registered Charity",
+            "recipientDistrictGeoCode": "E08000028",
+            "recipientLocation": "Sandwell District Oldbury Ward West Midlands",
+            "dateModified": "2016-05-11T15:46:00Z",
+            "currency": "GBP",
+            "description": "Not Available",
+            "dataset": {
+                "issued": "2016-04-22",
+                "identifier": "a002400000Z58cqAAB",
+                "modified": "2018-02-20T09:53:07+0000",
+                "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                "distribution": [
+                    {
+                        "downloadURL": "https://www.biglotteryfund.org.uk/-/media/Files/Research%20Documents/aOpenDataFiles/BLFOpenData_2004_2015_V41.csv",
+                        "title": "Big Lottery Fund - grants data 2004 - 2015 (100MB+)",
+                        "accessURL": "https://www.biglotteryfund.org.uk/research/open-data"
+                    }
+                ],
+                "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+                "license_name": "Open Government Licence 3.0 (United Kingdom)",
+                "publisher": {
+                    "name": "Big Lottery Fund",
+                    "website": "https://www.biglotteryfund.org.uk/",
+                    "prefix": "360G-blf",
+                    "logo": "http://www.threesixtygiving.org/wp-content/uploads/big-lottery-fund.png"
+                },
+                "funders": [
+                    [
+                        "The Big Lottery Fund",
+                        "360G-blf"
+                    ]
+                ],
+                "datagetter_metadata": {
+                    "downloads": true,
+                    "json": "data/json_all/a002400000Z58cqAAB.json",
+                    "datetime_downloaded": "2018-06-04T09:08:02+00:00",
+                    "valid": true,
+                    "acceptable_license": true,
+                    "file_type": "csv"
+                },
+                "description": "This is a large download file"
+            },
+            "recipientOrganization": [
+                {
+                    "location": [
+                        {
+                            "name": "Oldbury",
+                            "geoCode": "E05001273"
+                        },
+                        {
+                            "name": "Sandwell",
+                            "geoCode": "E08000028"
+                        }
+                    ],
+                    "id_and_name": "[\"Sandwell Parents for Disabled Children\", \"GB-CHC-1125576\"]",
+                    "id": "GB-CHC-1125576",
+                    "name": "Sandwell Parents for Disabled Children",
+                    "charityNumber": "1125576"
+                }
+            ],
+            "recipientWardNameGeoCode": "E05001273",
+            "amountAppliedFor": 9990,
+            "id": "360G-blf-0031019319",
+            "filename": "a002400000Z58cqAAB.json"
+        }
+    ]
+}
