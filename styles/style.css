@@ -7,11 +7,13 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 #chart {
   height: 720px; /* must at least match the svg, to place content after it!*/
   overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .node rect {
@@ -40,9 +42,14 @@ body {
 }
 
 .side-menu {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: rgb(255, 255, 255);
     height: 100%;
+    padding: 10px;
+    overflow: scroll;
+    border-right: 1px solid black;
+}
+
+.side-menu-header {
+    text-align: center;
 }
 
 .content {

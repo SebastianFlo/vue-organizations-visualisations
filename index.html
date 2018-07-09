@@ -27,9 +27,7 @@
 
 <body>
     <div id="app">
-        <b-navbar toggleable="md"
-            type="dark"
-            variant="info">
+        <b-navbar toggleable="md" type="dark" variant="dark">
 
             <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
@@ -74,10 +72,12 @@
             <b-row style="height: 100%;">
                 <b-col cols="3" class="side-menu">
                     <div>
-                        {{ keepActiveItem }}
+                        <div class="side-menu-header">
+                            <h2>Selection</h2>
+                        </div>
                         <div v-if="active.type === 'funder'">
                             <div style="background-color: white">
-                                <img height="50" v-bind:src="active.logo">Funder</h3>
+                                <img height="50" v-bind:src="active.logo">
                             </div>
                             <br>
                             <h3>Funder</h3>
