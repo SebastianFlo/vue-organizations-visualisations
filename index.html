@@ -1,139 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>360Giving's Data Visualisation</title>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
-        href="styles/style.css"
-        type="text/css" />
-    <link type="text/css"
-        rel="stylesheet"
-        href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
-    <link type="text/css"
-        rel="stylesheet"
-        href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css" />
-    <script type="text/javascript"
-        src="scripts/d3/d3.js"></script>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css" />
     <script src="https://d3js.org/d3-drag.v1.min.js"></script>
     <script src="https://d3js.org/d3-zoom.v1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
     <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
-    <script src="scripts/sankey.js"></script>
+
+    <title>sebastianflo.github.io</title>
 </head>
 
 <body>
-    <div id="app">
-        <b-navbar toggleable="md" type="dark" variant="dark">
-
-            <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-
-            <b-navbar-brand href="#">Children Charities</b-navbar-brand>
-
-            <b-collapse is-nav id="nav_collapse">
-
-                <b-navbar-nav class="ml-auto">
-
-                    <b-nav-form>
-                        <b-form-input size="sm"
-                            class="mr-sm-2"
-                            type="text"
-                            placeholder="Search" />
-                        <b-button size="sm"
-                            class="my-2 my-sm-0"
-                            type="submit">Search</b-button>
-                    </b-nav-form>
-
-                    <b-nav-item-dropdown text="Funders"
-                        right>
-                        <b-dropdown-item href="#">EN</b-dropdown-item>
-                        <b-dropdown-item href="#">ES</b-dropdown-item>
-                        <b-dropdown-item href="#">RU</b-dropdown-item>
-                        <b-dropdown-item href="#">FA</b-dropdown-item>
-                    </b-nav-item-dropdown>
-
-                    <b-nav-item-dropdown text="Recipients"
-                        right>
-                        <b-dropdown-item href="#">EN</b-dropdown-item>
-                        <b-dropdown-item href="#">ES</b-dropdown-item>
-                        <b-dropdown-item href="#">RU</b-dropdown-item>
-                        <b-dropdown-item href="#">FA</b-dropdown-item>
-                    </b-nav-item-dropdown>
-
-                </b-navbar-nav>
-
-            </b-collapse>
-        </b-navbar>
-
-        <b-container fluid style="height: 100%;">
-            <b-row style="height: 100%;">
-                <b-col cols="3" class="side-menu">
-                    <div>
-                        <div class="side-menu-header">
-                            <h2>Selection</h2>
-                        </div>
-                        <div v-if="active.type === 'funder'">
-                            <div style="background-color: white">
-                                <img height="50" v-bind:src="active.logo">
-                            </div>
-                            <br>
-                            <h3>Funder</h3>
-                            <h1>{{ active.name }}</h1>
-                            <br>
-                            Total Given Donations: <em>{{ active.value | currency  }}</em>
-                            <hr>
-                            <h3>Beneficiaries</h3>
-                            <ul>
-                                <li v-for="beneficiary in active.recipients" class="beneficiary-item">
-                                    {{ beneficiary.name }} :
-                                    <div>{{ beneficiary.amount | currency }}</div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div v-if="active.type === 'funded'">
-                            <h3>Charrity</h3>
-                            <h1>{{ active.name }}</h1>
-                            <br>
-                            Total Received Donations: <em>{{ active.value | currency  }}</em>
-                            <hr>
-                            <h3>Funders</h3>
-                            <ul>
-                                <li v-for="funder in active.funder" class="beneficiary-item">
-                                    {{ funder.source.name }} :
-                                    <div>{{ funder.target.value | currency }}</div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div v-if="active.type === 'link'">
-                            <h3>Funder</h3>
-                            <h1>{{ active.source.name }}</h1>
-                            <br>
-                            <em>{{ active.source.value | currency }}</em>
-                            <hr>
-                            ↓
-                            <hr>
-                            <h3>Beneficiary</h3>
-                            <h1>{{ active.target.name }}</h1>
-                            <br>
-                            <em>{{ active.target.value | currency }}</em>
-                            <hr>
-                        </div>
-                    </div>
-                </b-col>
-                <b-col cols="9" class="content">
-                    <p id="chart"></p>
-                </b-col>
-            </b-row>
-        </b-container>
-
-    </div>
-
-    <script src="scripts/script.js"></script>
+    <div id="app"></div>
+    <script src="/dist/build.js"></script>
 </body>
 
 </html>
