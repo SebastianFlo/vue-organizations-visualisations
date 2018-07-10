@@ -3,7 +3,11 @@
 
         <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-        <b-navbar-brand href="#">Children Charities</b-navbar-brand>
+        <b-navbar-brand>Children Charities</b-navbar-brand>
+
+        <b-navbar-nav>
+          <b-nav-item v-on:click="highlightFirst">Hover over items to see more information</b-nav-item>
+        </b-navbar-nav>
 
         <b-collapse is-nav id="nav_collapse">
 
@@ -42,10 +46,18 @@
 </template>
 
 <script>
+  import store from '../store.vue';
+
   export default {
     data: function () {
       return {
-        count: 0
+        count: 0,
+        defaultOrganisation: 'The Big Lottery Fund'
+      }
+    },
+    methods: {
+      highlightFirst: function () {
+        store.setActiveIdAction(this.defaultOrganisation);
       }
     }
   };

@@ -3,6 +3,7 @@
     debug: true,
     state: {
       active: {},
+      activeId: '',
       keepActiveItem: true
     },
     setActiveAction(newValue) {
@@ -56,12 +57,21 @@
 
       this.state.active = {};
     },
+
     setKeepActiveAction(newValue) {
       if (this.debug) {
         console.log('setKeepActiveAction triggered with', newValue);
       }
 
       this.state.keepActiveItem = newValue;
+    },
+
+    setActiveIdAction(newValue) {
+      if (this.debug) {
+        console.log('setActiveIdAction triggered with', newValue);
+      }
+
+      this.state.activeId = newValue;
     }
   }
 </script>

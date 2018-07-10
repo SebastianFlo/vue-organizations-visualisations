@@ -91,9 +91,19 @@
   }
 
   .node rect {
-    cursor: move;
-    fill-opacity: .9;
+    /* cursor: move; */
+    fill-opacity: .7;
     shape-rendering: crispEdges;
+  }
+
+  .node rect:hover {
+    fill-opacity: 1;
+    stroke: blue;
+  }
+
+  .node rect.active {
+    fill-opacity: 1;
+    stroke: blue;
   }
 
   .node text {
@@ -119,10 +129,6 @@
     padding: 10px;
     overflow: scroll;
     border-right: 1px solid black;
-  }
-
-  .side-menu-header {
-    text-align: center;
   }
 
   .content {

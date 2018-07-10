@@ -1,7 +1,11 @@
 <script>
-  const capitalize = function (value) {
+  const currency = function (value) {
     if (!value) return ''
     value = value.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
     return value + ' £';
-  }
+  };
+
+  export default {
+    currency
+  };
 </script>

@@ -1,5 +1,13 @@
 <template>
+  <div>
     <div id="chart"></div>
+    <div class="chart-actions">
+      <button id="zoom_in">+</button>
+      <button id="zoom_out">-</button>
+      <button id="zoom_full">[ ]</button>
+      {{ activeElement }}
+    </div>
+  </div>
 </template>
 
 <script>
@@ -9,7 +17,11 @@
   export default {
     data: function () {
       return {
-        state: store.state
+        activeId: '',
+        prevActiveId: '',
+        state: store.state,
+        allRectangles: [],
+        formatedData: []
       }
     },
     mounted: function () {
@@ -42,22 +54,25 @@
       var path = sankey.link();
 
       function zoomed() {
-        svg.attr('transform', 'translate(' + d3.event.translate + ')scale(' + d3.event.scale + ')');
+        svg.attr('transform',
+          'translate(' + zoom.translate() + ')' +
+          'scale(' + zoom.scale() + ')'
+        );
+        console.log(zoom.translate(), zoom.scale());
       }
 
       var radius = 5;
 
-      console.log('active', this.active);
-      var formatedData = formatData(userLedData);
-      console.log('formatted Data', formatedData);
+      this.formatedData = formatData(userLedData);
+      console.log('formatted Data', this.formatedData);
 
       sankey
-        .nodes(formatedData.nodes)
-        .links(formatedData.links)
+        .nodes(this.formatedData.nodes)
+        .links(this.formatedData.links)
         .layout(32); // what is this? iterations
 
       var link = svg.append('g').selectAll('.link')
-        .data(formatedData.links)
+        .data(this.formatedData.links)
         .enter().append('path')
         .attr('class', 'link')
         .attr('d', path)
@@ -71,7 +86,7 @@
         .text(function (d) { return d.source.name + ' → ' + d.target.name + '\n' + format(d.value); })
 
       var node = svg.append('g').selectAll('.node')
-        .data(formatedData.nodes)
+        .data(this.formatedData.nodes)
         .enter().append('g')
         .attr('class', 'node')
         .attr('transform', function (d) {
@@ -85,8 +100,8 @@
       node.append('rect')
         .attr('height', sankey.nodeWidth())
         .attr('width', function (d) { return d.dy; })
+        .attr('id', function (d) { return d.name; })
         .style('fill', function (d) { return d.color = color(d.name.replace(/ .*/, '')); })
-        .style('stroke', function (d) { return d3.rgb(d.color).darker(2); })
         .append('title')
         .text(function (d) { return d.name + '\n' + format(d.value); })
 
@@ -95,6 +110,9 @@
         .attr('x', function (d) { return d.dy / 2 })
         .attr('y', sankey.nodeWidth() / 2)
         .attr('dy', '.35em')
+
+      d3.selectAll('button').on('click', zoomClick);
+      d3.select('#zoom_full').on('click', zoomFull);
 
 
       function formatData(data) {
@@ -163,6 +181,58 @@
         return foundItem.index;
       }
 
+      function interpolateZoom(translate, scale) {
+        const self = this;
+        return d3.transition().duration(350).tween('zoom', function () {
+          const iTranslate = d3.interpolate(zoom.translate(), translate);
+          const iScale = d3.interpolate(zoom.scale(), scale);
+          return function (t) {
+            zoom
+              .scale(iScale(t))
+              .translate(iTranslate(t));
+            zoomed();
+          };
+        });
+      }
+
+      function zoomClick() {
+        const clicked = d3.event.target;
+        let direction = 1;
+        const factor = 0.2;
+        let target_zoom = 1;
+        const center = [width / 2, height / 2];
+        const extent = zoom.scaleExtent();
+        const translate = zoom.translate();
+        let translate0 = [];
+        let l = [];
+        const view = { x: translate[0], y: translate[1], k: zoom.scale() };
+
+        d3.event.preventDefault();
+        direction = (this.id === 'zoom_in') ? 1 : -1;
+        target_zoom = zoom.scale() * (1 + factor * direction);
+
+        if (target_zoom < extent[0] || target_zoom > extent[1]) { return false; }
+
+        translate0 = [(center[0] - view.x) / view.k, (center[1] - view.y) / view.k];
+        view.k = target_zoom;
+        l = [translate0[0] * view.k + view.x, translate0[1] * view.k + view.y];
+
+        view.x += center[0] - l[0];
+        view.y += center[1] - l[1];
+
+        interpolateZoom([view.x, view.y], view.k);
+      }
+
+      function zoomFull() {
+        const translate = [423.513292147877, 17.42590127464055];
+        const scale = 0.2264789279589534;
+
+        svg
+          .transition()
+          .duration(200) // milliseconds
+          .call(zoom.translate(translate).scale(scale).event);
+      }
+
       function getRecipients(list, grant) {
         var id = grant.fundingOrganization[0].id;
         var recipientOrganization = grant.recipientOrganization[0];
@@ -183,21 +253,69 @@
         }
         return recipients;
       }
+
+      this.allRectangles = d3.selectAll('rect')[0];
+
+      // this.preselectActive('The Big Lottery Fund');
     },
     methods: {
       setActive: function (data) {
+        if (this.state.activeId) {
+          this.clearActive(this.activeId);
+        }
+
         store.setActiveAction(data);
       },
-      clearActive: function () {
+      clearActive: function (name) {
         store.clearActiveAction();
+        store.setActiveIdAction('');
+
+        const element = this.findElement(name);
+        if (element && element.classList.contains('active')) {
+          element.classList.toggle('active');
+        }
       },
       setKeepActive: function () {
         store.setKeepActiveAction(true);
+      },
+      findElement(id) {
+        return this.allRectangles.find(rectangle => rectangle.id === id);
+      },
+      findNodeData(id) {
+        return this.formatedData.nodes.find(node => node.id === id);
+      },
+      preselectActive(id) {
+        if (!id) {
+          return;
+        }
+
+        const match = this.findElement(id);
+        const matchData = this.findNodeData(id);
+
+        this.setActive(matchData);
+
+        match.classList.toggle('active');
+      }
+    },
+    computed: {
+      activeElement: function() {
+        if (this.state.activeId && this.state.activeId !== this.prevActiveId) {
+          this.preselectActive(this.state.activeId);
+          this.state.activeId = this.prevActiveId;
+        }
+
+        return this.state.activeId;
       }
     }
   };
 </script>
 
 <style scoped>
+  button {
+    padding: 0px 30px;
+  }
 
+  .chart-actions {
+    float: left;
+  }
 </style>
