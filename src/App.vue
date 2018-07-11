@@ -138,4 +138,11 @@
   .beneficiary-item {
     padding: 4px 0;
   }
+
+  .navbar-expand-md .navbar-nav .dropdown-menu {
+    position: absolute;
+    height: 200px;
+    max-height: 200px;
+    overflow-x: hidden;
+  }
 </style>

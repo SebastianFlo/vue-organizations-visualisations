@@ -3,9 +3,27 @@
     debug: true,
     state: {
       active: {},
+      funders: [],
+      recipients: [],
       activeId: '',
       keepActiveItem: true
     },
+    setFundersAction(newValue) {
+      if (this.debug) {
+        console.log('setFundersAction triggered with', newValue);
+      }
+
+      this.state.funders = newValue
+    },
+
+    setRecipientsAction(newValue) {
+      if (this.debug) {
+        console.log('setRecipientsAction triggered with', newValue);
+      }
+
+      this.state.recipients = newValue
+    },
+
     setActiveAction(newValue) {
       if (this.debug) {
         console.log('setActiveAction triggered with', newValue);

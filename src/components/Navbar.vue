@@ -6,7 +6,7 @@
         <b-navbar-brand>Children Charities</b-navbar-brand>
 
         <b-navbar-nav>
-          <b-nav-item v-on:click="highlightFirst">Hover over items to see more information</b-nav-item>
+          <b-nav-item v-on:click="highlight(defaultOrganisation)">Hover over items to see more information</b-nav-item>
         </b-navbar-nav>
 
         <b-collapse is-nav id="nav_collapse">
@@ -23,20 +23,16 @@
                         type="submit">Search</b-button>
                 </b-nav-form>
 
-                <b-nav-item-dropdown text="Funders"
-                    right>
-                    <b-dropdown-item href="#">EN</b-dropdown-item>
-                    <b-dropdown-item href="#">ES</b-dropdown-item>
-                    <b-dropdown-item href="#">RU</b-dropdown-item>
-                    <b-dropdown-item href="#">FA</b-dropdown-item>
+                <b-nav-item-dropdown text="Funders" right>
+                    <b-dropdown-item
+                      v-on:click="highlight(funder.name)"
+                      v-for="funder in state.funders">{{ funder.name }}</b-dropdown-item>
                 </b-nav-item-dropdown>
 
-                <b-nav-item-dropdown text="Recipients"
-                    right>
-                    <b-dropdown-item href="#">EN</b-dropdown-item>
-                    <b-dropdown-item href="#">ES</b-dropdown-item>
-                    <b-dropdown-item href="#">RU</b-dropdown-item>
-                    <b-dropdown-item href="#">FA</b-dropdown-item>
+                <b-nav-item-dropdown text="Recipients" right>
+                    <b-dropdown-item
+                      v-on:click="highlight(recipient.name)"
+                      v-for="recipient in state.recipients">{{ recipient.name }}</b-dropdown-item>
                 </b-nav-item-dropdown>
 
             </b-navbar-nav>
@@ -51,13 +47,14 @@
   export default {
     data: function () {
       return {
-        count: 0,
-        defaultOrganisation: 'The Big Lottery Fund'
+        state: store.state,
+        // defaultOrganisation: 'The Big Lottery Fund'
+        defaultOrganisation: 'The Wellcome Trust'
       }
     },
     methods: {
-      highlightFirst: function () {
-        store.setActiveIdAction(this.defaultOrganisation);
+      highlight: function(name) {
+        store.setActiveIdAction(name);
       }
     }
   };

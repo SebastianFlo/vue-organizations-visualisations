@@ -12,7 +12,12 @@
 
 <script>
   import store from '../store.vue';
-  import userLedData from '../assets/user-led.json';
+  // import userLedData from '../assets/user-led.json';
+  // import userLedData from '../assets/children-with-disabilities.json';
+  import userLedData from '../assets/children-with-disabilities-no-blf.json';
+  // import userLedData from '../assets/mental-health.json';
+  // import userLedData from '../assets/mental-health-no-blf.json';
+  // import userLedData from '../assets/blf.json';
 
   export default {
     data: function () {
@@ -89,6 +94,7 @@
         .data(this.formatedData.nodes)
         .enter().append('g')
         .attr('class', 'node')
+
         .attr('transform', function (d) {
           return 'translate(' + d.x + ',' + d.y + ')';
         })
@@ -131,6 +137,8 @@
           return funder;
         });
 
+        store.setFundersAction(fundersList);
+
         var fundeds = data.grants.reduce(function (acc, grant) {
           acc[grant.recipientOrganization[0].id] = {
             name: grant.recipientOrganization[0].name,
@@ -140,9 +148,15 @@
           return acc;
         }, {});
 
-        var nodesObjectes = Object.assign(funders, fundeds);
+        var fundedsList = Object.values(fundeds).map(function (funded, index) {
+          return funded;
+        });
 
-        var nodesList = Object.values(nodesObjectes).map(function (node, index) {
+        store.setRecipientsAction(fundedsList);
+
+        var nodesObjects = Object.assign(funders, fundeds);
+
+        var nodesList = Object.values(nodesObjects).map(function (node, index) {
           return {
             org: node,
             index: index,
@@ -298,7 +312,7 @@
       }
     },
     computed: {
-      activeElement: function() {
+      activeElement: function () {
         if (this.state.activeId && this.state.activeId !== this.prevActiveId) {
           this.preselectActive(this.state.activeId);
           this.state.activeId = this.prevActiveId;
