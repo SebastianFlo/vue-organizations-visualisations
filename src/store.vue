@@ -59,6 +59,7 @@
         activeData.name = newValue.name;
         activeData.value = newValue.value;
         activeData.type = 'funded';
+        activeData.charityType = newValue.type;
         activeData.funder = newValue.targetLinks;
       }
 

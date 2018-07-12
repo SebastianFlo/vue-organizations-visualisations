@@ -13,8 +13,8 @@
 <script>
   import store from '../store.vue';
   // import userLedData from '../assets/user-led.json';
-  // import userLedData from '../assets/children-with-disabilities.json';
-  import userLedData from '../assets/children-with-disabilities-no-blf.json';
+  import userLedData from '../assets/children-with-disabilities.json';
+  // import userLedData from '../assets/children-with-disabilities-no-blf.json';
   // import userLedData from '../assets/mental-health.json';
   // import userLedData from '../assets/mental-health-no-blf.json';
   // import userLedData from '../assets/blf.json';
@@ -26,7 +26,15 @@
         prevActiveId: '',
         state: store.state,
         allRectangles: [],
-        formatedData: []
+        formatedData: [],
+        colorPallete: {
+          'Charity : Registered Charity': 0,
+          'School : Voluntary Aided School': 1,
+          'School : Voluntary Controlled School': 2,
+          'School : Community School': 3,
+          'Other : Non charitable unincorporated organisation': 4,
+          'None': 5
+        }
       }
     },
     mounted: function () {
@@ -69,6 +77,7 @@
       var radius = 5;
 
       this.formatedData = formatData(userLedData);
+      const colorPallete = this.colorPallete;
       console.log('formatted Data', this.formatedData);
 
       sankey
@@ -107,7 +116,15 @@
         .attr('height', sankey.nodeWidth())
         .attr('width', function (d) { return d.dy; })
         .attr('id', function (d) { return d.name; })
-        .style('fill', function (d) { return d.color = color(d.name.replace(/ .*/, '')); })
+        .style('fill', function(d) {
+          if (d.type) {
+            return d.color = color(colorPallete[d.type]);
+          } else if (d.recipients) {
+            return d.color = color(d.name.replace(/ .*/, ''));
+          }
+
+          return d.color = color(colorPallete.None);
+        })
         .append('title')
         .text(function (d) { return d.name + '\n' + format(d.value); })
 
@@ -128,7 +145,7 @@
             logo: grant.dataset.publisher.logo,
             website: grant.dataset.publisher.website,
             id: grant.fundingOrganization[0].name,
-            recipients: getRecipients(acc, grant)
+            recipients: getRecipients(acc, grant),
           }
           return acc;
         }, {});
@@ -144,6 +161,7 @@
             name: grant.recipientOrganization[0].name,
             url: grant.recipientOrganization[0].url,
             id: grant.recipientOrganization[0].id,
+            type: grant.BIGField_Organisation_Type
           };
           return acc;
         }, {});

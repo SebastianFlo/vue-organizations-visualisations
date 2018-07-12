@@ -28,6 +28,9 @@
       <div v-if="active.type === 'funded'">
         <h3>Charrity</h3>
         <h1>{{ active.name }}</h1>
+
+        <br>Type
+        <h5>{{ active.charityType }}</h5>
         <br> Total Received Donations:
         <em>{{ formatCurrency(active.value) }}</em>
         <hr>
