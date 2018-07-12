@@ -77,7 +77,9 @@
       var radius = 5;
 
       this.formatedData = formatData(userLedData);
+
       const colorPallete = this.colorPallete;
+
       console.log('formatted Data', this.formatedData);
 
       sankey

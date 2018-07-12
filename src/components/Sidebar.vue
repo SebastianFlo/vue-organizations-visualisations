@@ -63,6 +63,7 @@
 
 <script>
   import store from '../store.vue';
+  import { currency } from '../filters.vue';
 
   export default {
     data: function () {
@@ -76,11 +77,7 @@
       }
     },
     methods: {
-      formatCurrency: function (value) {
-        if (!value) return ''
-        value = value.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
-        return value + ' £';
-      }
+      formatCurrency: currency
     }
   };
 </script>
