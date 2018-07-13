@@ -70,6 +70,7 @@
     },
     methods: {
       highlight: function (name) {
+        this.$emit('select', name);
         store.setActiveIdAction(name);
       },
       formatCurrency: currency

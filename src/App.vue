@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <gdv-navbar></gdv-navbar>
+    <gdv-navbar v-on:select="selectLast"></gdv-navbar>
 
     <b-container fluid
       style="height: 100%;">
@@ -11,7 +11,7 @@
         </b-col>
         <b-col cols="9"
           class="content">
-          <gdv-chart></gdv-chart>
+          <gdv-chart v-bind:lastSelected="lastSelected"></gdv-chart>
         </b-col>
       </b-row>
     </b-container>
@@ -30,13 +30,19 @@
     data() {
       return {
         msg: 'Welcome to Your Vue.js App',
-        state: store.state
+        state: store.state,
+        lastSelected: {}
       }
     },
     components: {
       'gdv-navbar': Navbar,
       'gdv-sidebar': Sidebar,
       'gdv-chart': Chart,
+    },
+    methods: {
+      selectLast: function (name) {
+        this.lastSelected = { name };
+      }
     }
   }
 </script>

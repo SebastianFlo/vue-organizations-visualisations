@@ -37,6 +37,7 @@
         }
       }
     },
+    props: ['lastSelected'],
     mounted: function () {
       var margin = { top: 1, right: 1, bottom: 6, left: 1 },
         width = 1500 - margin.left - margin.right, // was 960
@@ -132,22 +133,7 @@
         .text(function (d) { return d.name + '\n' + format(d.value); })
 
       node.selectAll('rect')
-        .on('click', function (d) {
-          if (d3Active.node() === this) return reset();
-          d3Active.classed("active", false);
-          d3Active = d3.select(this).classed("active", true);
-
-          const {x, y, dy} = d;
-
-          const scale = 1;
-          const translate = [ -x - (dy/2) + (width / 2) - 150, -y + 360];
-
-          console.log('zooming to', translate);
-          svg.transition()
-            .duration(1000)
-            .attr("transform", "translate(" + translate + ")scale(" + scale + ")");
-
-        });
+        .on('click', zoomToElement);
 
       node.append('text')
         .attr('text-anchor', 'middle')
@@ -158,6 +144,21 @@
       d3.selectAll('button').on('click', zoomClick);
       d3.select('#zoom_full').on('click', zoomFull);
 
+      function zoomToElement(d) {
+        if (d3Active.node() === this) return reset();
+        d3Active.classed("active", false);
+        d3Active = d3.select(this).classed("active", true);
+
+        const { x, y, dy } = d;
+
+        const scale = 1;
+        const translate = [-x - (dy / 2) + (width / 2) - 150, -y + 360];
+
+        console.log('zooming to', translate);
+        svg.transition()
+          .duration(1000)
+          .attr("transform", "translate(" + translate + ")scale(" + scale + ")");
+      }
 
       function formatData(data) {
         var funders = data.grants.reduce(function (acc, grant) {
@@ -277,7 +278,7 @@
       }
 
       function zoomFull() {
-        const translate = [423.513292147877, 17.42590127464055];
+        const translate = [792.9501717238787, 21.866219449124685];
         const scale = 0.2264789279589534;
 
         svg
@@ -365,6 +366,15 @@
         }
 
         return this.state.activeId;
+      }
+    },
+    watch: {
+      lastSelected: function (newVal, oldVal) { // watch it
+        if (newVal.name !== oldVal.name) {
+          const el = this.findElement(newVal.name);
+          const click = new Event('click');
+          el.dispatchEvent(click);
+        }
       }
     }
   };
