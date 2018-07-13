@@ -8,7 +8,7 @@
     <b-navbar-brand>Children Charities</b-navbar-brand>
 
     <b-navbar-nav>
-      <b-nav-item v-on:click="highlight(defaultOrganisation)">Hover over items to see more information</b-nav-item>
+      <b-nav-item v-on:click="search(defaultOrganisation)">Click on items to see more information</b-nav-item>
     </b-navbar-nav>
 
     <b-collapse is-nav
@@ -29,7 +29,7 @@
         </b-nav-form> -->
 
         <b-nav-item-dropdown text="Funders" right>
-          <b-dropdown-item v-on:click="highlight(funder.name)" v-bind:key="funder.id" v-for="funder in orderedFunders">
+          <b-dropdown-item v-on:click="search(funder.name)" v-bind:key="funder.id" v-for="funder in orderedFunders">
             <div class="gdv-dropdown-funders">
               <span class="gdv-truncate">{{ funder.name }}</span>
               :
@@ -40,7 +40,7 @@
 
         <b-nav-item-dropdown text="Recipients"
           right>
-          <b-dropdown-item v-on:click="highlight(recipient.name)" v-bind:key="recipient.id" v-for="recipient in orderedRecipients">
+          <b-dropdown-item v-on:click="search(recipient.name)" v-bind:key="recipient.id" v-for="recipient in orderedRecipients">
             <div class="gdv-dropdown-funders">
               <span class="gdv-truncate">{{ recipient.name }}</span>
               :
@@ -69,9 +69,11 @@
       }
     },
     methods: {
-      highlight: function (name) {
-        this.$emit('select', name);
-        store.setActiveIdAction(name);
+      search: function (name) {
+        // store.getElementAction(name);
+        store.searchAction(name);
+        // this.$emit('select', name);
+        // store.setActiveIdAction(name);
       },
       formatCurrency: currency
     },

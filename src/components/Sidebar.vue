@@ -6,8 +6,7 @@
     <div class="side-menu-header-content">
       <div v-if="active.type === 'funder'">
         <div>
-          <img height="50"
-            v-bind:src="active.logo">
+          <img height="50" v-bind:src="active.logo">
         </div>
         <br>
         <h3>Funder</h3>
@@ -73,7 +72,7 @@
     },
     computed: {
       active: function () {
-        return this.state.active;
+        return this.state.active.data;
       }
     },
     methods: {

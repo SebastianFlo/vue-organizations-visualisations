@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <gdv-navbar v-on:select="selectLast"></gdv-navbar>
+    <gdv-navbar></gdv-navbar>
 
     <b-container fluid
       style="height: 100%;">
@@ -9,9 +9,8 @@
           class="side-menu">
           <gdv-sidebar></gdv-sidebar>
         </b-col>
-        <b-col cols="9"
-          class="content">
-          <gdv-chart v-bind:lastSelected="lastSelected"></gdv-chart>
+        <b-col cols="9" class="content">
+          <gdv-chart v-bind:lastSelected="selectedLast"></gdv-chart>
         </b-col>
       </b-row>
     </b-container>
@@ -39,9 +38,9 @@
       'gdv-sidebar': Sidebar,
       'gdv-chart': Chart,
     },
-    methods: {
-      selectLast: function (name) {
-        this.lastSelected = { name };
+    computed: {
+      selectedLast: function () {
+        return { name: this.state.searchId };
       }
     }
   }
@@ -120,10 +119,12 @@
   .link {
     fill: none;
     stroke-opacity: .5;
+    opacity: 0.2;
   }
 
   .link:hover {
     stroke-opacity: .8;
+    opacity: 1;
   }
 
   #app {

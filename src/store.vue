@@ -1,96 +1,55 @@
 <script>
   export default {
-    debug: true,
+    debug: {
+      setFundersAction: false,
+      setRecipientsAction: false,
+      setFormattedDataAction: false,
+      searchAction: true,
+    },
     state: {
-      active: {},
       funders: [],
       recipients: [],
-      activeId: '',
-      keepActiveItem: true
+      active: {
+        el: null,
+        data: {}
+      },
+      searchId: '',
+      formattedData: {},
+      chart: {
+        svg: null
+      }
     },
-    setFundersAction(newValue) {
-      if (this.debug) {
-        console.log('setFundersAction triggered with', newValue);
+    setFundersAction(funders) {
+      if (this.debug.setFundersAction) {
+        console.log('setFundersAction triggered with', funders);
       }
 
-      this.state.funders = newValue
-    },
-
-    setRecipientsAction(newValue) {
-      if (this.debug) {
-        console.log('setRecipientsAction triggered with', newValue);
-      }
-
-      this.state.recipients = newValue
-    },
-
-    setActiveAction(newValue) {
-      if (this.debug) {
-        console.log('setActiveAction triggered with', newValue);
-      }
-
-      let activeData = {
-        type: ''
-      };
-
-      if (newValue.source && newValue.target) {
-        // If Link
-        activeData.source = {
-          name: newValue.source.name,
-          recipients: newValue.source.recipients,
-          value: newValue.source.value,
-        };
-        activeData.target = {
-          name: newValue.target.name,
-          value: newValue.target.value,
-        };
-        activeData.type = 'link';
-
-      } else if (newValue.recipients) {
-        // If Funder
-        activeData.name = newValue.name;
-        activeData.logo = newValue.logo;
-        activeData.value = newValue.value;
-        activeData.recipients = newValue.recipients;
-        activeData.type = 'funder';
-
-      } else {
-        // If Funded
-        activeData.name = newValue.name;
-        activeData.value = newValue.value;
-        activeData.type = 'funded';
-        activeData.charityType = newValue.type;
-        activeData.funder = newValue.targetLinks;
-      }
-
-      this.state.active = activeData;
-    },
-    clearActiveAction() {
-      if (this.debug) {
-        console.log('clearActiveAction triggered');
-      }
-
-      if (this.state.keepActiveItem) {
-        return;
-      }
-
-      this.state.active = {};
+      this.state.funders = funders;
     },
 
-    setKeepActiveAction(newValue) {
-      if (this.debug) {
-        console.log('setKeepActiveAction triggered with', newValue);
+    setRecipientsAction(recipients) {
+      if (this.debug.setRecipientsAction) {
+        console.log('setRecipientsAction triggered with', recipients);
       }
 
-      this.state.keepActiveItem = newValue;
+      this.state.recipients = recipients;
     },
 
-    setActiveIdAction(newValue) {
-      if (this.debug) {
-        console.log('setActiveIdAction triggered with', newValue);
+    setFormattedDataAction(data) {
+      if (this.debug.setFormattedDataAction) {
+        console.log('setFormattedDataAction triggered with', data);
       }
 
-      this.state.activeId = newValue;
-    }
+      this.state.recipients = data;
+    },
+
+    searchAction(name) {
+      if (this.debug.searchAction) {
+        console.log('searchAction triggered with', name);
+      }
+
+      this.state.searchId = name;
+    },
+
   }
 </script>
