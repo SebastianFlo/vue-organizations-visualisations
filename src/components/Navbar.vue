@@ -9,22 +9,9 @@
       <b-nav-item v-on:click="search(defaultOrganisation)">Click on items to see more information</b-nav-item>
     </b-navbar-nav> -->
 
-    <b-collapse is-nav
-      id="nav_collapse">
+    <b-collapse is-nav id="nav_collapse">
 
       <b-navbar-nav class="ml-auto">
-
-        <!-- <b-nav-form>
-          <b-form-input size="sm"
-            class="mr-sm-2"
-            type="text"
-            placeholder="Search" />
-
-          <b-button size="sm"
-            class="my-2 my-sm-0"
-            type="submit">Search</b-button>
-
-        </b-nav-form> -->
 
         <b-nav-item-dropdown text="Recipient Types" right>
           <b-dropdown-item v-for="recipientType in state.recipientTypes" v-bind:key="recipientType.index" class="gdv-no-pointer">
@@ -32,25 +19,39 @@
           </b-dropdown-item>
         </b-nav-item-dropdown>
 
-        <b-nav-item-dropdown text="Funders" right>
-          <b-dropdown-item v-on:click="search(funder.name)" v-bind:key="funder.id" v-for="funder in orderedFunders">
-            <div class="gdv-dropdown-funders">
-              <span class="gdv-truncate gdv-width-325">{{ funder.name }}</span>
-              :
-              <span class="gdv-right">{{ formatCurrency(funder.value) }}</span>
-            </div>
-          </b-dropdown-item>
+        <b-nav-item-dropdown ref="funderDropdown" id="funderDropdown" text="Funders" right>
+            <b-form-input v-model.lazy="funderFilter" placeholder="Type to Search"/>
+            <b-table hover fixed striped
+              class="gdv-dropdown-funders"
+              :sort-by="'value'"
+              :sort-desc="true"
+              :filter="funderFilter"
+              :items="orderedFunders"
+              :fields="fields"
+              @row-clicked="search"
+              >
+              <template slot="value" slot-scope="row">
+                  {{ formatCurrency(row.item.value) }}
+              </template>
+          </b-table>
         </b-nav-item-dropdown>
 
-        <b-nav-item-dropdown text="Recipients"
+        <b-nav-item-dropdown ref="recipientDropdown" id="recipientDropdown" text="Recipients"
           right>
-          <b-dropdown-item v-on:click="search(recipient.name)" v-bind:key="recipient.id" v-for="recipient in orderedRecipients">
-            <div class="gdv-dropdown-funders">
-              <span class="gdv-truncate gdv-width-325">{{ recipient.name }}</span>
-              :
-              <span class="gdv-right">{{ formatCurrency(recipient.value) }}</span>
-            </div>
-          </b-dropdown-item>
+            <b-form-input v-model.lazy="recipientFilter" placeholder="Type to Search"/>
+            <b-table hover fixed striped
+              class="gdv-dropdown-funders"
+              :sort-by="'value'"
+              :sort-desc="true"
+              :filter="recipientFilter"
+              :items="orderedRecipients"
+              :fields="fields"
+              @row-clicked="search"
+              >
+              <template slot="value" slot-scope="row">
+                  {{ formatCurrency(row.item.value) }}
+              </template>
+            </b-table>
         </b-nav-item-dropdown>
 
       </b-navbar-nav>
@@ -68,24 +69,50 @@
     data: function () {
       return {
         state: store.state,
-        // defaultOrganisation: 'The Big Lottery Fund'
-        defaultOrganisation: 'The Wellcome Trust'
+        defaultOrganisation: 'The Wellcome Trust',
+        funderFilter: '',
+        recipientFilter: '',
+        fields: [{
+          key: 'name',
+          class: 'gdv-hover'
+        },
+        {
+          key: 'value',
+          sortable: true
+        }],
       }
     },
     methods: {
-      search: function (name) {
+      search: function (item) {
         // store.getElementAction(name);
-        this.$emit('select', { name });
+        this.$emit('select', { name: item.name });
+        this.closeDropdowns();
         // store.setActiveIdAction(name);
+      },
+      closeDropdowns() {
+        const funderDropdown = this.$refs.funderDropdown;
+        const recipientDropdown = this.$refs.recipientDropdown;
+        funderDropdown.hide();
+        recipientDropdown.hide();
       },
       formatCurrency: currency
     },
     computed: {
       orderedFunders: function () {
-        return _.orderBy(this.state.funders, 'value', 'desc')
+        const filteredFunder = this.state.funders.map(funder => ({
+          name: funder.name,
+          value: funder.value
+        }));
+        return filteredFunder;
+        // return _.orderBy(this.state.funders, 'value', 'desc')
       },
       orderedRecipients: function () {
-        return _.orderBy(this.state.recipients, 'value', 'desc')
+        const filteredRecipient = this.state.recipients.map(recipient => ({
+          name: recipient.name,
+          value: recipient.value
+        }));
+        return filteredRecipient;
+        // return _.orderBy(this.state.recipients, 'value', 'desc')
       }
     }
   };

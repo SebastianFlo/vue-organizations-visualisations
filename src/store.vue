@@ -7,7 +7,7 @@
       setRawDataAction: false,
       setRecipientColorAction: false,
       searchAction: false,
-      setActiveDataAction: true,
+      setActiveDataAction: false,
     },
     state: {
       funders: [],
@@ -153,11 +153,13 @@
             value: data.target.value,
             color: data.target.color,
             website: data.target.website,
+            funder: data.target.targetLinks,
             description: data.target.description,
             charityType: data.target.type
           },
           type: 2
         }
+
       }
 
       // If recipient
@@ -173,7 +175,6 @@
           type: 1
         }
       }
-
     },
 
   }

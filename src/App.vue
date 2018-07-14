@@ -143,9 +143,10 @@
 
   .navbar-expand-md .navbar-nav .dropdown-menu {
     position: absolute;
-    height: 200px;
-    max-height: 200px;
+    height: 300px;
+    max-height: 300px;
     overflow-x: hidden;
+    padding: 0;
   }
 
   .gdv-truncate {
@@ -156,5 +157,9 @@
 
   .gdv-width-200 {
     width: 200px;
+  }
+
+  .gdv-hover {
+    cursor: pointer;
   }
 </style>

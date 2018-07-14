@@ -2,7 +2,7 @@
   <div>
     <b-card-group v-if="active.type !== 2" deck>
       <b-card bg-variant="secondary" v-if="active.type !== 0 && !active.type" :title="active.name">
-        <b-button v-on:click="search(defaultOrganisation)">Click on items to see more information</b-button>
+        <b-button v-on:click="search(defaultOrganisation)">Hover over items to see more</b-button>
       </b-card>
 
       <b-card v-if="active.type === 0" :title="active.name">
@@ -31,7 +31,7 @@
               <template slot="amount" slot-scope="row">
                   {{ formatCurrency(row.item.amount) }}
               </template>
-            </b-table>
+          </b-table>
       </b-card>
 
       <b-card v-if="active.type === 1" deck :title="active.name" :sub-title="active.charityType">
@@ -45,10 +45,13 @@
 
           <b-card-body>
             <b-list-group>
-              <b-list-group-item class="d-flex justify-content-between align-items-center gdv-recipient-list-item">
-                <span class="gdv-truncate">{{ active.funder[0].source.name }}</span>
-                  <b-badge variant="primary" pill>{{ formatCurrency(active.funder[0].target.value) }}</b-badge>
-              </b-list-group-item>
+                <b-list-group-item v-for="grant in active.funder"
+                  v-bind:key="grant.dx"
+                  class="d-flex justify-content-between align-items-center gdv-recipient-list-item">
+                    <span class="gdv-truncate">{{ grant.source.name }}</span>
+                      <b-badge variant="primary" pill>{{ formatCurrency(grant.value) }}</b-badge>
+                  </b-list-group-item>
+                </b-list-group>
             </b-list-group>
           </b-card-body>
 
@@ -95,6 +98,17 @@
             </span>
               Beneficiary
           </h4>
+
+          <b-card-body>
+              <b-list-group>
+                <b-list-group-item v-for="grant in active.target.funder"
+                  v-bind:key="grant.dx"
+                  class="d-flex justify-content-between align-items-center gdv-recipient-list-item">
+                  <span class="gdv-truncate">{{ grant.source.name }}</span>
+                    <b-badge variant="primary" pill>{{ formatCurrency(grant.value) }}</b-badge>
+                </b-list-group-item>
+              </b-list-group>
+            </b-card-body>
       </b-card>
     </div>
   </div>
