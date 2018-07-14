@@ -28,6 +28,12 @@
 
         </b-nav-form> -->
 
+        <b-nav-item-dropdown text="Recipient Types" right>
+          <b-dropdown-item v-for="charityType in state.charityTypes" v-bind:key="charityType.index" class="gdv-no-pointer">
+              <div v-bind:style="{ 'color': charityType.color }">{{ charityType.name }}</div>
+          </b-dropdown-item>
+        </b-nav-item-dropdown>
+
         <b-nav-item-dropdown text="Funders" right>
           <b-dropdown-item v-on:click="search(funder.name)" v-bind:key="funder.id" v-for="funder in orderedFunders">
             <div class="gdv-dropdown-funders">
@@ -101,5 +107,10 @@
 
   .gdv-dropdown-funders {
     width: 475px;
+  }
+
+  .gdv-no-pointer {
+    cursor: default;
+    pointer-events:none;
   }
 </style>

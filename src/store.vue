@@ -1,7 +1,7 @@
 <script>
   export default {
     debug: {
-      setFundersAction: false,
+      setFundersAction: true,
       setRecipientsAction: false,
       setFormattedDataAction: false,
       setRawData: false,
@@ -18,9 +18,43 @@
       searchId: '',
       rawData: {},
       formattedData: {},
-      chart: {
-        svg: null
-      }
+      charityTypes: [
+      {
+        color: '#ffbb78',
+        name: 'Charity',
+        index: 0
+      },
+      {
+        color: '#2ca02c',
+        name: 'Community Group',
+        index: 1
+      },
+      {
+        color: '#98df8a',
+        name: 'Company / Mutual Society',
+        index: 2
+      },
+      {
+        color: '#d62728',
+        name: 'Public Sector',
+        index: 3
+      },
+      {
+        color: '#ff9896',
+        name: 'Non charitable unincorporated organisation',
+        index: 4
+      },
+      {
+        color: '#9467bd',
+        name: 'Grassroots organisation',
+        index: 5
+      },
+      {
+        color: '#c5b0d5',
+        name: 'CIC',
+        index: 6
+      },
+      ]
     },
     setFundersAction(funders) {
       if (this.debug.setFundersAction) {

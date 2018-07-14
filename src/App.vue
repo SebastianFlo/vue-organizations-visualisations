@@ -117,13 +117,13 @@
 
   .link {
     fill: none;
-    stroke-opacity: .5;
-    opacity: 0.2;
+    stroke-opacity: .2;
+    /* opacity: 0.2; */
   }
 
   .link:hover {
-    stroke-opacity: .8;
-    opacity: 1;
+    stroke-opacity: 1 !important;
+    /* opacity: 1; */
   }
 
   #app {

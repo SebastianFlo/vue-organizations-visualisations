@@ -27,14 +27,14 @@
         d3Active: d3.select(null),
         formatNumber: d3.format(',.0f'),
         formatedData: [],
-        colorPallete: {
-          'Charity : Registered Charity': 0,
-          'School : Voluntary Aided School': 1,
-          'School : Voluntary Controlled School': 2,
-          'School : Community School': 3,
-          'Other : Non charitable unincorporated organisation': 4,
-          'None': 5
-        },
+        // colorPallete: {
+        //   'Charity : Registered Charity': 0,
+        //   'School : Voluntary Aided School': 1,
+        //   'School : Voluntary Controlled School': 2,
+        //   'School : Community School': 3,
+        //   'Other : Non charitable unincorporated organisation': 4,
+        //   'None': 5
+        // },
         // debug only
         matchLess: []
       }
@@ -53,13 +53,14 @@
       createChart: function () {
         const color = d3.scale.category20();
         const format = this.format;
-        const colorPallete = this.colorPallete;
-
+        // const colorPallete = this.colorPallete;
+        const colorPallete = this.state.charityTypes;
+ // TODO: Set color dynamically
         const zoom = d3.behavior.zoom()
-        .translate([0, 0])
-        .scale(1)
-        .scaleExtent([0.2, 2])
-        .on('zoom', zoomed);
+          .translate([0, 0])
+          .scale(1)
+          .scaleExtent([0.2, 2])
+          .on('zoom', zoomed);
 
         this.zoom = zoom;
 
@@ -100,13 +101,17 @@
           .attr('class', 'link')
           .attr('d', path)
           .style('stroke-width', function (d) { return Math.max(1, d.dy); })
-          .style('stroke', function (d) { return d.source.color = color(d.source.name.replace(/ .*/, '')); })
+          .style('stroke', (d) => {
+            // return d.source.color = color(d.source.name.replace(/ .*/, ''));
+            const funderIndex = this.mapToRange(d.source.value, 0, 11871856, colorPallete.length, colorPallete.length + 27);
+            return d.source.color = color(Math.round(funderIndex));
+          })
           .attr('id', function (d, i) {
             d.id = i;
             return 'link-' + i;
           })
-        .on('mouseover', this.setActive)
-        .on('mouseout', this.clearActive);
+          .on('mouseover', this.setActive)
+          .on('mouseout', this.clearActive);
 
         link.append('title')
           .text(function (d) { return d.source.name + ' → ' + d.target.name + '\n' + format(d.value); });
@@ -123,21 +128,32 @@
           // .on('mouseover', this.setActive)
           .on('mouseout', (node, i) => { this.setNodeLinksOpacity(node, i, 0.2); this.clearActive(node); });
 
+        var charityTypes = new Map(); // delete
+
         node.append('rect')
           .attr('height', sankey.nodeWidth())
           .attr('width', function (d) { return d.dy; })
           .attr('id', function (d) { return d.name; })
-          .style('fill', function (d) {
+          .style('fill', (d, index) => {
             if (d.type) {
-              return d.color = color(colorPallete[d.type]);
+              const charity = colorPallete.find(charity => charity.name === d.type);
+              charityTypes.set(d.type, color(charity.index));
+              return d.color = color(charity.index);
             } else if (d.recipients) {
-              return d.color = color(d.name.replace(/ .*/, ''));
+              // return d.color = color(d.name.replace(/ .*/, ''));
+              const funderIndex = this.mapToRange(d.value, 0, 11871856, colorPallete.length, colorPallete.length + 27);
+              return d.color = color(Math.round(funderIndex));
             }
 
-            return d.color = color(colorPallete.None);
+            return d.color = color(colorPallete.length);
           })
           .append('title')
           .text(function (d) { return d.name + '\n' + format(d.value); });
+
+        // charityTypes.forEach((value, key) => {
+      //    TODO: Set color dynamically
+        //   console.log(value, key);
+        // });
 
         node.selectAll('rect')
           .on('click', this.zoomToElement);
@@ -148,11 +164,11 @@
           .attr('y', sankey.nodeWidth() / 2)
           .attr('dy', '.35em');
 
-        console.log('matchLess', this.matchLess);
+        // console.log('matchLess', this.matchLess);
       },
-      zoom: function () {},
+      zoom: function () { },
       format: function (d) { return this.formatNumber(d) + ' £'; },
-      zoomed: function () {},
+      zoomed: function () { },
       formatData: function (data) {
         const funders = data.grants.reduce((acc, grant) => {
           acc[grant.fundingOrganization[0].id] = {
@@ -176,7 +192,7 @@
             name: grant.recipientOrganization[0].name,
             website: grant.recipientOrganization[0].url,
             id: grant.recipientOrganization[0].id,
-            type: grant.BIGField_Organisation_Type || this.getCharityType(grant.id, grant.recipientOrganization[0].name)
+            type: this.getCharityType(grant.id, grant.recipientOrganization[0].name) || ''
           };
           return acc;
         }, {});
@@ -251,7 +267,7 @@
         });
       },
       highlight_link: function (id, opacity) {
-        d3.select('#link-' + id).style('opacity', opacity);
+        d3.select('#link-' + id).style('stroke-opacity', opacity);
       },
       zoomToElement: function (d) {
         // if (d3Active.node() === this) return reset();
@@ -327,9 +343,6 @@
           .call(this.zoom.translate(translate).scale(scale).event);
       },
       reset: function () {
-        // d3Active.classed('active', false);
-        // d3Active = d3.select(null);
-
         this.zoomFull();
       },
       getRecipients: function (list, grant) {
@@ -353,7 +366,7 @@
         return recipients;
       },
 
-      getCharityType: function(grantId, recipientName) {
+      getCharityType: function (grantId, recipientName) {
         const grant = extraData.additionalData.find(charity => charity.id === grantId);
 
         if (!grant || !grant.type) {
@@ -368,27 +381,10 @@
 
 
       setActive: function (data) {
-        const element = this.findElement(data.name);
-        this.d3Active = d3.select(element).classed('active', true);
-        console.log('this.d3Active', this.d3Active);
-
-        // if (this.state.activeId) {
-        //   this.clearActive(this.activeId);
-        // }
-
         store.setActiveDataAction(data);
       },
       clearActive: function (data) {
-        const element = this.findElement(data.name);
-        this.d3Active = d3.select(element).classed('active', false);
-        // store.setActiveDataAction({});
-        // store.clearActiveAction();
-        // store.setActiveIdAction('');
 
-        // const element = this.findElement(name);
-        // if (element && element.classList.contains('active')) {
-        //   element.classList.toggle('active');
-        // }
       },
       setKeepActive: function () {
         // store.setKeepActiveAction(true);
@@ -399,17 +395,8 @@
       findNodeData(id) {
         return this.formatedData.nodes.find(node => node.id === id);
       },
-      preselectActive(id) {
-        // if (!id) {
-        //   return;
-        // }
-
-        // const match = this.findElement(id);
-        // const matchData = this.findNodeData(id);
-
-        // this.setActive(matchData);
-
-        // match.classList.toggle('active');
+      mapToRange(num, in_min, in_max, out_min, out_max) {
+        return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
       }
     },
     computed: {
