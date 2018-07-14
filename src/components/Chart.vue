@@ -27,14 +27,6 @@
         d3Active: d3.select(null),
         formatNumber: d3.format(',.0f'),
         formatedData: [],
-        // colorPallete: {
-        //   'Charity : Registered Charity': 0,
-        //   'School : Voluntary Aided School': 1,
-        //   'School : Voluntary Controlled School': 2,
-        //   'School : Community School': 3,
-        //   'Other : Non charitable unincorporated organisation': 4,
-        //   'None': 5
-        // },
         // debug only
         matchLess: []
       }
@@ -54,7 +46,7 @@
         const color = d3.scale.category20();
         const format = this.format;
         // const colorPallete = this.colorPallete;
-        const colorPallete = this.state.charityTypes;
+        const colorPallete = this.state.recipientTypes;
  // TODO: Set color dynamically
         const zoom = d3.behavior.zoom()
           .translate([0, 0])
@@ -138,6 +130,7 @@
             if (d.type) {
               const charity = colorPallete.find(charity => charity.name === d.type);
               charityTypes.set(d.type, color(charity.index));
+
               return d.color = color(charity.index);
             } else if (d.recipients) {
               // return d.color = color(d.name.replace(/ .*/, ''));
@@ -150,10 +143,11 @@
           .append('title')
           .text(function (d) { return d.name + '\n' + format(d.value); });
 
-        // charityTypes.forEach((value, key) => {
-      //    TODO: Set color dynamically
-        //   console.log(value, key);
-        // });
+        // Set color dynamically
+        charityTypes.forEach((value, key) => {
+          // console.log(value, key);
+          store.setRecipientColorAction(key.toString(), value.toString());
+        });
 
         node.selectAll('rect')
           .on('click', this.zoomToElement);

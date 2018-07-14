@@ -1,12 +1,13 @@
 <script>
   export default {
     debug: {
-      setFundersAction: true,
+      setFundersAction: false,
       setRecipientsAction: false,
       setFormattedDataAction: false,
-      setRawData: false,
+      setRawDataAction: false,
+      setRecipientColorAction: false,
       searchAction: false,
-      setActiveDataAction: true,
+      setActiveDataAction: false,
     },
     state: {
       funders: [],
@@ -18,42 +19,42 @@
       searchId: '',
       rawData: {},
       formattedData: {},
-      charityTypes: [
-      {
-        color: '#ffbb78',
-        name: 'Charity',
-        index: 0
-      },
-      {
-        color: '#2ca02c',
-        name: 'Community Group',
-        index: 1
-      },
-      {
-        color: '#98df8a',
-        name: 'Company / Mutual Society',
-        index: 2
-      },
-      {
-        color: '#d62728',
-        name: 'Public Sector',
-        index: 3
-      },
-      {
-        color: '#ff9896',
-        name: 'Non charitable unincorporated organisation',
-        index: 4
-      },
-      {
-        color: '#9467bd',
-        name: 'Grassroots organisation',
-        index: 5
-      },
-      {
-        color: '#c5b0d5',
-        name: 'CIC',
-        index: 6
-      },
+      recipientTypes: [
+        {
+          color: '#ffbb78',
+          name: 'Charity',
+          index: 0
+        },
+        {
+          color: '#2ca02c',
+          name: 'Community Group',
+          index: 1
+        },
+        {
+          color: '#98df8a',
+          name: 'Company / Mutual Society',
+          index: 2
+        },
+        {
+          color: '#d62728',
+          name: 'Public Sector',
+          index: 3
+        },
+        {
+          color: '#ff9896',
+          name: 'Non charitable unincorporated organisation',
+          index: 4
+        },
+        {
+          color: '#9467bd',
+          name: 'Grassroots organisation',
+          index: 5
+        },
+        {
+          color: '#c5b0d5',
+          name: 'CIC',
+          index: 6
+        },
       ]
     },
     setFundersAction(funders) {
@@ -80,12 +81,28 @@
       this.state.formattedData = data;
     },
 
-    setRawData(data) {
-      if (this.debug.setRawData) {
-        console.log('setRawData triggered with', data);
+    setRawDataAction(data) {
+      if (this.debug.setRawDataAction) {
+        console.log('setRawDataAction triggered with', data);
       }
 
       this.state.rawData = data;
+    },
+
+    setRecipientColorAction(name, color) {
+      if (this.debug.setRecipientColorAction) {
+        console.log('setRecipientColorAction triggered with', name, color);
+      }
+
+      const newColors = this.state.recipientTypes.map(recipient => {
+        if (recipient.name === name) {
+          recipient.color = color;
+        };
+
+        return recipient;
+      });
+
+      this.state.recipientTypes = newColors;
     },
 
     searchAction(name) {

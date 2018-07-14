@@ -29,8 +29,8 @@
         </b-nav-form> -->
 
         <b-nav-item-dropdown text="Recipient Types" right>
-          <b-dropdown-item v-for="charityType in state.charityTypes" v-bind:key="charityType.index" class="gdv-no-pointer">
-              <div v-bind:style="{ 'color': charityType.color }">{{ charityType.name }}</div>
+          <b-dropdown-item v-for="recipientType in state.recipientTypes" v-bind:key="recipientType.index" class="gdv-no-pointer">
+              <div v-bind:style="{ 'color': recipientType.color }">{{ recipientType.name }}</div>
           </b-dropdown-item>
         </b-nav-item-dropdown>
 
