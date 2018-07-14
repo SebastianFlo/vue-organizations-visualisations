@@ -14,6 +14,7 @@
 <script>
   import store from '../store.vue';
   import userLedData from '../assets/children-with-disabilities.json';
+  import extraData from '../assets/children-with-disabilities-extra.json';
 
   export default {
     data: function () {
@@ -33,7 +34,9 @@
           'School : Community School': 3,
           'Other : Non charitable unincorporated organisation': 4,
           'None': 5
-        }
+        },
+        // debug only
+        matchLess: []
       }
     },
     props: ['lastSelected'],
@@ -66,6 +69,8 @@
           .call(this.zoom)
           .append('g')
           .attr('transform', 'translate(' + this.chartData.margin.left + ',' + this.chartData.margin.top + ')');
+
+        this.svg = svg;
 
         const sankey = d3.sankey()
           .nodeWidth(55) // was 15
@@ -100,8 +105,8 @@
             d.id = i;
             return 'link-' + i;
           })
-        // .on('mouseover', this.setActive)
-        // .on('mouseout', this.clearActive);
+        .on('mouseover', this.setActive)
+        .on('mouseout', this.clearActive);
 
         link.append('title')
           .text(function (d) { return d.source.name + ' → ' + d.target.name + '\n' + format(d.value); });
@@ -114,8 +119,9 @@
             return 'translate(' + d.x + ',' + d.y + ')';
           })
           // .on('click', this.setActive)
-          .on('mouseover', (node, i) => { this.setNodeLinksOpacity(node, i, 1) })
-          .on('mouseout', (node, i) => { this.setNodeLinksOpacity(node, i, 0.2) });
+          .on('mouseover', (node, i) => { this.setNodeLinksOpacity(node, i, 1); this.setActive(node); })
+          // .on('mouseover', this.setActive)
+          .on('mouseout', (node, i) => { this.setNodeLinksOpacity(node, i, 0.2); this.clearActive(node); });
 
         node.append('rect')
           .attr('height', sankey.nodeWidth())
@@ -141,6 +147,8 @@
           .attr('x', function (d) { return d.dy / 2 })
           .attr('y', sankey.nodeWidth() / 2)
           .attr('dy', '.35em');
+
+        console.log('matchLess', this.matchLess);
       },
       zoom: function () {},
       format: function (d) { return this.formatNumber(d) + ' £'; },
@@ -163,12 +171,12 @@
 
         store.setFundersAction(fundersList);
 
-        const fundeds = data.grants.reduce(function (acc, grant) {
+        const fundeds = data.grants.reduce((acc, grant) => {
           acc[grant.recipientOrganization[0].id] = {
             name: grant.recipientOrganization[0].name,
-            url: grant.recipientOrganization[0].url,
+            website: grant.recipientOrganization[0].url,
             id: grant.recipientOrganization[0].id,
-            type: grant.BIGField_Organisation_Type
+            type: grant.BIGField_Organisation_Type || this.getCharityType(grant.id, grant.recipientOrganization[0].name)
           };
           return acc;
         }, {});
@@ -345,15 +353,35 @@
         return recipients;
       },
 
+      getCharityType: function(grantId, recipientName) {
+        const grant = extraData.additionalData.find(charity => charity.id === grantId);
+
+        if (!grant || !grant.type) {
+          this.matchLess.push({
+            id: grantId, name: recipientName
+          });
+          return '';
+        }
+
+        return grant.type;
+      },
+
 
       setActive: function (data) {
+        const element = this.findElement(data.name);
+        this.d3Active = d3.select(element).classed('active', true);
+        console.log('this.d3Active', this.d3Active);
+
         // if (this.state.activeId) {
         //   this.clearActive(this.activeId);
         // }
 
-        // store.setActiveAction(data);
+        store.setActiveDataAction(data);
       },
-      clearActive: function (name) {
+      clearActive: function (data) {
+        const element = this.findElement(data.name);
+        this.d3Active = d3.select(element).classed('active', false);
+        // store.setActiveDataAction({});
         // store.clearActiveAction();
         // store.setActiveIdAction('');
 
@@ -396,8 +424,11 @@
       lastSelected: function (newVal, oldVal) { // watch it
         if (newVal.name !== oldVal.name) {
           const el = this.findElement(newVal.name);
+          const parent = el.parentNode;
           const click = new Event('click');
+          const mouseover = new Event('mouseover');
           el.dispatchEvent(click);
+          parent.dispatchEvent(mouseover);
         }
       }
     }

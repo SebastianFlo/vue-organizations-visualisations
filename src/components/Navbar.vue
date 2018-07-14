@@ -71,8 +71,7 @@
     methods: {
       search: function (name) {
         // store.getElementAction(name);
-        store.searchAction(name);
-        // this.$emit('select', name);
+        this.$emit('select', { name });
         // store.setActiveIdAction(name);
       },
       formatCurrency: currency

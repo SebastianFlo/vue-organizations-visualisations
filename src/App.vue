@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <gdv-navbar></gdv-navbar>
+    <gdv-navbar v-on:select="selectLast"></gdv-navbar>
 
     <b-container fluid
       style="height: 100%;">
@@ -28,9 +28,8 @@
     name: 'app',
     data() {
       return {
-        msg: 'Welcome to Your Vue.js App',
         state: store.state,
-        lastSelected: {}
+        selectedLast: {}
       }
     },
     components: {
@@ -38,9 +37,9 @@
       'gdv-sidebar': Sidebar,
       'gdv-chart': Chart,
     },
-    computed: {
-      selectedLast: function () {
-        return { name: this.state.searchId };
+    methods: {
+      selectLast: function (name) {
+        this.selectedLast = name;
       }
     }
   }
@@ -140,10 +139,6 @@
 
   .content {
     height: 100%;
-  }
-
-  .beneficiary-item {
-    padding: 4px 0;
   }
 
   .navbar-expand-md .navbar-nav .dropdown-menu {
