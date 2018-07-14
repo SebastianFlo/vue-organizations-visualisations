@@ -2,12 +2,10 @@
   <div id="app">
     <gdv-navbar v-on:select="selectLast"></gdv-navbar>
 
-    <b-container fluid
-      style="height: 100%;">
+    <b-container fluid style="height: 100%;">
       <b-row style="height: 100%;">
-        <b-col cols="3"
-          class="side-menu">
-          <gdv-sidebar></gdv-sidebar>
+        <b-col cols="3" class="side-menu">
+          <gdv-sidebar v-on:select="selectLast"></gdv-sidebar>
         </b-col>
         <b-col cols="9" class="content">
           <gdv-chart v-bind:lastSelected="selectedLast"></gdv-chart>
@@ -131,10 +129,12 @@
   }
 
   .side-menu {
-    height: 100%;
+    /*
     padding: 10px;
+    border-right: 1px solid black; */
+    height: 100%;
     overflow: scroll;
-    border-right: 1px solid black;
+    background: #343a40;
   }
 
   .content {
@@ -146,5 +146,15 @@
     height: 200px;
     max-height: 200px;
     overflow-x: hidden;
+  }
+
+  .gdv-truncate {
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+  }
+
+  .gdv-width-200 {
+    width: 200px;
   }
 </style>

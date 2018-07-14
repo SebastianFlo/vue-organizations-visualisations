@@ -1,15 +1,13 @@
 <template>
-  <b-navbar toggleable="md"
-    type="dark"
-    variant="dark">
+  <b-navbar toggleable="md" type="dark" variant="dark">
 
     <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-    <b-navbar-brand>Children Charities</b-navbar-brand>
+    <b-navbar-brand>Grant Funding for Children with Disabilities</b-navbar-brand>
 
-    <b-navbar-nav>
+    <!-- <b-navbar-nav>
       <b-nav-item v-on:click="search(defaultOrganisation)">Click on items to see more information</b-nav-item>
-    </b-navbar-nav>
+    </b-navbar-nav> -->
 
     <b-collapse is-nav
       id="nav_collapse">
@@ -37,7 +35,7 @@
         <b-nav-item-dropdown text="Funders" right>
           <b-dropdown-item v-on:click="search(funder.name)" v-bind:key="funder.id" v-for="funder in orderedFunders">
             <div class="gdv-dropdown-funders">
-              <span class="gdv-truncate">{{ funder.name }}</span>
+              <span class="gdv-truncate gdv-width-325">{{ funder.name }}</span>
               :
               <span class="gdv-right">{{ formatCurrency(funder.value) }}</span>
             </div>
@@ -48,7 +46,7 @@
           right>
           <b-dropdown-item v-on:click="search(recipient.name)" v-bind:key="recipient.id" v-for="recipient in orderedRecipients">
             <div class="gdv-dropdown-funders">
-              <span class="gdv-truncate">{{ recipient.name }}</span>
+              <span class="gdv-truncate gdv-width-325">{{ recipient.name }}</span>
               :
               <span class="gdv-right">{{ formatCurrency(recipient.value) }}</span>
             </div>
@@ -98,11 +96,8 @@
     float: right;
   }
 
-  .gdv-truncate {
+  .gdv-width-325 {
     width: 325px;
-    overflow: hidden;
-    display: inline-block;
-    text-overflow: ellipsis;
   }
 
   .gdv-dropdown-funders {

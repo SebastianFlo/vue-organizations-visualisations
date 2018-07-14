@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div id='chart'></div>
     <div class='chart-actions'>
-      <button id='zoom_in'>+</button>
-      <button id='zoom_out'>-</button>
-      <button id='zoom_full'>[ ]</button>
-      <button id='move_prev'>⬅</button>
-      <button id='move_next'>➡</button>
+      <!-- <button id='zoom_in'>+</button>
+      <button id='zoom_out'>-</button> -->
+      <b-button :variant="'outline-success'" id='zoom_full' v-b-tooltip.hover title="Fit to Screen">[ ]</b-button>
+      <!-- <button id='move_prev'></button>
+      <button id='move_next'></button> -->
     </div>
+    <div id='chart'></div>
   </div>
 </template>
 
@@ -47,7 +47,7 @@
         const format = this.format;
         // const colorPallete = this.colorPallete;
         const colorPallete = this.state.recipientTypes;
- // TODO: Set color dynamically
+        // TODO: Set color dynamically
         const zoom = d3.behavior.zoom()
           .translate([0, 0])
           .scale(1)
@@ -77,7 +77,7 @@
             'translate(' + zoom.translate() + ')' +
             'scale(' + zoom.scale() + ')'
           );
-          console.log(zoom.translate(), zoom.scale());
+          // console.log(zoom.translate(), zoom.scale());
         }
 
         this.zoomed = zoomed;
@@ -153,10 +153,31 @@
           .on('click', this.zoomToElement);
 
         node.append('text')
-          .attr('text-anchor', 'middle')
-          .attr('x', function (d) { return d.dy / 2 })
-          .attr('y', sankey.nodeWidth() / 2)
-          .attr('dy', '.35em');
+          .filter(function(d) { return d.recipients })
+          .filter(function(d) { return d.dy > 100; })
+          .attr("x", sankey.nodeWidth() + 20)
+          .attr('y', (sankey.nodeWidth() + 170) / 2)
+          .attr('text-anchor', 'start')
+          .attr("transform", "rotate(-65)")
+          .style('fill', (d, index) => {
+              const funderIndex = this.mapToRange(d.value, 0, 11871856, colorPallete.length, colorPallete.length + 27);
+              return d.color = color(Math.round(funderIndex));
+          })
+          .text(function(d) { return d.name; });
+
+          node.append('text')
+          .filter(function(d) { return d.recipients })
+          .filter(function(d) { return d.dy < 100; })
+          .attr('x', sankey.nodeWidth() - 30)
+          .attr('y', function(d) { return d.y })
+          .attr('text-anchor', 'start')
+          .attr("transform", "rotate(-65)")
+          .style('fill', (d, index) => {
+              const funderIndex = this.mapToRange(d.value, 0, 11871856, colorPallete.length, colorPallete.length + 27);
+              return d.color = color(Math.round(funderIndex));
+          })
+          .style('opacity', 0.5)
+          .text(function(d) { return d.name; });
 
         // console.log('matchLess', this.matchLess);
       },
@@ -186,6 +207,7 @@
             name: grant.recipientOrganization[0].name,
             website: grant.recipientOrganization[0].url,
             id: grant.recipientOrganization[0].id,
+            description: grant.description,
             type: this.getCharityType(grant.id, grant.recipientOrganization[0].name) || ''
           };
           return acc;
@@ -417,11 +439,9 @@
 </script>
 
 <style scoped>
-  button {
-    padding: 0px 30px;
-  }
-
   .chart-actions {
-    float: left;
+    position: absolute;
+    top: 20px;
+    left: 20px;
   }
 </style>

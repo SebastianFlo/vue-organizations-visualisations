@@ -7,7 +7,7 @@
       setRawDataAction: false,
       setRecipientColorAction: false,
       searchAction: false,
-      setActiveDataAction: false,
+      setActiveDataAction: true,
     },
     state: {
       funders: [],
@@ -153,19 +153,21 @@
             value: data.target.value,
             color: data.target.color,
             website: data.target.website,
+            description: data.target.description,
             charityType: data.target.type
           },
           type: 2
         }
       }
 
+      // If recipient
       else {
         this.state.active.data = {
           name: data.name,
           website: data.website,
           color: data.color,
           value: data.value,
-          recipients: data.recipients,
+          description: data.description,
           charityType: data.type,
           funder: data.targetLinks,
           type: 1
