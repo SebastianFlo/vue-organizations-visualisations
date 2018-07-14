@@ -1,504 +1,1799 @@
 {
+  "exclude": [
+      "360G-QuartetCF-A465261",
+      "360G-QuartetCF-A473508",
+      "360G-CFSurrey-A386312",
+      "360G-EssexCF-A460524",
+      "360G-EssexCF-A427370",
+      "360G-EssexCF-A466302",
+      "360G-EssexCF-A424987",
+      "360G-EssexCF-A440001",
+      "360G-EssexCF-A439489",
+      "360G-SCVO-a11b000000EtkDNAAZ",
+      "360G-CFTyneWearNland-161418",
+      "360G-COOPGROUP-7943",
+      "360G-QuartetCF-A428036",
+      "360G-EssexCF-A467903",
+      "360G-EssexCF-A439114",
+      "360G-COOPGROUP-1602",
+      "360G-COOPGROUP-3127",
+      "360G-RST-17",
+      "360G-COOPGROUP-9416",
+      "360G-blf-0031040552",
+      "360G-ocf-a061600000fwz8k",
+      "360G-ocf-a06G000000fQmAZ",
+      "360G-blf-0031035954",
+      "360G-EssexCF-A463575",
+      "360G-phf-30064",
+      "360G-Wellcome-106408_Z_14_Z",
+      "360G-OCF-A451707",
+      "360G-Wellcome-108858_Z_15_Z",
+      "360G-QuartetCF-A448628",
+      "360G-Wellcome-106992_Z_15_Z",
+      "360G-OCF-A456781",
+      "360G-QuartetCF-A470395",
+      "360G-CFSurrey-A400110",
+      "360G-OCF-A439619",
+      "360G-Wellcome-104916_Z_14_Z",
+      "360G-SCVO-a11b000000NBn7OAAT",
+      "360G-Wellcome-108518_Z_15_Z",
+      "360G-CFSurrey-A389422",
+      "360G-CFSurrey-A415501",
+      "360G-Wellcome-208438_Z_17_Z",
+      "360G-QuartetCF-A417749",
+      "360G-OCF-A456784",
+      "360G-QuartetCF-A467012",
+      "360G-SCVO-a0gb000000QAVeGAAX",
+      "360G-SCVO-a0gb000000QAf2NAAT",
+      "360G-EssexCF-A395244"
+  ],
+
   "additionalData": [
-    {
-      "id": "360G-blf-0031039953",
-      "type": "CIC",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-blf-0031049688",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-EssexCF-A428100",
-      "type": "Charity",
-      "field": "Education"
-    },
-    {
-      "id": "360G-EFF-17-1650",
-      "type": "Grassroots organisation",
-      "field": "Education"
-    },
-    {
-      "id": "360G-QuartetCF-A466423",
-      "type": "Charity",
-      "field": "Culture / Art"
-    },
-    {
-      "id": "360G-COOPGROUP-11002",
-      "type": "Charity",
-      "field": "Training / Exercise"
-    },
-    {
-      "id": "360G-QuartetCF-A435987",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-CheshireCF-A447718",
-      "type": "Charity",
-      "field": "Education"
-    },
-    {
-      "id": "360G-blf-0031026389",
-      "type": "Non charitable unincorporated organisation",
-      "field": "Culture / Art"
-    },
-    {
-      "id": "360G-blf-0031028239",
-      "type": "Charity",
-      "field": "Training / Exercise"
-    },
-    {
-      "id": "360G-ClothworkersFdn-201700179",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-OCF-A467300",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-blf-0031031305",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-blf-0031045095",
-      "type": "Non charitable unincorporated organisation",
-      "field": "Training / Exercise"
-    },
-    {
-      "id": "360G-QuartetCF-A465261",
-      "type": "",
-      "field": ""
-    },
-    {
-      "id": "360G-EssexCF-A413879",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-ocf-a061600000fSvIn",
-      "type": "Charity",
-      "field": "Training / Exercise"
-    },
-    {
-      "id": "360G-blf-0031050615",
-      "type": "Charity",
-      "field": "Training / Exercise"
-    },
-    {
-      "id": "360G-blf-0031037926",
-      "type": "Charity",
-      "field": "Health"
-    },
-    {
-      "id": "360G-blf-0031038066",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-OCF-A439851",
-      "type": "Community Group",
-      "field": "Culture / Art"
-    },
-    {
-      "id": "360G-ocf-a061600000lx9yn",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-ocf-a06G000000SuWur",
-      "type": "Charity",
-      "field": "Health"
-    },
-    {
-      "id": "360G-blf-0031046363",
-      "type": "Charity",
-      "field": "Support / Guidance"
-    },
-    {
-      "id": "360G-QuartetCF-A415402",
-      "type": "Charity",
-      "field": "Culture / Art"
-    },
-    {
-      "id": "360G-ocf-a061600000kOU6N",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-blf-0031040314",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-MasonicCharitableFdn-SG000042",
-      "type": "Charitable Foundation",
-      "field": "Training / Exercise"
-    },
-    {
-      "id": "360G-EssexCF-A449254",
-      "type": "Charity",
-      "field": "Support / Guidance"
-    },
-    {
-      "id": "360G-OCF-A439742",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-EssexCF-A461998",
-      "type": "Charity",
-      "field": "Support / Guidance"
-    },
-    {
-      "id": "360G-QuartetCF-A473508",
-      "type": "",
-      "field": ""
-    },
-    {
-      "id": "360G-CFSurrey-A386312",
-      "type": "",
-      "field": ""
-    },
-    {
-      "id": "360G-EssexCF-A421397",
-      "type": "Charity",
-      "field": "Support / Guidance"
-    },
-    {
-      "id": "360G-EssexCF-A431344",
-      "type": "Charity",
-      "field": "Support / Guidance"
-    },
-    {
-      "id": "360G-blf-0031051663",
-      "type": "Charity",
-      "field": "Support / Guidance"
-    },
-    {
-      "id": "360G-blf-0031040883",
-      "type": "Non charitable unincorporated organisation",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-blf-0031040935",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-blf-0031037108",
-      "type": "Charity",
-      "field": "Training / Exercise"
-    },
-    {
-      "id": "360G-blf-0031032656",
-      "type": "Public Sector",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-blf-0031023832",
-      "type": "Company / Mutual Society",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-blf-0031032587",
-      "type": "Public Sector",
-      "field": "Accessibility"
-    },
-    {
-      "id": "360G-blf-0031029486",
-      "type": "Non charitable unincorporated organisation",
-      "field": "Accessibility"
-    },
-    {
-      "id": "360G-blf-0031022163",
-      "type": "Charity",
-      "field": "Support / Guidance"
-    },
-    {
-      "id": "360G-RSMCT-006b000000QBXRT",
-      "type": "Charity",
-      "field": "Training / Exercise"
-    },
-    {
-      "id": "360G-RSMCT-006b000000C1usQ",
-      "type": "Charity",
-      "field": "Training / Exercise"
-    },
-    {
-      "id": "360G-EssexCF-A460524",
-      "type": "",
-      "field": ""
-    },
-    {
-      "id": "360G-CheshireCF-A458178",
-      "type": "Charity",
-      "field": "Support / Guidance"
-    },
-    {
-      "id": "360G-SomersetCF-A414334",
-      "type": "Charity",
-      "field": "Education"
-    },
-    {
-      "id": "360G-QuartetCF-A430413",
-      "type": "Charity",
-      "field": "Training / Exercise"
-    },
-    {
-      "id": "360G-EssexCF-A426580",
-      "type": "Charity",
-      "field": "Support / Guidance"
-    },
-    {
-      "id": "360G-EssexCF-A427370",
-      "type": "",
-      "field": ""
-    },
-    {
-      "id": "360G-EssexCF-A466302",
-      "type": "",
-      "field": ""
-    },
-    {
-      "id": "360G-EssexCF-A424987",
-      "type": "",
-      "field": ""
-    },
-    {
-      "id": "360G-EssexCF-A476535",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-EssexCF-A467291",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-EssexCF-A442475",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-EssexCF-A432767",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-EssexCF-A427365",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-EssexCF-A440001",
-      "type": "",
-      "field": ""
-    },
-    {
-      "id": "360G-EssexCF-A422983",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-EssexCF-A439489",
-      "type": "",
-      "field": ""
-    },
-    {
-      "id": "360G-QuartetCF-A470394",
-      "type": "Community Group",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-SomersetCF-A411724",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-SomersetCF-A421543",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-QuartetCF-A471418",
-      "type": "Charity",
-      "field": "Culture / Art"
-    },
-    {
-      "id": "360G-CIN-78567",
-      "type": "Public Sector",
-      "field": "Support / Guidance"
-    },
-    {
-      "id": "360G-SomersetCF-A406829",
-      "type": "Community Group",
-      "field": "Training / Exercise"
-    },
-    {
-      "id": "360G-EssexCF-A466506",
-      "type": "Charity",
-      "field": "Support / Guidance"
-    },
-    {
-      "id": "360G-SCVO-a11b000000EtkDNAAZ",
-      "type": "",
-      "field": ""
-    },
-    {
-      "id": "360G-SomersetCF-A413773",
-      "type": "Charity",
-      "field": "Support / Guidance"
-    },
-    {
-      "id": "360G-ocf-a06G000000Stzec",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-CFTyneWearNland-161418",
-      "type": "",
-      "field": ""
-    },
-    {
-      "id": "360G-ocf-a06G000000bceqz",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-ocf-a061600000gCjC1",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-CIN-79328",
-      "type": "Charity",
-      "field": "Support / Guidance"
-    },
-    {
-      "id": "360G-EssexCF-A436276",
-      "type": "Community Group",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-COOPGROUP-7943",
-      "type": "",
-      "field": ""
-    },
-    {
-      "id": "360G-blf-0031023882",
-      "type": "Charity",
-      "field": "Support / Guidance"
-    },
-    {
-      "id": "360G-CIN-72785",
-      "type": "Charity",
-      "field": "Support / Guidance"
-    },
-    {
-      "id": "360G-QuartetCF-A428036",
-      "type": "",
-      "field": ""
-    },
-    {
-      "id": "360G-CIN-78253",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-blf-0031051607",
-      "type": "Charity",
-      "field": "Health"
-    },
-    {
-      "id": "360G-EssexCF-A452086",
-      "type": "Community Group",
-      "field": "Support / Guidance"
-    },
-    {
-      "id": "360G-EssexCF-A474145",
-      "type": "Community Group",
-      "field": "Support / Guidance"
-    },
-    {
-      "id": "360G-EssexCF-A467903",
-      "type": "",
-      "field": ""
-    },
-    {
-      "id": "360G-EssexCF-A439114",
-      "type": "",
-      "field": ""
-    },
-    {
-      "id": "360G-COOPGROUP-1602",
-      "type": "",
-      "field": ""
-    },
-    {
-      "id": "360G-EssexCF-A426809",
-      "type": "Community Group",
-      "field": "Support / Guidance"
-    },
-    {
-      "id": "360G-COOPGROUP-3127",
-      "type": "",
-      "field": ""
-    },
-    {
-      "id": "360G-EFF-16-2028",
-      "type": "Charity",
-      "field": "Culture / Art"
-    },
-    {
-      "id": "360G-CIN-76225",
-      "type": "Charity",
-      "field": "Culture / Art"
-    },
-    {
-      "id": "360G-LBFEW-114066",
-      "type": "Non charitable unincorporated organisation",
-      "field": "Support / Guidance"
-    },
-    {
-      "id": "360G-QuartetCF-A450246",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-blf-0031006792",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-CIN-76256",
-      "type": "Charity",
-      "field": "Community / Social activities"
-    },
-    {
-      "id": "360G-CIN-79249",
-      "type": "Non charitable unincorporated organisation",
-      "field": "Training / Exercise"
-    },
-    {
-      "id": "360G-bulldogtrust-2015-16-03",
-      "type": "Charity",
-      "field": "Culture / Art"
-    },
-    {
-      "id": "360G-SCVO-a0gb000000QAM2gAAH",
-      "type": "Charity",
-      "field": "Accessibility"
-    },
-    {
-      "id": "360G-blf-0031044808",
-      "type": "Company / Mutual Society",
-      "field": "Community / Social activities"
-    }
+      {
+          "id": "360G-blf-0031032587",
+          "name": "none",
+          "type": "Public Sector",
+          "field": "Accessibility"
+      },
+      {
+          "id": "360G-blf-0031029486",
+          "name": "none",
+          "type": "Non charitable unincorporated organisation",
+          "field": "Accessibility"
+      },
+      {
+          "id": "360G-SCVO-a0gb000000QAM2gAAH",
+          "name": "none",
+          "type": "Charity",
+          "field": "Accessibility"
+      },
+      {
+          "id": "360G-blf-0031029632",
+          "name": "Turton Tower Kitchen Garden Restoration Group",
+          "type": "Non charitable unincorporated organisation",
+          "field": "Accessibility"
+      },
+      {
+          "id": "360G-blf-0031024973",
+          "name": "Welney Residents Rec and Green Spaces User Group (RUG)",
+          "type": "Non charitable unincorporated organisation",
+          "field": "Accessibility"
+      },
+      {
+          "id": "360G-blf-0031030589",
+          "name": "Grenoside Community Association (GB-CHC-1160198)",
+          "type": "Charity",
+          "field": "Accessibility"
+      },
+      {
+          "id": "360G-blf-0031045553",
+          "name": "Kirkheaton Community Centre (GB-CHC-1163247)",
+          "type": "Charity",
+          "field": "Accessibility"
+      },
+      {
+          "id": "360G-blf-0031022827",
+          "name": "Charmouth Village Hall (GB-CHC-1052279)",
+          "type": "Charity",
+          "field": "Accessibility"
+      },
+      {
+          "id": "360G-blf-0031025651",
+          "name": "Friends of Victoria Park",
+          "type": "Non charitable unincorporated organisation",
+          "field": "Accessibility"
+      },
+      {
+          "id": "360G-blf-0031053611",
+          "name": "St Breward AFC",
+          "type": "Non charitable unincorporated organisation",
+          "field": "Accessibility"
+      },
+      {
+          "id": "360G-EssexCF-A435780",
+          "name": "Berden Village Hall (GB-CHC-1063800)",
+          "type": "Charity",
+          "field": "Accessibility"
+      },
+      {
+          "id": "360G-blf-0031039953",
+          "name": "none",
+          "type": "CIC",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-blf-0031049688",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-QuartetCF-A435987",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-ClothworkersFdn-201700179",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-OCF-A467300",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-blf-0031031305",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-EssexCF-A413879",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-blf-0031038066",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-ocf-a061600000lx9yn",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-ocf-a061600000kOU6N",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-blf-0031040314",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-OCF-A439742",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-blf-0031040883",
+          "name": "none",
+          "type": "Non charitable unincorporated organisation",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-blf-0031040935",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-blf-0031032656",
+          "name": "none",
+          "type": "Public Sector",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-blf-0031023832",
+          "name": "none",
+          "type": "Company / Mutual Society",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-EssexCF-A476535",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-EssexCF-A467291",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-EssexCF-A442475",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-EssexCF-A432767",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-EssexCF-A427365",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-EssexCF-A422983",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-QuartetCF-A470394",
+          "name": "none",
+          "type": "Community Group",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-SomersetCF-A411724",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-SomersetCF-A421543",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-ocf-a06G000000Stzec",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-ocf-a06G000000bceqz",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-ocf-a061600000gCjC1",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-EssexCF-A436276",
+          "name": "none",
+          "type": "Community Group",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-CIN-78253",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-QuartetCF-A450246",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-blf-0031006792",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-CIN-76256",
+          "name": "none",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-blf-0031044808",
+          "name": "none",
+          "type": "Company / Mutual Society",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-QuartetCF-A467998",
+          "name": "Bath Area Play Project (GB-CHC-1013897)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-blf-0031051590",
+          "name": "The Movement for Non-Mobile Children (Whizz Kidz)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-OCF-A466223",
+          "name": "Bladon Methodist Church",
+          "type": "Community Group",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-QuartetCF-A468444",
+          "name": "Zion Bristol (GB-COH-07577393)",
+          "type": "Community Group",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-trafford-SB1818",
+          "name": "Space Cadet Journey",
+          "type": "Profit for Purpose Business",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-CIN-77768",
+          "name": "Woodvale & Ainsdale Community Association",
+          "type": "Community Group",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-EFF-17-2201",
+          "name": "Playing Out C.I.C",
+          "type": "CIC",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-ocf-a061600000hImBf",
+          "name": "Dovecote Voluntary Parent Committee",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-QuartetCF-A449376",
+          "name": "Windmill Hill City Farm (GB-COH-01409415)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-SomersetCF-A412118",
+          "name": "Westfield United Reformed Church (GB-CHC-1131463)",
+          "type": "Church",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-EssexCF-A471905",
+          "name": "Kids Inspire (GB-COH-06380082)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-blf-0031022428",
+          "name": "SFICE (GB-CHC-1155645)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-blf-0031021798",
+          "name": "Friends of Burnage Library Limited (GB-CHC-1158817)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-blf-0031022173",
+          "name": "Play Torbay (GB-CHC-1137551)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-blf-0031044484",
+          "name": "Tyne Gateway Trust (GB-CHC-1144453)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-HeartofEnglandCF-A438058",
+          "name": "WATCH Ltd (GB-COH-03548462)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-QuartetCF-A460279",
+          "name": "BREAD (GB-COH-08219367)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-traffordhousingtrust-STA15030",
+          "name": "Friends of Victoria Park",
+          "type": "Community Group",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-EssexCF-A435466",
+          "name": "Kids Inspire (GB-COH-06380082)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-blf-0031006389",
+          "name": "Friends of Baxter Park (GB-SC-SC037064)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-blf-0031037931",
+          "name": "Horrabridge Parish Council",
+          "type": "Non charitable unincorporated organisation",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-OCF-A449866",
+          "name": "Oxford Hub (GB-CHC-1122328)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-QuartetCF-A462918",
+          "name": "Southside Family Project (GB-COH-03368679)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-OCF-A444426",
+          "name": "Finstock Village Hall (GB-CHC-279171)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-ocf-a061600000h2rC4",
+          "name": "Oxfordshire Autistic Society for Information an",
+          "type": "Charity",
+          "field": "Community / Social activitie"
+      },
+      {
+          "id": "360G-QuartetCF-A454020",
+          "name": "Windmill Hill City Farm (GB-COH-01409415)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-RST-52",
+          "name": "Bannerman Road Community School PTA (GB-CHC-1173205)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-blf-0031021436",
+          "name": "Kingswood Early Years Centre",
+          "type": "School",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-CFSurrey-A408939",
+          "name": "The Boileroom Originate CIC",
+          "type": "CIC",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-SCVO-a0gb00000127f8sAAA",
+          "name": "Lanarkshire Deaf Club (GB-SC-SC036628)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-CFSurrey-A430425",
+          "name": "Surrey Clubs for Young People (GB-CHC-30513)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-EssexCF-A473961",
+          "name": "Achievement Through Football",
+          "type": "Community Group",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-ocf-a061600000iXbXj",
+          "name": "Oxfordshire Autistic Society for Information an",
+          "type": "Charity",
+          "field": "Community / Social activitie"
+      },
+      {
+          "id": "360G-QuartetCF-A436818",
+          "name": "Southmead Community Association (GB-CHC-201099)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-QuartetCF-A462495",
+          "name": "Bath City Farm (GB-COH-03112751)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-EssexCF-A447711",
+          "name": "St Stephen's Community Trust (GB-CHC-1143746)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-ocf-a061600000k01sa",
+          "name": "Hub Ventures",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-QuartetCF-A406444",
+          "name": "Lawrence Weston Community Farm (GB-COH-03040752)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-ptc-gr32",
+          "name": "Windmill Hill City Farm (GB-COH-01409415)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-blf-0031038111",
+          "name": "St David Haigh and Aspull CofE Primary School",
+          "type": "School",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-EssexCF-A463504",
+          "name": "Villiers Park Educational Trust (GB-CHC-225920)",
+          "type": "Charity",
+          "field": "Community / Social activities"
+      },
+      {
+          "id": "360G-QuartetCF-A466423",
+          "name": "none",
+          "type": "Charity",
+          "field": "Culture / Art"
+      },
+      {
+          "id": "360G-blf-0031026389",
+          "name": "none",
+          "type": "Non charitable unincorporated organisation",
+          "field": "Culture / Art"
+      },
+      {
+          "id": "360G-OCF-A439851",
+          "name": "none",
+          "type": "Community Group",
+          "field": "Culture / Art"
+      },
+      {
+          "id": "360G-QuartetCF-A415402",
+          "name": "none",
+          "type": "Charity",
+          "field": "Culture / Art"
+      },
+      {
+          "id": "360G-QuartetCF-A471418",
+          "name": "none",
+          "type": "Charity",
+          "field": "Culture / Art"
+      },
+      {
+          "id": "360G-EFF-16-2028",
+          "name": "none",
+          "type": "Charity",
+          "field": "Culture / Art"
+      },
+      {
+          "id": "360G-CIN-76225",
+          "name": "none",
+          "type": "Charity",
+          "field": "Culture / Art"
+      },
+      {
+          "id": "360G-bulldogtrust-2015-16-03",
+          "name": "none",
+          "type": "Charity",
+          "field": "Culture / Art"
+      },
+      {
+          "id": "360G-blf-0031040040",
+          "name": "Licketyspit Limited (GB-SC-SCO35154)",
+          "type": "Charity",
+          "field": "Culture / Art"
+      },
+      {
+          "id": "360G-QuartetCF-A436118",
+          "name": "Travelling Light Theatre Company (GB-COH-02539087)",
+          "type": "Charity",
+          "field": "Culture / Art"
+      },
+      {
+          "id": "360G-ocf-a061600000iXdoA",
+          "name": "Chipping Norton Literary Festival (360G-ocf-org: 1152866)",
+          "type": "Charity",
+          "field": "Culture / Art"
+      },
+      {
+          "id": "360G-HeartofEnglandCF-A417037",
+          "name": "WATCH Ltd (GB-COH-03548462)",
+          "type": "Charity",
+          "field": "Culture / Art"
+      },
+      {
+          "id": "360G-blf-0031048036",
+          "name": "The Flying Gorillas (GB-CHC-1089339)",
+          "type": "Charity",
+          "field": "Culture / Art"
+      },
+      {
+          "id": "360G-blf-0031022824",
+          "name": "Ribbon Academy Trust (GB-COH-08132353)",
+          "type": "Company / Mutual Society",
+          "field": "Culture / Art"
+      },
+      {
+          "id": "360G-EssexCF-A465677",
+          "name": "London Bus Theatre Company",
+          "type": "CIC",
+          "field": "Culture / Art"
+      },
+      {
+          "id": "360G-Wellcome-107301_Z_15_Z",
+          "name": "Theatre-Rites",
+          "type": "Charity",
+          "field": "Culture / Art"
+      },
+      {
+          "id": "360G-QuartetCF-A438640",
+          "name": "Bristol Music Trust (GB-CHC-1140898)",
+          "type": "Charity",
+          "field": "Culture / Art"
+      },
+      {
+          "id": "360G-Wellcome-201006_Z_16_Z",
+          "name": "Polka Theatre",
+          "type": "Charity",
+          "field": "Culture / Art"
+      },
+      {
+          "id": "360G-EssexCF-A449770",
+          "name": "London Bus Theatre Company",
+          "type": "CIC",
+          "field": "Culture / Art"
+      },
+      {
+          "id": "360G-CFSurrey-A408930",
+          "name": "The Boileroom Originate CIC",
+          "type": "CIC",
+          "field": "Culture / Art"
+      },
+      {
+          "id": "360G-EssexCF-A428100",
+          "name": "none",
+          "type": "Charity",
+          "field": "Education"
+      },
+      {
+          "id": "360G-EFF-17-1650",
+          "name": "none",
+          "type": "Grassroots organisation",
+          "field": "Education"
+      },
+      {
+          "id": "360G-CheshireCF-A447718",
+          "name": "none",
+          "type": "Charity",
+          "field": "Education"
+      },
+      {
+          "id": "360G-SomersetCF-A414334",
+          "name": "none",
+          "type": "Charity",
+          "field": "Education"
+      },
+      {
+          "id": "360G-blf-0031031894",
+          "name": "Caldicotes Primary Academy",
+          "type": "School",
+          "field": "Education"
+      },
+      {
+          "id": "360G-EFF-15-2236",
+          "name": "The People and Work Unit",
+          "type": "Charity",
+          "field": "Education"
+      },
+      {
+          "id": "360G-EssexCF-A466570",
+          "name": "Public Service Broadcasting Trust Limited (GB-CHC-298643)",
+          "type": "Nonprofit Organisation",
+          "field": "Education"
+      },
+      {
+          "id": "360G-blf-0031054129",
+          "name": "St Nicholas C E School",
+          "type": "School",
+          "field": "Education"
+      },
+      {
+          "id": "360G-ocf-a061600000lvB18",
+          "name": "Bookfeast (360G-ocf-org: 1109268)",
+          "type": "Charity",
+          "field": "Education"
+      },
+      {
+          "id": "360G-blf-0031038379",
+          "name": "Malton School",
+          "type": "School",
+          "field": "Education"
+      },
+      {
+          "id": "360G-EssexCF-A466493",
+          "name": "Teen Talk (Harwich) (GB-COH-00757756)",
+          "type": "Charity",
+          "field": "Education"
+      },
+      {
+          "id": "360G-QuartetCF-A461113",
+          "name": "St Werburghs City Farm (GB-CHC-297091)",
+          "type": "Charity",
+          "field": "Education"
+      },
+      {
+          "id": "360G-EssexCF-A465560",
+          "name": "Cirdan Sailing Trust (GB-COH-04365550)",
+          "type": "Charity",
+          "field": "Education"
+      },
+      {
+          "id": "360G-blf-0031037926",
+          "name": "none",
+          "type": "Charity",
+          "field": "Health / Research"
+      },
+      {
+          "id": "360G-ocf-a06G000000SuWur",
+          "name": "none",
+          "type": "Charity",
+          "field": "Health / Research"
+      },
+      {
+          "id": "360G-blf-0031051607",
+          "name": "none",
+          "type": "Charity",
+          "field": "Health / Research"
+      },
+      {
+          "id": "360G-Wellcome-206764_Z_17_Z",
+          "name": "Biomedical Research & Training Institute",
+          "type": "Research Institute",
+          "field": "Health / Research"
+      },
+      {
+          "id": "360G-blf-0031025386",
+          "name": "Hornsea Nursery School",
+          "type": "School",
+          "field": "Health / Research"
+      },
+      {
+          "id": "360G-QuartetCF-A458688",
+          "name": "Bridge Foundation (GB-CHC-1073759)",
+          "type": "Charity",
+          "field": "Health / Research"
+      },
+      {
+          "id": "360G-QuartetCF-A448491",
+          "name": "Bridge Foundation (GB-CHC-1073759)",
+          "type": "Charity",
+          "field": "Health / Research"
+      },
+      {
+          "id": "360G-QuartetCF-A418802",
+          "name": "Bridge Foundation (GB-CHC-1073759)",
+          "type": "Charity",
+          "field": "Health / Research"
+      },
+      {
+          "id": "360G-Wellcome-206008_Z_16_Z",
+          "name": "University of Oxford",
+          "type": "Research Institute",
+          "field": "Health / Research"
+      },
+      {
+          "id": "360G-Wellcome-108453_Z_15_Z",
+          "name": "University College London",
+          "type": "Research Institute",
+          "field": "Health / Research"
+      },
+      {
+          "id": "360G-Wellcome-103902_Z_14_Z",
+          "name": "University Hospitals Bristol NHS Foundation Trust",
+          "type": "Foundation trust",
+          "field": "Health / Research"
+      },
+      {
+          "id": "360G-Wellcome-201511_Z_16_Z",
+          "name": "Institute of Cancer Research",
+          "type": "Research Institute",
+          "field": "Health / Research"
+      },
+      {
+          "id": "360G-Wellcome-200901_Z_16_Z",
+          "name": "London School of Hygiene & Tropical Medicine",
+          "type": "Research Institute",
+          "field": "Health / Research"
+      },
+      {
+          "id": "360G-Wellcome-107740_Z_15_Z",
+          "name": "Mali Service Centre",
+          "type": "Research Institute",
+          "field": "Health / Research"
+      },
+      {
+          "id": "360G-Wellcome-110311_Z_15_Z",
+          "name": "London School of Hygiene & Tropical Medicine",
+          "type": "Research Institute",
+          "field": "Health / Research"
+      },
+      {
+          "id": "360G-RST-71",
+          "name": "Sustrans (GB-CHC-326550)",
+          "type": "Charity",
+          "field": "Health / Research"
+      },
+      {
+          "id": "360G-RST-14",
+          "name": "University of South Wales (GB-CHC-1140312)",
+          "type": "Charity",
+          "field": "Health / Research"
+      },
+      {
+          "id": "360G-blf-0031023675",
+          "name": "International Prevention-Intervention",
+          "type": "Charity",
+          "field": "Safety"
+      },
+      {
+          "id": "360G-phf-28206",
+          "name": "Just for Kids Law (GB-COH-05815338)",
+          "type": "Charity",
+          "field": "Social Justice"
+      },
+      {
+          "id": "360G-blf-0031046363",
+          "name": "none",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EssexCF-A449254",
+          "name": "none",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EssexCF-A461998",
+          "name": "none",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EssexCF-A421397",
+          "name": "none",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EssexCF-A431344",
+          "name": "none",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031051663",
+          "name": "none",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031022163",
+          "name": "none",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-CheshireCF-A458178",
+          "name": "none",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EssexCF-A426580",
+          "name": "none",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-CIN-78567",
+          "name": "none",
+          "type": "Public Sector",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EssexCF-A466506",
+          "name": "none",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-SomersetCF-A413773",
+          "name": "none",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-CIN-79328",
+          "name": "none",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031023882",
+          "name": "none",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-CIN-72785",
+          "name": "none",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EssexCF-A452086",
+          "name": "none",
+          "type": "Community Group",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EssexCF-A474145",
+          "name": "none",
+          "type": "Community Group",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EssexCF-A426809",
+          "name": "none",
+          "type": "Community Group",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-LBFEW-114066",
+          "name": "none",
+          "type": "Non charitable unincorporated organisation",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031048792",
+          "name": "Sharing Parenting An Adlerian Approach to Parenting Community Interest Company",
+          "type": "CIC",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EFF-16-3574",
+          "name": "Xplode Magazine (Bolton) (GB-CHC-1155789)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-CR-1007366",
+          "name": "National Survivor User Network (GB-COH-07166851)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031002175",
+          "name": "Kodjo Yenga Trust (GB-CHC-1137842)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031049367",
+          "name": "Heart to Heart Ltd (GB-SC-SC036813)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031005720",
+          "name": "Parent Network Scotland (GB-SC-SC029266)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031041175",
+          "name": "The Children's Family Trust West Midlands (GB-CHC-208607)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EssexCF-A465679",
+          "name": "Open Door Thurrock (GB-COH-05670567)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EFF-15-1742",
+          "name": "Youth Access (GB-CHC-1042121)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031036037",
+          "name": "The Northern Ireland Cancer Fund for Children (GB-NIC-XR29768)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EssexCF-A467786",
+          "name": "Open Door Thurrock (GB-COH-05670567)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EFF-16-1103",
+          "name": "Healthy n Happy Community Development Trust (GB-SC-SC032654)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-QuartetCF-A461405",
+          "name": "Southside Family Project (GB-COH-03368679)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031035711",
+          "name": "Groundwork Northamptonshire (GB-CHC-1114205)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031027008",
+          "name": "New Lodge and Duncairn Community HealthPartnership (GB-NIC-XR61028)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-bulldogtrust-2013-14-09",
+          "name": "Circle Crew for Change (GB-COH-IP031979)",
+          "type": "Community benefit society",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031027006",
+          "name": "Church of Ireland Board for Social Responsibility (GB-CHC-101826)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031036694",
+          "name": "Swindon Mentoring and Self Help Youth Project (GB-CHC-1107900)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031039234",
+          "name": "MindMosaic Counselling and Therapy (GB-SC-SC046721)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-tudortrust-83535",
+          "name": "Downright Special (GB-CHC-1128178)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031039054",
+          "name": "Haven (GB-CHC-1096964)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-LBFEW-115086",
+          "name": "Calderdale Parent and Carers Council (GB-CHC-1109413)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EssexCF-A462284",
+          "name": "Kids Inspire (GB-COH-06380082)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031050370",
+          "name": "Wellies-On Community Interest Company (GB-COH-9863944)",
+          "type": "CIC",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-ocf-a061600000h2qkK",
+          "name": "Home-Start Banbury and Chipping Norton (360G-ocf-org: 1114860)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-CheshireCF-A447720",
+          "name": "Healthbox CIC",
+          "type": "CIC",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-ocf-a061600000jsC7S",
+          "name": "Home-Start Banbury and Chipping Norton (360G-ocf-org: 1114860)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-ocf-a061600000jzxBZ",
+          "name": "Oxford Parent Infant Project (OXPIP) (360G-ocf-org: 1109956)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031050225",
+          "name": "Imara CIO (GB-CHC-1170331)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031028426",
+          "name": "K.I.N.D (GB-CHC-518985)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031052307",
+          "name": "Pause Creating Space for Change (GB-CHC-1170310)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031033113",
+          "name": "Leeds Women's Aid (GB-CHC-1005884)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031029843",
+          "name": "Ashiana Sheffield (GB-CHC-1120401)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031035005",
+          "name": "Home-Start Glasgow North (GB-SC-SC032736)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031048427",
+          "name": "Nottingham Central Womens Aid (GB-CHC-1146410)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-blf-0031027770",
+          "name": "Eating Matters (GB-CHC-1003974)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EssexCF-A458623",
+          "name": "Teen Talk (Harwich) (GB-COH-00757756)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EssexCF-A436724",
+          "name": "Teen Talk (Harwich) (GB-COH-00757756)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EssexCF-A430058",
+          "name": "Teen Talk (Harwich) (GB-COH-00757756)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EssexCF-A458350",
+          "name": "Teen Talk (Harwich) (GB-COH-00757756)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-QuartetCF-A413859",
+          "name": "Freedom Project CIC (GB-COH-07270622)",
+          "type": "CIC",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EssexCF-A421000",
+          "name": "Teen Talk (Harwich) (GB-COH-00757756)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EssexCF-A473442",
+          "name": "Teen Talk (Harwich) (GB-COH-00757756)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-phf-29239",
+          "name": "YoungMinds Trust (GB-COH-2780643)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-QuartetCF-A465260",
+          "name": "Bridge Foundation (GB-CHC-1073759)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-QuartetCF-A404935",
+          "name": "Bridge Foundation (GB-CHC-1073759)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-QuartetCF-A476509",
+          "name": "Bridge Foundation (GB-CHC-1073759)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-QuartetCF-A430946",
+          "name": "Bridge Foundation (GB-CHC-1073759)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-QuartetCF-A404846",
+          "name": "Bridge Foundation (GB-CHC-1073759)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-CheshireCF-A450787",
+          "name": "Autism Networks (GB-CHC-1141889)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-QuartetCF-A446131",
+          "name": "Bridge Foundation (GB-CHC-1073759)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-QuartetCF-A461378",
+          "name": "Off The Record - BANES (GB-COH-03643586)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-LondonCouncils-8268",
+          "name": "SignHealth (GB-CHC-1011056)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "(360G-OCF-A468819",
+          "name": "Thames Valley Partnership (GB-COH-02881664)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-OCF-A439453",
+          "name": "Oxford Deaf and Hard of Hearing Centre (GB-COH-04802357)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-QuartetCF-A453339",
+          "name": "Bluebell Care Trust (GB-COH-07101628)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-QuartetCF-A454754",
+          "name": "Bridge Foundation (GB-CHC-1073759)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EssexCF-A471926",
+          "name": "Rainbow Services (GB-COH-03826440)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-SomersetCF-A412799",
+          "name": "The Balsam Centre (GB-COH-03898170)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-HeartofEnglandCF-A441085",
+          "name": "Aptitude Organisation CIC (GB-COH-10565933)",
+          "type": "CIC",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EssexCF-A464398",
+          "name": "SOS Rape Crisis (GB-CHC-1143021)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-QuartetCF-A431039",
+          "name": "Bristol Refugee Rights (GB-COH-05669208)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EssexCF-A466855",
+          "name": "SOS Rape Crisis (GB-CHC-1143021)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-EssexCF-A449356",
+          "name": "SOS Rape Crisis (GB-CHC-1143021)",
+          "type": "Charity",
+          "field": "Support / Guidance"
+      },
+      {
+          "id": "360G-COOPGROUP-11002",
+          "name": "none",
+          "type": "Charity",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-blf-0031028239",
+          "name": "none",
+          "type": "Charity",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-blf-0031045095",
+          "name": "none",
+          "type": "Non charitable unincorporated organisation",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-ocf-a061600000fSvIn",
+          "name": "none",
+          "type": "Charity",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-blf-0031050615",
+          "name": "none",
+          "type": "Charity",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-MasonicCharitableFdn-SG000042",
+          "name": "none",
+          "type": "Charitable Foundation",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-blf-0031037108",
+          "name": "none",
+          "type": "Charity",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-RSMCT-006b000000QBXRT",
+          "name": "none",
+          "type": "Charity",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-RSMCT-006b000000C1usQ",
+          "name": "none",
+          "type": "Charity",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-QuartetCF-A430413",
+          "name": "none",
+          "type": "Charity",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-SomersetCF-A406829",
+          "name": "none",
+          "type": "Community Group",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-CIN-79249",
+          "name": "none",
+          "type": "Non charitable unincorporated organisation",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-ocf-a061600000iWbgA",
+          "name": "Dovecote Voluntary Parent Committee",
+          "type": "Charity",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-blf-0031029171",
+          "name": "ClubWorld Sports Limited (GB-SC-SC043300)",
+          "type": "Charity",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-blf-0031048164",
+          "name": "Hemingford Grey Primary School",
+          "type": "School",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-QuartetCF-A476758",
+          "name": "Access Sport (GB-CHC-1156819)",
+          "type": "Charity",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-QuartetCF-A453380",
+          "name": "Access Sport (GB-CHC-1156819)",
+          "type": "Charity",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-blf-0031026009",
+          "name": "Parklands Community Primary School",
+          "type": "School",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-QuartetCF-A464655",
+          "name": "Access Sport (GB-CHC-1156819)",
+          "type": "Charity",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-tuixen-a022000000lGn6rAAC",
+          "name": "Whizz-Kidz (GB-CHC-802872)",
+          "type": "Charity",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-tuixen-a0220000013AhGkAAK",
+          "name": "Whizz-Kidz (GB-CHC-802872)",
+          "type": "Charity",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-tuixen-a0220000013AhGzAAK",
+          "name": "Whizz-Kidz (GB-CHC-802872)",
+          "type": "Charity",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-blf-0031048155",
+          "name": "Fressingfield Church of England Voluntary Controlled Primary School",
+          "type": "School",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-blf-0031036639",
+          "name": "The Friends of Indigos Go Wild",
+          "type": "Charity",
+          "field": "Training / Exercise"
+      },
+      {
+          "id": "360G-QuartetCF-A465261",
+          "name": "none",
+          "type": "",
+          "field": ""
+      },
+      {
+          "id": "360G-QuartetCF-A473508",
+          "name": "none",
+          "type": "",
+          "field": ""
+      },
+      {
+          "id": "360G-CFSurrey-A386312",
+          "name": "none",
+          "type": "",
+          "field": ""
+      },
+      {
+          "id": "360G-EssexCF-A460524",
+          "name": "none",
+          "type": "",
+          "field": ""
+      },
+      {
+          "id": "360G-EssexCF-A427370",
+          "name": "none",
+          "type": "",
+          "field": ""
+      },
+      {
+          "id": "360G-EssexCF-A466302",
+          "name": "none",
+          "type": "",
+          "field": ""
+      },
+      {
+          "id": "360G-EssexCF-A424987",
+          "name": "none",
+          "type": "",
+          "field": ""
+      },
+      {
+          "id": "360G-EssexCF-A440001",
+          "name": "none",
+          "type": "",
+          "field": ""
+      },
+      {
+          "id": "360G-EssexCF-A439489",
+          "name": "none",
+          "type": "",
+          "field": ""
+      },
+      {
+          "id": "360G-SCVO-a11b000000EtkDNAAZ",
+          "name": "none",
+          "type": "",
+          "field": ""
+      },
+      {
+          "id": "360G-CFTyneWearNland-161418",
+          "name": "none",
+          "type": "",
+          "field": ""
+      },
+      {
+          "id": "360G-COOPGROUP-7943",
+          "name": "none",
+          "type": "",
+          "field": ""
+      },
+      {
+          "id": "360G-QuartetCF-A428036",
+          "name": "none",
+          "type": "",
+          "field": ""
+      },
+      {
+          "id": "360G-EssexCF-A467903",
+          "name": "none",
+          "type": "",
+          "field": ""
+      },
+      {
+          "id": "360G-EssexCF-A439114",
+          "name": "none",
+          "type": "",
+          "field": ""
+      },
+      {
+          "id": "360G-COOPGROUP-1602",
+          "name": "none",
+          "type": "",
+          "field": ""
+      },
+      {
+          "id": "360G-COOPGROUP-3127",
+          "name": "none",
+          "type": "",
+          "field": ""
+      },
+      {
+          "id": "360G-RST-17",
+          "name": "University College London (GB-EDU-133902)",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-COOPGROUP-9416",
+          "name": "Woodhouse & District Community Forum",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-blf-0031040552",
+          "name": "Fuse Fm Ballymoney",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-ocf-a061600000fwz8k",
+          "name": "Bookfeast",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-ocf-a06G000000fQmAZ",
+          "name": "Bookfeast",
+          "type": "Charity",
+          "field": ""
+      },
+      {
+          "id": "360G-blf-0031035954",
+          "name": "The Friends of Waterlow Park",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-EssexCF-A463575",
+          "name": "Holdfast Credit Union Limited",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-phf-30064",
+          "name": "Circles South West (GB-CHC-1138726)",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-Wellcome-106408_Z_14_Z",
+          "name": "Edinburgh International Science Festival",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-OCF-A451707",
+          "name": "Abingdon Damascus Youth Project (GB-CHC-1098966)",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-Wellcome-108858_Z_15_Z",
+          "name": "University of Manchester",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-QuartetCF-A448628",
+          "name": "North Bristol Advice Centre (GB-COH-03449469)",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-Wellcome-106992_Z_15_Z",
+          "name": "James Films Ltd (360G-Wellcome-ORG...)",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-OCF-A456781",
+          "name": "African Families in the UK (AFiUK) CIC (360G-OCF-ACC833333)",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-QuartetCF-A470395",
+          "name": "Lifeskills (GB-CHC-1080747)",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-CFSurrey-A400110",
+          "name": "Runnymede Rockets BMX Club",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-OCF-A439619",
+          "name": "OCVA (GB-COH-05363946)",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-Wellcome-104916_Z_14_Z",
+          "name": "University of Edinburgh",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-SCVO-a11b000000NBn7OAAT",
+          "name": "Women's Aid South Lanarkshire and East Renfrews... (GB-SC-SC041781)",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-Wellcome-108518_Z_15_Z",
+          "name": "University of York",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-CFSurrey-A389422",
+          "name": "Runnymede and Spelthorne CAB (GB-CHC-1128180)",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-CFSurrey-A415501",
+          "name": "Catalyst (GB-COH-03689561)",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-Wellcome-208438_Z_17_Z",
+          "name": "Historic England",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-QuartetCF-A417749",
+          "name": "Windmill Hill Community Association (GB-CHC-1066925)",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-OCF-A456784",
+          "name": "Soldiers of Oxfordshire Trust (SOFO) (GB-COH-07155027)",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-QuartetCF-A467012",
+          "name": "Sea Mills Together",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-SCVO-a0gb000000QAVeGAAX",
+          "name": "Whiteinch Transformation (GB-SC-SC028928)",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-SCVO-a0gb000000QAf2NAAT",
+          "name": "Ruchazie Parish Church",
+          "type": "none",
+          "field": ""
+      },
+      {
+          "id": "360G-EssexCF-A395244",
+          "name": "Salvation Army Housing Association (GB-CHC-15210R)",
+          "type": "none",
+          "field": ""
+      }
   ]
 }

@@ -46,7 +46,7 @@
         const color = d3.scale.category20();
         const format = this.format;
         // const colorPallete = this.colorPallete;
-        const colorPallete = this.state.recipientTypes;
+        const colorPallete = this.state.charityTypes;
         // TODO: Set color dynamically
         const zoom = d3.behavior.zoom()
           .translate([0, 0])
@@ -128,10 +128,10 @@
           .attr('id', function (d) { return d.name; })
           .style('fill', (d, index) => {
             if (d.type) {
-              const charity = colorPallete.find(charity => charity.name === d.type);
-              charityTypes.set(d.type, color(charity.index));
+              const charityIndex = colorPallete.indexOf(d.type);
+              charityTypes.set(d.type, color(charityIndex));
 
-              return d.color = color(charity.index);
+              return d.color = color(charityIndex);
             } else if (d.recipients) {
               // return d.color = color(d.name.replace(/ .*/, ''));
               const funderIndex = this.mapToRange(d.value, 0, 11871856, colorPallete.length, colorPallete.length + 27);
@@ -146,7 +146,7 @@
         // Set color dynamically
         charityTypes.forEach((value, key) => {
           // console.log(value, key);
-          store.setRecipientColorAction(key.toString(), value.toString());
+          store.setRecipientColorAction(key.toString(), value.toString(), colorPallete.indexOf(key.toString()));
         });
 
         node.selectAll('rect')
@@ -185,7 +185,9 @@
       format: function (d) { return this.formatNumber(d) + ' £'; },
       zoomed: function () { },
       formatData: function (data) {
-        const funders = data.grants.reduce((acc, grant) => {
+        const includedGrants = data.grants.filter(grant => extraData.exclude.indexOf(grant.id) < 0);
+
+        const funders = includedGrants.reduce((acc, grant) => {
           acc[grant.fundingOrganization[0].id] = {
             name: grant.fundingOrganization[0].name,
             logo: grant.dataset.publisher.logo,
@@ -202,7 +204,7 @@
 
         store.setFundersAction(fundersList);
 
-        const fundeds = data.grants.reduce((acc, grant) => {
+        const fundeds = includedGrants.reduce((acc, grant) => {
           acc[grant.recipientOrganization[0].id] = {
             name: grant.recipientOrganization[0].name,
             website: grant.recipientOrganization[0].url,

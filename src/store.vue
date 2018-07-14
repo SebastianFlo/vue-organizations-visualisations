@@ -20,41 +20,36 @@
       rawData: {},
       formattedData: {},
       recipientTypes: [
-        {
-          color: '#ffbb78',
-          name: 'Charity',
-          index: 0
-        },
-        {
-          color: '#2ca02c',
-          name: 'Community Group',
-          index: 1
-        },
-        {
-          color: '#98df8a',
-          name: 'Company / Mutual Society',
-          index: 2
-        },
-        {
-          color: '#d62728',
-          name: 'Public Sector',
-          index: 3
-        },
-        {
-          color: '#ff9896',
-          name: 'Non charitable unincorporated organisation',
-          index: 4
-        },
-        {
-          color: '#9467bd',
-          name: 'Grassroots organisation',
-          index: 5
-        },
-        {
-          color: '#c5b0d5',
-          name: 'CIC',
-          index: 6
-        },
+        { name: 'Charity' },
+        { name: 'Church' },
+        { name: 'CIC' },
+        { name: 'Community benefit society' },
+        { name: 'Community Group' },
+        { name: 'Company / Mutual Society' },
+        { name: 'Foundation trust' },
+        { name: 'Grassroots organisation' },
+        { name: 'Non charitable unincorporated organisation' },
+        { name: 'Nonprofit Organisation' },
+        { name: 'Profit for Purpose Business' },
+        { name: 'Public Sector' },
+        { name: 'Research Institute' },
+        { name: 'School' },
+      ],
+      charityTypes: [
+        'Charity',
+        'Church',
+        'CIC',
+        'Community benefit society',
+        'Community Group',
+        'Company / Mutual Society',
+        'Foundation trust',
+        'Grassroots organisation',
+        'Non charitable unincorporated organisation',
+        'Nonprofit Organisation',
+        'Profit for Purpose Business',
+        'Public Sector',
+        'Research Institute',
+        'School',
       ]
     },
     setFundersAction(funders) {
@@ -89,7 +84,7 @@
       this.state.rawData = data;
     },
 
-    setRecipientColorAction(name, color) {
+    setRecipientColorAction(name, color, index) {
       if (this.debug.setRecipientColorAction) {
         console.log('setRecipientColorAction triggered with', name, color);
       }
@@ -97,6 +92,7 @@
       const newColors = this.state.recipientTypes.map(recipient => {
         if (recipient.name === name) {
           recipient.color = color;
+          recipient.index = index;
         };
 
         return recipient;

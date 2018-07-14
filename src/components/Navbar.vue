@@ -48,6 +48,9 @@
               :fields="fields"
               @row-clicked="search"
               >
+              <template slot="name" slot-scope="row">
+                  <span v-bind:style="{ 'color': row.item.color }"> {{ row.item.name }}</span>
+              </template>
               <template slot="value" slot-scope="row">
                   {{ formatCurrency(row.item.value) }}
               </template>
@@ -72,7 +75,8 @@
         defaultOrganisation: 'The Wellcome Trust',
         funderFilter: '',
         recipientFilter: '',
-        fields: [{
+        fields: [
+        {
           key: 'name',
           class: 'gdv-hover'
         },
@@ -109,7 +113,8 @@
       orderedRecipients: function () {
         const filteredRecipient = this.state.recipients.map(recipient => ({
           name: recipient.name,
-          value: recipient.value
+          value: recipient.value,
+          color: recipient.color
         }));
         return filteredRecipient;
         // return _.orderBy(this.state.recipients, 'value', 'desc')
