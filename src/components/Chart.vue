@@ -77,7 +77,7 @@
             'translate(' + zoom.translate() + ')' +
             'scale(' + zoom.scale() + ')'
           );
-          // console.log(zoom.translate(), zoom.scale());
+          console.log(zoom.translate(), zoom.scale());
         }
 
         this.zoomed = zoomed;
@@ -179,6 +179,7 @@
           .style('opacity', 0.5)
           .text(function(d) { return d.name; });
 
+        this.zoomFull();
         // console.log('matchLess', this.matchLess);
       },
       zoom: function () { },
@@ -352,8 +353,8 @@
         this.interpolateZoom([view.x, view.y], view.k);
       },
       zoomFull: function () {
-        const translate = [792.9501717238787, 21.866219449124685];
-        const scale = 0.2264789279589534;
+        const translate = [659.9932142084058, 99.55105973555226];
+        const scale = 0.20837957399983806;
 
         this.svg
           .transition()
