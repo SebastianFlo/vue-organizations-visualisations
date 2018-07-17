@@ -162,4 +162,13 @@
   .gdv-hover {
     cursor: pointer;
   }
+
+  .legend rect {
+    fill:white;
+    opacity:0.8;
+  }
+
+  .legend text {
+    cursor: default;
+  }
 </style>

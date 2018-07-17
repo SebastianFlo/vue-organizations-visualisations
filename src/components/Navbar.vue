@@ -13,11 +13,11 @@
 
       <b-navbar-nav class="ml-auto">
 
-        <b-nav-item-dropdown text="Recipient Types" right>
+        <!-- <b-nav-item-dropdown text="Recipient Types" right>
           <b-dropdown-item v-for="recipientType in state.recipientTypes" v-bind:key="recipientType.index" class="gdv-no-pointer">
               <div v-bind:style="{ 'color': recipientType.color }">{{ recipientType.name }}</div>
           </b-dropdown-item>
-        </b-nav-item-dropdown>
+        </b-nav-item-dropdown> -->
 
         <b-nav-item-dropdown ref="funderDropdown" id="funderDropdown" text="Funders" right>
             <b-form-input v-model.lazy="funderFilter" placeholder="Type to Search"/>

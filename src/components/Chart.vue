@@ -3,7 +3,10 @@
     <div class='chart-actions'>
       <!-- <button id='zoom_in'>+</button>
       <button id='zoom_out'>-</button> -->
-      <b-button :variant="'outline-success'" id='zoom_full' v-b-tooltip.hover title="Fit to Screen">[ ]</b-button>
+      <b-button :variant="'outline-success'"
+        id='zoom_full'
+        v-b-tooltip.hover
+        title="Fit to Screen">[ ]</b-button>
       <!-- <button id='move_prev'></button>
       <button id='move_next'></button> -->
     </div>
@@ -25,6 +28,7 @@
         },
         height: 3000,
         d3Active: d3.select(null),
+        legendEl: undefined,
         formatNumber: d3.format(',.0f'),
         formatedData: [],
         // debug only
@@ -39,6 +43,7 @@
       console.log('formatted Data', this.formatedData);
 
       this.createChart();
+      this.createLegend();
       this.setupButtons();
     },
     methods: {
@@ -102,6 +107,7 @@
             d.id = i;
             return 'link-' + i;
           })
+          .attr('data-target', function (d) { return d.target.name; })
           .on('mouseover', this.setActive)
           .on('mouseout', this.clearActive);
 
@@ -143,6 +149,11 @@
           .append('title')
           .text(function (d) { return d.name + '\n' + format(d.value); });
 
+        node.selectAll('rect')
+          .filter(function (d) { return d.type })
+          .attr('data-legend', function (d) { return d.type })
+          .attr('data-legend-pos', function (d) { return colorPallete.indexOf(d.type) });
+
         // Set color dynamically
         charityTypes.forEach((value, key) => {
           // console.log(value, key);
@@ -153,34 +164,41 @@
           .on('click', this.zoomToElement);
 
         node.append('text')
-          .filter(function(d) { return d.recipients })
-          .filter(function(d) { return d.dy > 100; })
-          .attr("x", sankey.nodeWidth() + 20)
+          .filter(function (d) { return d.recipients })
+          .filter(function (d) { return d.dy > 100; })
+          .attr('x', sankey.nodeWidth() + 20)
           .attr('y', (sankey.nodeWidth() + 170) / 2)
           .attr('text-anchor', 'start')
-          .attr("transform", "rotate(-65)")
+          .attr('transform', 'rotate(-65)')
           .style('fill', (d, index) => {
-              const funderIndex = this.mapToRange(d.value, 0, 11871856, colorPallete.length, colorPallete.length + 27);
-              return d.color = color(Math.round(funderIndex));
+            const funderIndex = this.mapToRange(d.value, 0, 11871856, colorPallete.length, colorPallete.length + 27);
+            return d.color = color(Math.round(funderIndex));
           })
-          .text(function(d) { return d.name; });
+          .text(function (d) { return d.name; });
 
-          node.append('text')
-          .filter(function(d) { return d.recipients })
-          .filter(function(d) { return d.dy < 100; })
+        node.append('text')
+          .filter(function (d) { return d.recipients })
+          .filter(function (d) { return d.dy < 100; })
           .attr('x', sankey.nodeWidth() - 30)
-          .attr('y', function(d) { return d.y })
+          .attr('y', function (d) { return d.y })
           .attr('text-anchor', 'start')
-          .attr("transform", "rotate(-65)")
+          .attr('transform', 'rotate(-65)')
           .style('fill', (d, index) => {
-              const funderIndex = this.mapToRange(d.value, 0, 11871856, colorPallete.length, colorPallete.length + 27);
-              return d.color = color(Math.round(funderIndex));
+            const funderIndex = this.mapToRange(d.value, 0, 11871856, colorPallete.length, colorPallete.length + 27);
+            return d.color = color(Math.round(funderIndex));
           })
           .style('opacity', 0.5)
-          .text(function(d) { return d.name; });
+          .text(function (d) { return d.name; });
 
         this.zoomFull();
         // console.log('matchLess', this.matchLess);
+      },
+      createLegend: function () {
+        this.legendEl = this.svg.append('g')
+          .attr('class', 'legend')
+          .attr('transform', `translate(${-2 * this.width}, ${(this.height / 2) - 50})`)
+          .style('font-size', '32px')
+          .call(this.generateLegendLib)
       },
       zoom: function () { },
       format: function (d) { return this.formatNumber(d) + ' £'; },
@@ -270,7 +288,7 @@
         traverse.forEach(step => {
           node[step.linkType].forEach(link => {
             remainingNodes.push(link[step.nodeType]);
-            this.highlight_link(link.id, opacity);
+            this.highlight_link('#link-' + link.id, opacity);
           });
 
           while (remainingNodes.length) {
@@ -278,7 +296,7 @@
             remainingNodes.forEach(node => {
               node[step.linkType].forEach(link => {
                 nextNodes.push(link[step.nodeType]);
-                this.highlight_link(link.id, opacity);
+                this.highlight_link('#link-' + link.id, opacity);
               });
             });
             remainingNodes = nextNodes;
@@ -286,7 +304,7 @@
         });
       },
       highlight_link: function (id, opacity) {
-        d3.select('#link-' + id).style('stroke-opacity', opacity);
+        d3.select(id).style('stroke-opacity', opacity);
       },
       zoomToElement: function (d) {
         // if (d3Active.node() === this) return reset();
@@ -416,6 +434,77 @@
       },
       mapToRange(num, in_min, in_max, out_min, out_max) {
         return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+      },
+      generateLegendLib(g) {
+        const setNodeLinksOpacity = this.setNodeLinksOpacity;
+        const formatedData = this.formatedData;
+        const highlight_link = this.highlight_link;
+        const chartSvg = this.svg;
+
+        g.each(function () {
+
+          const g = d3.select(this);
+          let items = {};
+          const svg = d3.select(g.property('nearestViewportElement'));
+          const legendPadding = g.attr('data-style-padding') || 5;
+          const lb = g.selectAll('.legend-box').data([true]);
+          const li = g.selectAll('.legend-items').data([true]);
+
+          lb.enter().append('rect').classed('legend-box', true)
+          li.enter().append('g').classed('legend-items', true)
+
+          svg.selectAll('[data-legend]').each(function () {
+            var self = d3.select(this)
+            items[self.attr('data-legend')] = {
+              pos: self.attr('data-legend-pos') || this.getBBox().y,
+              color: self.attr('data-legend-color') != undefined ? self.attr('data-legend-color') : self.style('fill') != 'none' ? self.style('fill') : self.style('stroke')
+            }
+          })
+
+          items = d3.entries(items).sort(function (a, b) { return a.value.pos - b.value.pos })
+
+
+          li.selectAll('text')
+            .data(items, function (d) { return d.key })
+            .call(function (d) { d.enter().append('text') })
+            .call(function (d) { d.exit().remove() })
+            .attr('y', function (d, i) { return i + 'em' })
+            .attr('x', '1em')
+            .text(function (d) { return d.key; })
+            .on('mouseover', (node, i) => {
+              const rectNodes = svg.selectAll(`rect[data-legend="${node.key}"]`);
+
+              rectNodes[0].forEach((rectNode, i) => {
+                const link = svg.select(`.link[data-target="${rectNode.id}"`)
+                highlight_link('#' + link[0][0].id, 1);
+              });
+            })
+            .on('mouseout', (node, i) => {
+              const rectNodes = svg.selectAll(`rect[data-legend="${node.key}"]`);
+
+              rectNodes[0].forEach((rectNode, i) => {
+                const link = svg.select(`.link[data-target="${rectNode.id}"`)
+                highlight_link('#' + link[0][0].id, 0.2);
+              });
+            });
+
+          li.selectAll('circle')
+            .data(items, function (d) { return d.key })
+            .call(function (d) { d.enter().append('circle') })
+            .call(function (d) { d.exit().remove() })
+            .attr('cy', function (d, i) { return i - 0.25 + 'em' })
+            .attr('cx', 0)
+            .attr('r', '0.4em')
+            .style('fill', function (d) { return d.value.color })
+
+          // Reposition and resize the box
+          var lbbox = li[0][0].getBBox()
+          lb.attr('x', (lbbox.x - legendPadding))
+            .attr('y', (lbbox.y - legendPadding))
+            .attr('height', (lbbox.height + 2 * legendPadding))
+            .attr('width', (lbbox.width + 2 * legendPadding))
+        })
+        return g;
       }
     },
     computed: {
