@@ -7,8 +7,11 @@
 
       <b-card v-if="active.type === 0" :title="active.name">
           <a v-bind:href="active.website" target="new">
-            <b-img rounded blank-color="#777" class="gdv-logo" :src="active.logo" thumbnail/>
+            <b-img rounded blank-color="#777" class="gdv-logo" :src="active.logo" thumbnail v-b-tooltip.hover title="Website"/>
           </a>
+
+          <b-button :variant="'outline-success'" @click="search(active.name)" class="gdv-show-in-chart" v-b-tooltip.hover title="Show in chart">⊕</b-button>
+
           <h4 slot="header">
             <span class="gdv-header-color">
                 <b-img blank rounded="circle" height="10" :blank-color="active.color"/>
@@ -28,6 +31,9 @@
             :sort-desc="true"
             :items="active.recipients"
             :fields="fields">
+              <template slot="name" slot-scope="row">
+                <b-link @click="search(row.item.name)">{{ row.item.name }}</b-link>
+              </template>
               <template slot="amount" slot-scope="row">
                   {{ formatCurrency(row.item.amount) }}
               </template>
@@ -48,7 +54,7 @@
                 <b-list-group-item v-for="grant in active.funder"
                   v-bind:key="grant.dx"
                   class="d-flex justify-content-between align-items-center gdv-recipient-list-item">
-                    <span class="gdv-truncate">{{ grant.source.name }}</span>
+                      <b-link class="gdv-truncate" @click="search(grant.source.name)">{{ grant.source.name }}</b-link>
                       <b-badge variant="primary" pill>{{ formatCurrency(grant.value) }}</b-badge>
                   </b-list-group-item>
                 </b-list-group>
@@ -75,7 +81,8 @@
             <span class="gdv-header-color">
                 <b-img blank rounded="circle" height="10" :blank-color="active.source.color"/>
             </span>
-            Funder</h4>
+            Funder
+          </h4>
           <b-card-body>
               <p class="card-text">
                   Grant Awarded:
@@ -101,10 +108,9 @@
 
           <b-card-body>
               <b-list-group>
-                <b-list-group-item v-for="grant in active.target.funder"
-                  v-bind:key="grant.dx"
+                <b-list-group-item v-for="grant in active.target.funder" v-bind:key="grant.dx"
                   class="d-flex justify-content-between align-items-center gdv-recipient-list-item">
-                  <span class="gdv-truncate">{{ grant.source.name }}</span>
+                    <b-link class="gdv-truncate" @click="search(grant.source.name)">{{ grant.source.name }}</b-link>
                     <b-badge variant="primary" pill>{{ formatCurrency(grant.value) }}</b-badge>
                 </b-list-group-item>
               </b-list-group>
@@ -112,74 +118,6 @@
       </b-card>
     </div>
   </div>
-
-  <!-- <div>
-    <div class="side-menu-header" v-bind:style="{ 'background-color': active.color }">
-      <span class="side-menu-header-title">Selection</span>
-    </div>
-    <div class="side-menu-header-content">
-
-      <div v-if="active.type === 0">
-        <div>
-          <img height="50" v-bind:src="active.logo">
-        </div>
-        <br>
-        <h3>Funder</h3>
-        <a v-bind:href="active.website" target="new">{{ active.name }}</a>
-        <br> Total Given Donations:
-        <em>{{ formatCurrency(active.value) }}</em>
-        <hr>
-        <h3>Beneficiaries</h3>
-        <b-list-group>
-          <b-list-group-item
-            v-for="beneficiary in active.recipients"
-            class="d-flex justify-content-between align-items-center gdv-recipient-list-item">
-            <span class="gdv-truncate">{{ beneficiary.name }}</span>
-              <b-badge variant="primary" pill>{{ formatCurrency(beneficiary.amount) }}</b-badge>
-          </b-list-group-item>
-        </b-list-group>
-      </div>
-
-      <div v-if="active.type === 1">
-        <h3>Charrity</h3>
-        <h1>{{ active.name }}</h1>
-
-        <br>Type
-        <h5>{{ active.charityType }}</h5>
-        <br> Total Received Donations:
-        <em>{{ formatCurrency(active.value) }}</em>
-        <hr>
-        <h3>Funder</h3>
-        <ul>
-          <li v-for="funder in active.funder" class="beneficiary-item">
-            {{ funder.source.name }} :
-            <div>{{ formatCurrency(funder.target.value) }}</div>
-          </li>
-        </ul>
-      </div>
-
-      <div v-if="active.type === 2">
-        <div v-bind:style="{ 'background-color': active.source.color }">
-          <h3>Funder</h3>
-          <h1>{{ active.source.name }}</h1>
-          <br>
-          <em>{{ formatCurrency(active.source.value) }}</em>
-        </div>
-        <hr>
-        ↓
-        <hr>
-        <div v-bind:style="{ 'background-color': active.target.color }">
-          <h3>Beneficiary</h3>
-          <a v-bind:href="active.target.website" target="new">{{ active.target.name }}</a>
-          <br>
-          <em>{{ formatCurrency(active.target.value) }}</em>
-          <hr>
-          <em>{{ active.target.charityType }}</em>
-        </div>
-        <hr>
-      </div>
-    </div>
-  </div> -->
 </template>
 
 <script>
@@ -235,5 +173,9 @@
     padding-top: 20px;
     padding-bottom: 20px;
     color: white
+  }
+
+  .gdv-show-in-chart {
+    width: 40px;
   }
 </style>
