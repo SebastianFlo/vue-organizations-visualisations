@@ -77,7 +77,7 @@
             'translate(' + zoom.translate() + ')' +
             'scale(' + zoom.scale() + ')'
           );
-          console.log(zoom.translate(), zoom.scale());
+          // console.log(zoom.translate(), zoom.scale());
         }
 
         this.zoomed = zoomed;
