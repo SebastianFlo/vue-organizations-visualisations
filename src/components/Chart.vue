@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="chart-parent">
     <div class='chart-actions'>
       <!-- <button id='zoom_in'>+</button>
       <button id='zoom_out'>-</button> -->
@@ -32,7 +32,8 @@
         formatNumber: d3.format(',.0f'),
         formatedData: [],
         // debug only
-        matchLess: []
+        matchLess: [],
+        parentDiv: undefined
       }
     },
     props: ['lastSelected'],
@@ -41,6 +42,7 @@
     mounted: function () {
       this.formatedData = this.formatData(userLedData);
       console.log('formatted Data', this.formatedData);
+      this.parentDiv = document.getElementById('parentDiv');
 
       this.createChart();
       this.createLegend();
@@ -82,7 +84,7 @@
             'translate(' + zoom.translate() + ')' +
             'scale(' + zoom.scale() + ')'
           );
-          // console.log(zoom.translate(), zoom.scale());
+          console.log(zoom.translate(), zoom.scale());
         }
 
         this.zoomed = zoomed;
@@ -371,7 +373,16 @@
         this.interpolateZoom([view.x, view.y], view.k);
       },
       zoomFull: function () {
-        const translate = [659.9932142084058, 99.55105973555226];
+        console.log(this.svg);
+        const bbox = this.svg[0][0].getBBox();
+        const center = {
+          x: bbox.x + bbox.width/2,
+          y: bbox.y + bbox.height/2
+        };
+
+        // const translate = [659.9932142084058, 99.55105973555226];
+        // const translate = [this.width + center.x, (this.height / 2) - center.y];
+        const translate = [this.width + center.x - (center.x / 8), (this.height / 2) - center.y - 80];
         const scale = 0.20837957399983806;
 
         this.svg
@@ -535,5 +546,12 @@
     position: absolute;
     top: 20px;
     left: 20px;
+  }
+
+  #parentDiv {
+    height: calc(100vh - 100px); /** output container is small for display */
+    width: calc(100vw - 100px);
+    display: block;
+    border: 1px solid red;
   }
 </style>

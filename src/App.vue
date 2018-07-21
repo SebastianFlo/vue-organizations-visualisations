@@ -4,10 +4,10 @@
 
     <b-container fluid style="height: 100%;">
       <b-row style="height: 100%;">
-        <b-col cols="3" class="side-menu">
+        <b-col cols="12" md="3" class="side-menu">
           <gdv-sidebar v-on:select="selectLast"></gdv-sidebar>
         </b-col>
-        <b-col cols="9" class="content">
+        <b-col cols="6" md="9" class="content">
           <gdv-chart v-bind:lastSelected="selectedLast"></gdv-chart>
         </b-col>
       </b-row>
@@ -84,12 +84,18 @@
   }
 
 
-  #chart {
+  /* #chart {
     height: 720px;
-    /* must at least match the svg, to place content after it!*/
     overflow: hidden;
-    /* background-color: rgba(0, 0, 0, 0.2); */
     background-color: rgb(255, 255, 255);
+  } */
+
+  #chart {
+    /* position: fixed; */
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
   }
 
   .node rect {
