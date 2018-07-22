@@ -3,6 +3,19 @@
     <b-card-group v-if="active.type !== 2" deck>
       <b-card bg-variant="secondary" v-if="active.type !== 0 && !active.type" :title="active.name">
         <b-button v-on:click="search(defaultOrganisation)">Hover over items to see more</b-button>
+
+        <h4 slot="header">
+          A visual representation of grants awarded to User Led Organisations.
+        </h4>
+
+        <b-card-body>
+          The grant theme is <em>children with disabilities or disadvantages</em>,
+          because we believe in the importance of getting support early on in life in order to be able to give children the best possibilities for the future.
+        </b-card-body>
+
+        <b-card-body>
+          You can hover over a organisation to see who funds it, how much, hover over the funders themselves, search, filter by type or even year.
+        </b-card-body>
       </b-card>
 
       <b-card v-if="active.type === 0" :title="active.name">
@@ -36,6 +49,9 @@
               </template>
               <template slot="amount" slot-scope="row">
                   {{ formatCurrency(row.item.amount) }}
+              </template>
+              <template slot="date" slot-scope="row">
+                  {{ formatDate(row.item.date) }}
               </template>
           </b-table>
       </b-card>
@@ -122,12 +138,13 @@
 
 <script>
   import store from '../store.vue';
-  import { currency } from '../filters.vue';
+  import { currency, formatDate } from '../filters.vue';
 
   export default {
     data: function () {
       return {
         state: store.state,
+        // fields: ['name', { key: 'amount', sortable: true}, { key: 'date', sortable: true } ],
         fields: ['name', { key: 'amount', sortable: true} ],
         defaultOrganisation: 'The Wellcome Trust'
       }
@@ -139,6 +156,7 @@
     },
     methods: {
       formatCurrency: currency,
+      formatDate: formatDate,
       search: function (name) {
         this.$emit('select', { name });
       },
