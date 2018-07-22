@@ -169,6 +169,14 @@
     cursor: pointer;
   }
 
+  .gdv-left {
+    text-align: left;
+  }
+
+  .gdv-mt20 {
+    margin-top: 20px;
+  }
+
   .legend rect {
     fill:white;
     opacity:0.8;

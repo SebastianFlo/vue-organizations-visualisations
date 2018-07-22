@@ -9,15 +9,22 @@
         title="Fit to Screen">[ ]</b-button>
       <!-- <button id='move_prev'></button>
       <button id='move_next'></button> -->
+      <b-form-group class="gdv-left gdv-mt20" label="Grant Awarded">
+        <b-form-checkbox-group stacked v-model="years.selected" name="flavour2" :options="years.options" v-on:change="toggleYears">
+        </b-form-checkbox-group>
+      </b-form-group>
+
     </div>
     <div id='chart'></div>
   </div>
 </template>
 
 <script>
+  import _ from 'lodash';
   import store from '../store.vue';
   import userLedData from '../assets/children-with-disabilities.json';
   import extraData from '../assets/children-with-disabilities-extra.json';
+  import { formatDate } from '../filters.vue';
 
   export default {
     data: function () {
@@ -33,7 +40,18 @@
         formatedData: [],
         // debug only
         matchLess: [],
-        parentDiv: undefined
+        parentDiv: undefined,
+        years: {
+          // values: new Set(),
+          selected: ['2014', '2015', '2016', '2017', '2018'], // Must be an array reference!
+          options: [
+            {text: '2018', value: '2018'},
+            {text: '2017', value: '2017'},
+            {text: '2016', value: '2016'},
+            {text: '2015', value: '2015'},
+            {text: '2014', value: '2014'},
+          ]
+        }
       }
     },
     props: ['lastSelected'],
@@ -110,6 +128,7 @@
             return 'link-' + i;
           })
           .attr('data-target', function (d) { return d.target.name; })
+          .attr('data-year', function (d) { return d.date; })
           .on('mouseover', this.setActive)
           .on('mouseout', this.clearActive);
 
@@ -124,9 +143,17 @@
             return 'translate(' + d.x + ',' + d.y + ')';
           })
           // .on('click', this.setActive)
-          .on('mouseover', (node, i) => { this.setNodeLinksOpacity(node, i, 1); this.setActive(node); })
+          .on('mouseover', (node, i) => {
+            this.showAllYears();
+            this.setNodeLinksOpacity(node, i, 1);
+            this.setActive(node);
+          })
           // .on('mouseover', this.setActive)
-          .on('mouseout', (node, i) => { this.setNodeLinksOpacity(node, i, 0.2); this.clearActive(node); });
+          .on('mouseout', (node, i) => {
+            // reset years
+            this.setNodeLinksOpacity(node, i, 0.2);
+            this.clearActive(node);
+          });
 
         var charityTypes = new Map(); // delete
 
@@ -219,6 +246,8 @@
           return acc;
         }, {});
 
+        // this.years.values.forEach(val => console.log(val));
+
         const fundersList = Object.values(funders).map(function (funder, index) {
           return funder;
         });
@@ -261,7 +290,8 @@
             const link = {
               source: node.index,
               target: this.findIndexOf(recipient.id, nodesList),
-              value: recipient.amount
+              value: recipient.amount,
+              date: recipient.date
             }
             acc.push(link);
             return acc;
@@ -307,6 +337,10 @@
       },
       highlight_link: function (id, opacity) {
         d3.select(id).style('stroke-opacity', opacity);
+      },
+      showAllYears: function () {
+        this.years.selected = this.years.options.map(option => option.value); // reset years
+        this.toggleYears(this.years.selected);
       },
       zoomToElement: function (d) {
         // if (d3Active.node() === this) return reset();
@@ -394,21 +428,26 @@
         this.zoomFull();
       },
       getRecipients: function (list, grant) {
-        var id = grant.fundingOrganization[0].id;
-        var recipientOrganization = grant.recipientOrganization[0];
-        var recipients = [];
+        const id = grant.fundingOrganization[0].id;
+        const recipientOrganization = grant.recipientOrganization[0];
+        let recipients = [];
+
+        // this.years.values.add(formatDate(grant.awardDate));
+
         if (list[id] && list[id].recipients) {
           recipients = list[id].recipients;
           recipients.push({
             name: recipientOrganization.name,
             amount: grant.amountAwarded,
-            id: recipientOrganization.id
+            id: recipientOrganization.id,
+            date: formatDate(grant.awardDate)
           });
         } else {
           recipients.push({
             name: recipientOrganization.name,
             amount: grant.amountAwarded,
-            id: recipientOrganization.id
+            id: recipientOrganization.id,
+            date: formatDate(grant.awardDate)
           })
         }
         return recipients;
@@ -486,7 +525,7 @@
               const rectNodes = svg.selectAll(`rect[data-legend="${node.key}"]`);
 
               rectNodes[0].forEach((rectNode, i) => {
-                const link = svg.select(`.link[data-target="${rectNode.id}"`)
+                const link = svg.select(`.link[data-target="${rectNode.id}"]`)
                 highlight_link('#' + link[0][0].id, 1);
               });
             })
@@ -494,7 +533,7 @@
               const rectNodes = svg.selectAll(`rect[data-legend="${node.key}"]`);
 
               rectNodes[0].forEach((rectNode, i) => {
-                const link = svg.select(`.link[data-target="${rectNode.id}"`)
+                const link = svg.select(`.link[data-target="${rectNode.id}"]`)
                 highlight_link('#' + link[0][0].id, 0.2);
               });
             });
@@ -516,7 +555,26 @@
             .attr('width', (lbbox.width + 2 * legendPadding))
         })
         return g;
-      }
+      },
+      toggleYears (checked) {
+        // this.selected = checked ? this.flavours.slice() : []
+        const links = this.svg.selectAll(`.link`);
+        const deselected = _.difference(this.years.options.map(option => option.value), checked);
+        console.log('deselected', deselected);
+        deselected.forEach(year => {
+          const deselectedLinks = this.svg.selectAll(`.link[data-year="${year}"]`)
+          deselectedLinks[0].forEach(link => {
+            this.highlight_link('#' + link.id, 0);
+          })
+        });
+
+        checked.forEach(year => {
+          const selectedLinks = this.svg.selectAll(`.link[data-year="${year}"]`)
+          selectedLinks[0].forEach(link => {
+            this.highlight_link('#' + link.id, 0.2);
+          })
+        });
+      },
     },
     computed: {
       width: function () {
