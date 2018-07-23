@@ -74,6 +74,3 @@ Even though the categorization is not accurate, since it is primarily based on o
 Thea Hoeg ([#](http://theahoeg.com))
 
 Sebastian Florian ([#](https://github.com/SebastianFlo/SebastianFlo.github.io))
-
-
-
