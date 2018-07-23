@@ -71,7 +71,7 @@ Even though the categorization is not accurate, since it is primarily based on o
 > Diagram based on http://benlogan1981.github.io/VerticalSankey/UBS.html
 
 ## Authors
-Thea Hoeg ([#](theahoeg.com))
+Thea Hoeg ([#](http://theahoeg.com))
 
 Sebastian Florian ([#](https://github.com/SebastianFlo/SebastianFlo.github.io))
 
