@@ -7,7 +7,7 @@
       setRawDataAction: false,
       setRecipientColorAction: false,
       searchAction: false,
-      setActiveDataAction: false,
+      setActiveDataAction: true,
     },
     state: {
       funders: [],
@@ -151,7 +151,8 @@
             website: data.target.website,
             funder: data.target.targetLinks,
             description: data.target.description,
-            charityType: data.target.type
+            charityType: data.target.type,
+            category: data.target.field
           },
           type: 2
         }
@@ -167,6 +168,7 @@
           value: data.value,
           description: data.description,
           charityType: data.type,
+          category: data.field,
           funder: data.targetLinks,
           type: 1
         }

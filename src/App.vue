@@ -177,6 +177,14 @@
     margin-top: 20px;
   }
 
+  .gdv-mb70 {
+    margin-bottom: 70px !important;
+  }
+
+  .gdv-text--black {
+    color: rgb(10, 10, 10);
+  }
+
   .legend rect {
     fill:white;
     opacity:0.8;

@@ -3,7 +3,7 @@
 
     <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-    <b-navbar-brand>Grant Funding for Children with Disabilities</b-navbar-brand>
+    <b-navbar-brand @click="search()" class="gdv-hover">The Flow of Funds</b-navbar-brand>
 
     <!-- <b-navbar-nav>
       <b-nav-item v-on:click="search(defaultOrganisation)">Click on items to see more information</b-nav-item>
@@ -88,10 +88,13 @@
     },
     methods: {
       search: function (item) {
-        // store.getElementAction(name);
-        this.$emit('select', { name: item.name });
+        if (!item) {
+          this.$emit('select', {});
+          store.setActiveDataAction();
+        } else {
+          this.$emit('select', { name: item.name });
+        }
         this.closeDropdowns();
-        // store.setActiveIdAction(name);
       },
       closeDropdowns() {
         const funderDropdown = this.$refs.funderDropdown;
@@ -132,8 +135,16 @@
     width: 325px;
   }
 
-  .gdv-dropdown-funders {
-    width: 475px;
+  @media only screen and (max-width: 600px) {
+    .gdv-dropdown-funders {
+        width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    .gdv-dropdown-funders {
+        width: 475px;
+    }
   }
 
   .gdv-no-pointer {

@@ -22,8 +22,8 @@
 <script>
   import _ from 'lodash';
   import store from '../store.vue';
-  import userLedData from '../assets/children-with-disabilities.json';
-  import extraData from '../assets/children-with-disabilities-extra.json';
+  import ChildrenWithDisabilities from '../assets/children-with-disabilities.json';
+  import CWDExtraData from '../assets/children-with-disabilities-extra.json';
   import { formatDate } from '../filters.vue';
 
   export default {
@@ -58,7 +58,7 @@
     created: function () {
     },
     mounted: function () {
-      this.formatedData = this.formatData(userLedData);
+      this.formatedData = this.formatData(ChildrenWithDisabilities);
       console.log('formatted Data', this.formatedData);
       this.parentDiv = document.getElementById('parentDiv');
 
@@ -102,7 +102,7 @@
             'translate(' + zoom.translate() + ')' +
             'scale(' + zoom.scale() + ')'
           );
-          console.log(zoom.translate(), zoom.scale());
+          // console.log(zoom.translate(), zoom.scale());
         }
 
         this.zoomed = zoomed;
@@ -233,7 +233,7 @@
       format: function (d) { return this.formatNumber(d) + ' £'; },
       zoomed: function () { },
       formatData: function (data) {
-        const includedGrants = data.grants.filter(grant => extraData.exclude.indexOf(grant.id) < 0);
+        const includedGrants = data.grants.filter(grant => CWDExtraData.exclude.indexOf(grant.id) < 0);
 
         const funders = includedGrants.reduce((acc, grant) => {
           acc[grant.fundingOrganization[0].id] = {
@@ -260,7 +260,8 @@
             website: grant.recipientOrganization[0].url,
             id: grant.recipientOrganization[0].id,
             description: grant.description,
-            type: this.getCharityType(grant.id, grant.recipientOrganization[0].name) || ''
+            type: this.getCharityType(grant.id, grant.recipientOrganization[0].name) || '',
+            field: this.getCharityCategory(grant.id, grant.recipientOrganization[0].name) || '',
           };
           return acc;
         }, {});
@@ -407,7 +408,6 @@
         this.interpolateZoom([view.x, view.y], view.k);
       },
       zoomFull: function () {
-        console.log(this.svg);
         const bbox = this.svg[0][0].getBBox();
         const center = {
           x: bbox.x + bbox.width/2,
@@ -454,7 +454,7 @@
       },
 
       getCharityType: function (grantId, recipientName) {
-        const grant = extraData.additionalData.find(charity => charity.id === grantId);
+        const grant = CWDExtraData.additionalData.find(charity => charity.id === grantId);
 
         if (!grant || !grant.type) {
           this.matchLess.push({
@@ -464,6 +464,16 @@
         }
 
         return grant.type;
+      },
+
+      getCharityCategory: function (grantId, recipientName) {
+        const grant = CWDExtraData.additionalData.find(charity => charity.id === grantId);
+
+        if (!grant || !grant.field) {
+          return '';
+        }
+
+        return grant.field;
       },
 
 
