@@ -1,5 +1,8 @@
 # sebastianflo.github.io
 
+![Screenshot](src/assets/screenshot.jpg?raw=true "Screenshot")
+
+
 > Visualisation of User-led organisations supporting children with disabilities in the last five years, and who funds them.
 
 > Made for the [360 Giving Data Visualisation Challenge](https://challenge.threesixtygiving.org/)
